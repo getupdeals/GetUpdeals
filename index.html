@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GetUpDeals – Discover Hot Deals Daily</title>
+
+  <!-- ✅ CSS from ./style/ -->
+  <link rel="stylesheet" href="./style/base.css" />
+  <link rel="stylesheet" href="./style/components.css" />
+  <link rel="stylesheet" href="./style/animation.css" />
+  <link rel="stylesheet" href="./style/banner.css" />
+  <link rel="stylesheet" href="./style/homepage.css" />
+  <link rel="stylesheet" href="./style/responsive.css" />
+  <link rel="stylesheet" href="./style/theme.css" />
+  <link rel="stylesheet" href="./style/products-section.css" />
+  <link rel="stylesheet" href="./style/layout.css" />
+  <link rel="stylesheet" href="./style/utilities.css" />
+  
+  <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+
+</head>
+<body>
+  <!-- 🔷 CUSTOM EXPERIENCE + MOBILE-FIRST -->
+  <header id="main-header">
+    <div class="header-top">
+      <img src="./logo.png" alt="GetUpDeals" id="logo" onclick="window.location.href='index.html'" />
+      <div class="search-wrapper" id="searchBarWrapper">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Search deals, products..." />
+        <div id="liveSuggestions" class="suggestions-box hidden"></div>
+      </div>
+      <button id="themeToggle" class="header-theme-toggle" aria-label="Toggle Theme">
+        <span class="icon sun">🌞</span>
+        <span class="icon moon">🌑</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ✅ Everything below can be hidden when search is active -->
+  <div id="homepage">
+    <!-- 🔷 HOT HOOK: Banner -->
+    <section id="banner-section">
+      <div class="banner-carousel">
+        <div class="banner-slide">
+          <img src="./assets/banner1.jpg" alt="Promo 1" />
+          <div class="banner-label">🔥 LIMITED DEAL</div>
+          <div class="banner-text">Up to 70% Off</div>
+        </div>
+        <div class="banner-slide">
+          <img src="./assets/banner2.jpg" alt="Promo 2" />
+          <div class="banner-label">🚚 FREE SHIPPING</div>
+          <div class="banner-text">No Minimum</div>
+        </div>
+        <div class="banner-slide">
+          <img src="./logo.png" alt="Promo 3" />
+          <div class="banner-label">🎁 EXCLUSIVE</div>
+          <div class="banner-text">Members-Only Deals</div>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <!-- ✅ Category Avatars -->
+      <section id="category-container"></section>
+
+      <!-- ✅ Homepage Deal Carousels -->
+      <div class="homepage-section">
+        <div class="section-header">
+          <h2>Trending Deals</h2>
+          <a href="#" class="view-all">View All</a>
+        </div>
+        <div class="carousel" id="trendingDealsContainer"></div>
+      </div>
+
+      <div class="homepage-section">
+        <div class="section-header">
+          <h2>Hot Picks</h2>
+          <a href="#" class="view-all">View All</a>
+        </div>
+        <div class="carousel" id="hotPicksContainer"></div>
+      </div>
+
+      <div class="homepage-section">
+        <div class="section-header">
+          <h2>New Arrivals</h2>
+          <a href="#" class="view-all">View All</a>
+        </div>
+        <div class="carousel" id="newArrivalsContainer"></div>
+      </div>
+
+      <!-- ✅ Optional Sections -->
+      <section id="product-list"></section>
+      <section id="products-section"></section>
+      <section id="filters-section"></section>
+      <div id="quickPreviewModal" class="modal hidden"></div>
+      <section id="wishlist-section"></section>
+      <section id="rewards-section"></section>
+
+      <!-- ✅ Trust Badges -->
+      <section id="trustbadges-section">
+        <div class="badge">🔒 Secure Checkout</div>
+        <div class="badge">✅ Verified Sellers</div>
+        <div class="badge">💬 24/7 Support</div>
+      </section>
+    </main>
+  </div> <!-- 🔚 END of homepage -->
+
+  <!-- 🔍 Search Overlay (active when typing/searching) -->
+  <div id="search-overlay" class="hidden">
+    <div class="suggestions" id="textSuggestions"></div>
+    <div class="search-section">
+      <h3>Matching Products</h3>
+      <div id="productSuggestions" class="previews"></div>
+    </div>
+  </div>
+
+  <!-- 🔍 Focus Overlay (shown on input focus before typing) -->
+  <div id="search-focus-overlay" class="hidden">
+    <div class="search-section">
+      <h3>Recent Searches</h3>
+      <div id="recentSearches" class="chip-container"></div>
+    </div>
+    <div class="search-section">
+      <h3>Recommended</h3>
+      <div id="recommendedSearches" class="previews"></div>
+    </div>
+    <div class="search-section">
+      <h3>Popular Products</h3>
+      <div id="popularProducts" class="previews"></div>
+    </div>
+    <!-- 🔷 FOOTER (not hidden during search) -->
+    <footer>
+      <p>&copy; 2025 GetUpDeals • Smart. Fun. Trusted.</p>
+    </footer>
+  </div> <!-- ✅ END search-focus-overlay -->
+
+  <!-- ✅ 🔷 ORGANIZED FLOW: Navigation (moved outside overlays) -->
+  <nav id="bottom-nav">
+    <a href="./index.html" class="nav-item active">
+      <span class="nav-icon">🏠</span>
+      <span class="nav-label">Home</span>
+    </a>
+    <a href="./rewards/rewards.html" class="nav-item">
+      <span class="nav-icon">🎁</span>
+      <span class="nav-label">Rewards</span>
+    </a>
+    <a href="./search/search.html" class="nav-item">
+      <span class="nav-icon">🔍</span>
+      <span class="nav-label">Search</span>
+    </a>
+    <a href="./wishlist/wishlist.html" class="nav-item">
+      <span class="nav-icon">❤️</span>
+      <span class="nav-label">Wishlist</span>
+    </a>
+    <a href="./account/account.html" class="nav-item">
+      <span class="nav-icon">👤</span>
+      <span class="nav-label">Account</span>
+    </a>
+  </nav>
+<!-- ✅ Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+<!-- ✅ Your Firebase Config -->
+<script src="./js/firebase-config.js"></script>
+
+  <!-- ✅ JS files -->
+  <script src="./js/loaders.js"></script>
+  <script src="./js/categories.js"></script>
+  <script src="./js/subcategories.js"></script>
+  <script src="./js/subsubcategories.js"></script>
+  <script src="./js/products.js"></script>
+  <script src="./js/banner.js"></script>
+  <script src="./js/homepage.js"></script>
+  <script src="./js/filters.js"></script>
+  <script src="./js/search.js"></script>
+  <script src="./js/quickpreview.js"></script>
+  <script src="./js/wishlist.js"></script>
+  <script src="./js/rewards.js"></script>
+  <script src="./js/trustbadges.js"></script>
+  <script src="./js/navigation.js"></script>
+  <script src="./js/themetoggle.js"></script>
+  <script src="./js/ui.js"></script>
+  <script src="./js/analytics.js"></script>
+  <script src="./js/main.js"></script>
+  
+  <script>
+  let originalHeight = window.innerHeight;
+  const bottomNav = document.getElementById('bottom-nav');
+  
+  window.addEventListener('resize', () => {
+    const currentHeight = window.innerHeight;
+    
+    // If height decreased significantly, assume keyboard is open
+    if (currentHeight < originalHeight - 100) {
+      bottomNav.style.display = 'none';
+    } else {
+      bottomNav.style.display = 'flex'; // Or 'block' based on your nav styling
+    }
+  });
+</script>
+  
+  <script>
+  firebase.auth().onAuthStateChanged(user => {
+    if (user) {
+      console.log("🔐 Logged in as:", user.email);
+      // Optionally show user's info
+      // Example: document.getElementById("welcomeMsg").textContent = "Welcome " + user.displayName;
+    } else {
+      console.log("👤 Not logged in – homepage open for all users.");
+    }
+  });
+</script>
+  
+  
+  
+</body>
+</html>
