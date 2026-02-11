@@ -1,0 +1,1096 @@
+/* categories-index.css - Categories Hub Page Styles for GetUpDeals */
+
+/* ==========================================================================
+   Variables & Base Styles
+   ========================================================================== */
+
+.categories-index-page {
+    --category-card-radius: var(--radius);
+    --category-icon-size: 3rem;
+    --featured-deal-card-height: 300px;
+    --gradient-primary: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    --gradient-accent: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+    --shadow-sm: 0 1px 2px 0 var(--shadow-color-light);
+    --shadow-md: 0 4px 6px -1px var(--shadow-color-light), 0 2px 4px -1px var(--shadow-color);
+    --shadow-lg: 0 10px 15px -3px var(--shadow-color-light), 0 4px 6px -2px var(--shadow-color);
+    --shadow-xl: 0 20px 25px -5px var(--shadow-color-light), 0 10px 10px -5px var(--shadow-color);
+    --radius-lg: 1rem;
+}
+
+/* ==========================================================================
+   Categories Header
+   ========================================================================== */
+
+.categories-header {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+    padding: 3rem 0 4rem;
+    position: relative;
+    overflow: hidden;
+    transition: background var(--theme-transition);
+}
+
+.categories-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--primary), transparent);
+    transition: background var(--theme-transition);
+}
+
+.categories-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-top: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.categories-hero-content {
+    max-width: 600px;
+}
+
+.categories-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: background var(--theme-transition);
+}
+
+.categories-description {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin-bottom: 2.5rem;
+    transition: color var(--theme-transition);
+}
+
+.categories-stats {
+    display: flex;
+    gap: 2.5rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.categories-stats .stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.categories-stats .stat-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary);
+    line-height: 1;
+    transition: color var(--theme-transition);
+}
+
+.categories-stats .stat-label {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    margin-top: 0.5rem;
+    text-align: center;
+    font-weight: 500;
+    transition: color var(--theme-transition);
+}
+
+.category-search-container {
+    max-width: 600px;
+}
+
+.category-search-form {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+}
+
+.category-search-input {
+    flex: 1;
+    padding: 1.25rem 1.5rem;
+    border-radius: var(--radius-full);
+    border: 2px solid var(--border-primary);
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-size: 1.125rem;
+    font-weight: 500;
+    transition: all var(--theme-transition);
+}
+
+.category-search-input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+}
+
+.category-search-input::placeholder {
+    color: var(--gray-400);
+    transition: color var(--theme-transition);
+}
+
+.category-search-btn {
+    padding: 1.25rem 2rem;
+    background: var(--gradient-primary);
+    color: var(--white);
+    border: none;
+    border-radius: var(--radius-full);
+    font-weight: 600;
+    font-size: 1.125rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: all var(--theme-transition);
+    white-space: nowrap;
+}
+
+.category-search-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.categories-hero-image {
+    position: relative;
+}
+
+.categories-hero-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-xl);
+    transition: transform 0.5s ease;
+}
+
+.categories-hero-image:hover img {
+    transform: scale(1.02);
+}
+
+/* ==========================================================================
+   Main Categories Grid
+   ========================================================================== */
+
+.main-categories-section {
+    padding: 5rem 0;
+    background: var(--bg-primary);
+    transition: background-color var(--theme-transition);
+}
+
+.main-categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.main-category-card {
+    background: var(--bg-secondary);
+    border: 2px solid var(--border-primary);
+    border-radius: var(--category-card-radius);
+    padding: 2rem;
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: all var(--theme-transition);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.main-category-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-primary);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease, background var(--theme-transition);
+}
+
+.main-category-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+}
+
+.main-category-card:hover::before {
+    transform: scaleX(1);
+}
+
+.category-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.category-icon {
+    width: var(--category-icon-size);
+    height: var(--category-icon-size);
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 1.5rem;
+    transition: background var(--theme-transition);
+}
+
+.deal-count {
+    background: var(--bg-tertiary);
+    color: var(--text-muted);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-full);
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: all var(--theme-transition);
+}
+
+.main-category-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+    transition: color var(--theme-transition);
+}
+
+.main-category-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+    transition: color var(--theme-transition);
+}
+
+.category-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.category-tags .tag {
+    background: var(--bg-tertiary);
+    color: var(--text-muted);
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-full);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    transition: all var(--theme-transition);
+}
+
+.main-category-card:hover .category-tags .tag {
+    background: var(--primary-light);
+    color: var(--white);
+}
+
+.view-category {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 1.125rem;
+    transition: gap 0.3s ease, color var(--theme-transition);
+}
+
+.main-category-card:hover .view-category {
+    gap: 1rem;
+}
+
+/* Category Card Colors Based on Category - Theme Compatible */
+.main-category-card[data-category="electronics"] .category-icon {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+}
+
+.main-category-card[data-category="fashion"] .category-icon {
+    background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-dark) 100%);
+}
+
+.main-category-card[data-category="home-appliances"] .category-icon {
+    background: linear-gradient(135deg, var(--success) 0%, #059669 100%);
+}
+
+.main-category-card[data-category="gadgets"] .category-icon {
+    background: linear-gradient(135deg, var(--warning) 0%, var(--warning-dark, #d97706) 100%);
+}
+
+.main-category-card[data-category="beauty"] .category-icon {
+    background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
+}
+
+.main-category-card[data-category="travel"] .category-icon {
+    background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+}
+
+.main-category-card[data-category="home-kitchen"] .category-icon {
+    background: linear-gradient(135deg, #84cc16 0%, #65a30d 100%);
+}
+
+.main-category-card[data-category="sports-fitness"] .category-icon {
+    background: linear-gradient(135deg, var(--danger) 0%, var(--danger-dark, #dc2626) 100%);
+}
+
+.main-category-card[data-category="books-media"] .category-icon {
+    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+}
+
+.main-category-card[data-category="automotive"] .category-icon {
+    background: linear-gradient(135deg, var(--gray-600) 0%, var(--gray-700) 100%);
+}
+
+.main-category-card[data-category="grocery"] .category-icon {
+    background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+}
+
+.main-category-card[data-category="pets"] .category-icon {
+    background: linear-gradient(135deg, #a855f7 0%, #9333ea 100%);
+}
+
+/* ==========================================================================
+   Featured Categories Section
+   ========================================================================== */
+
+.featured-categories-section {
+    padding: 5rem 0;
+    background: var(--bg-secondary);
+    position: relative;
+    transition: background-color var(--theme-transition);
+}
+
+.featured-categories-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border-primary), transparent);
+    transition: background var(--theme-transition);
+}
+
+.featured-categories-tabs {
+    background: var(--bg-primary);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    margin-top: 3rem;
+    transition: all var(--theme-transition);
+}
+
+.tabs-header {
+    display: flex;
+    background: var(--bg-tertiary);
+    padding: 0.5rem;
+    gap: 0.5rem;
+    border-bottom: 1px solid var(--border-primary);
+    transition: background-color var(--theme-transition), border-color var(--theme-transition);
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    font-weight: 600;
+    font-size: 1.125rem;
+    cursor: pointer;
+    border-radius: var(--radius);
+    transition: all var(--theme-transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.tab-btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--gradient-primary);
+    transform: scaleX(0);
+    transition: transform 0.3s ease, background var(--theme-transition);
+}
+
+.tab-btn:hover {
+    color: var(--primary);
+    background: rgba(59, 130, 246, 0.05);
+}
+
+.tab-btn.active {
+    color: var(--primary);
+    background: var(--bg-primary);
+}
+
+.tab-btn.active::before {
+    transform: scaleX(1);
+}
+
+.tabs-content {
+    padding: 2rem;
+}
+
+.tab-pane {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.featured-deals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.featured-deal-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: all var(--theme-transition);
+    height: var(--featured-deal-card-height);
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-deal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary);
+}
+
+.deal-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--gradient-accent);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-full);
+    font-weight: 700;
+    font-size: 0.875rem;
+    z-index: 1;
+    box-shadow: var(--shadow-sm);
+    transition: background var(--theme-transition);
+}
+
+.deal-image {
+    height: 160px;
+    overflow: hidden;
+}
+
+.deal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.featured-deal-card:hover .deal-image img {
+    transform: scale(1.05);
+}
+
+.deal-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.deal-content h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+    color: var(--text-primary);
+    transition: color var(--theme-transition);
+}
+
+.deal-price {
+    margin-bottom: 1rem;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    margin-right: 0.5rem;
+    transition: color var(--theme-transition);
+}
+
+.discounted-price {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary);
+    transition: color var(--theme-transition);
+}
+
+.deal-store {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+    transition: color var(--theme-transition);
+}
+
+.deal-store img {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+}
+
+.deal-link {
+    margin-top: auto;
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: gap 0.3s ease, color var(--theme-transition);
+}
+
+.featured-deal-card:hover .deal-link {
+    gap: 0.75rem;
+}
+
+.tab-footer {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-primary);
+    transition: border-color var(--theme-transition);
+}
+
+.view-all-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 1.125rem;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-full);
+    transition: all var(--theme-transition);
+}
+
+.view-all-link:hover {
+    background: var(--primary);
+    color: var(--white);
+    gap: 1rem;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* ==========================================================================
+   How-to Section
+   ========================================================================== */
+
+.how-to-section {
+    padding: 5rem 0;
+    background: var(--bg-primary);
+    transition: background-color var(--theme-transition);
+}
+
+.how-to-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.how-to-card {
+    background: var(--bg-secondary);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    border: 1px solid var(--border-primary);
+    transition: all var(--theme-transition);
+}
+
+.how-to-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.how-to-number {
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: var(--gradient-primary);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1.125rem;
+    box-shadow: var(--shadow-md);
+    transition: background var(--theme-transition);
+}
+
+.how-to-icon {
+    width: 4rem;
+    height: 4rem;
+    background: rgba(59, 130, 246, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 1.5rem;
+    color: var(--primary);
+    transition: background var(--theme-transition), color var(--theme-transition);
+}
+
+.how-to-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+    transition: color var(--theme-transition);
+}
+
+.how-to-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 0.9375rem;
+    transition: color var(--theme-transition);
+}
+
+/* ==========================================================================
+   Newsletter Section (Customized for Categories)
+   ========================================================================== */
+
+.categories-index-page .newsletter-section {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+    padding: 5rem 0;
+    transition: background var(--theme-transition);
+}
+
+.categories-index-page .newsletter-card {
+    background: var(--bg-primary);
+    border: 2px solid var(--border-primary);
+    transition: all var(--theme-transition);
+}
+
+.categories-index-page .newsletter-card:hover {
+    border-color: var(--primary);
+    box-shadow: var(--shadow-xl);
+}
+
+.categories-index-page .btn-subscribe {
+    background: var(--gradient-primary);
+    color: var(--white);
+    transition: background var(--theme-transition);
+}
+
+.categories-index-page .form-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+/* ==========================================================================
+   Responsive Design
+   ========================================================================== */
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    .categories-hero {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+    
+    .categories-hero-content {
+        max-width: 100%;
+    }
+    
+    .categories-title {
+        justify-content: center;
+    }
+    
+    .categories-stats {
+        justify-content: center;
+    }
+    
+    .main-categories-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+    
+    .category-search-form {
+        flex-direction: column;
+    }
+    
+    .category-search-btn {
+        justify-content: center;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .categories-header {
+        padding: 2rem 0 3rem;
+    }
+    
+    .categories-title {
+        font-size: 2.5rem;
+    }
+    
+    .categories-description {
+        font-size: 1.125rem;
+    }
+    
+    .categories-stats {
+        gap: 2rem;
+    }
+    
+    .categories-stats .stat-number {
+        font-size: 2rem;
+    }
+    
+    .main-categories-section {
+        padding: 3rem 0;
+    }
+    
+    .featured-categories-section,
+    .how-to-section {
+        padding: 3rem 0;
+    }
+    
+    .tabs-header {
+        flex-direction: column;
+    }
+    
+    .tab-btn {
+        text-align: center;
+    }
+    
+    .featured-deals-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .how-to-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .how-to-card {
+        padding: 1.5rem;
+    }
+    
+    .category-search-input,
+    .category-search-btn {
+        padding: 1rem 1.5rem;
+    }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+    .categories-title {
+        font-size: 2rem;
+    }
+    
+    .main-categories-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .main-category-card {
+        padding: 1.5rem;
+    }
+    
+    .category-icon {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.25rem;
+    }
+    
+    .featured-deal-card {
+        height: auto;
+        min-height: 280px;
+    }
+}
+
+/* ==========================================================================
+   Dark Mode Overrides (Enhanced with Theme Variables)
+   ========================================================================== */
+
+[data-theme="dark"] .categories-header {
+    background: linear-gradient(135deg, var(--gray-900) 0%, var(--gray-800) 100%);
+}
+
+[data-theme="dark"] .main-category-card {
+    background: var(--bg-secondary);
+    border-color: var(--border-primary);
+}
+
+[data-theme="dark"] .main-category-card:hover {
+    border-color: var(--primary-light);
+    background: var(--bg-secondary);
+}
+
+[data-theme="dark"] .deal-count {
+    background: var(--bg-tertiary);
+    color: var(--text-muted);
+}
+
+[data-theme="dark"] .featured-categories-tabs {
+    background: var(--bg-primary);
+    border-color: var(--border-primary);
+}
+
+[data-theme="dark"] .tabs-header {
+    background: var(--bg-tertiary);
+    border-bottom-color: var(--border-primary);
+}
+
+[data-theme="dark"] .tab-btn {
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] .tab-btn:hover {
+    background: rgba(59, 130, 246, 0.1);
+}
+
+[data-theme="dark"] .tab-btn.active {
+    background: var(--bg-primary);
+    color: var(--primary);
+}
+
+[data-theme="dark"] .featured-deal-card {
+    background: var(--bg-secondary);
+    border-color: var(--border-primary);
+}
+
+[data-theme="dark"] .featured-deal-card:hover {
+    border-color: var(--primary-light);
+}
+
+[data-theme="dark"] .how-to-card {
+    background: var(--bg-secondary);
+    border-color: var(--border-primary);
+}
+
+[data-theme="dark"] .how-to-card:hover {
+    border-color: var(--primary);
+}
+
+[data-theme="dark"] .view-all-link {
+    background: var(--bg-tertiary);
+    color: var(--primary);
+}
+
+[data-theme="dark"] .view-all-link:hover {
+    background: var(--primary);
+    color: var(--white);
+}
+
+[data-theme="dark"] .categories-index-page .newsletter-card {
+    background: var(--bg-primary);
+    border-color: var(--border-primary);
+}
+
+[data-theme="dark"] .category-search-input {
+    background: var(--bg-secondary);
+    border-color: var(--border-primary);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .category-search-input:focus {
+    border-color: var(--primary-light);
+    box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.1);
+}
+
+[data-theme="dark"] .category-tags .tag {
+    background: var(--bg-tertiary);
+    color: var(--text-muted);
+}
+
+[data-theme="dark"] .main-category-card:hover .category-tags .tag {
+    background: var(--primary-light);
+    color: var(--white);
+}
+
+[data-theme="dark"] .how-to-icon {
+    background: rgba(59, 130, 246, 0.2);
+    color: var(--primary-light);
+}
+
+/* ==========================================================================
+   Accessibility & Performance Optimizations
+   ========================================================================== */
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    .main-category-card,
+    .featured-deal-card,
+    .how-to-card,
+    .tab-btn,
+    .deal-image img,
+    .view-all-link,
+    .view-category,
+    .deal-link,
+    .category-search-btn,
+    .categories-hero-image img {
+        transition: none;
+    }
+    
+    .main-category-card:hover,
+    .featured-deal-card:hover,
+    .how-to-card:hover {
+        transform: none;
+    }
+    
+    .tab-pane.active {
+        animation: none;
+    }
+    
+    @keyframes fadeIn {
+        from, to { opacity: 1; transform: translateY(0); }
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .main-category-card,
+    .featured-deal-card,
+    .how-to-card,
+    .newsletter-card,
+    .featured-categories-tabs {
+        border-width: 2px;
+    }
+    
+    .tab-btn.active::before {
+        height: 4px;
+    }
+    
+    .category-search-input:focus {
+        outline: 2px solid var(--primary);
+        outline-offset: 2px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .categories-header,
+    .main-categories-section,
+    .featured-categories-section,
+    .how-to-section,
+    .newsletter-section {
+        padding: 2rem 0 !important;
+    }
+    
+    .categories-hero-image,
+    .deal-image,
+    .tabs-header,
+    .newsletter-image {
+        display: none !important;
+    }
+    
+    .categories-hero {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .main-categories-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    
+    .main-category-card {
+        break-inside: avoid;
+        border: 1px solid #ccc !important;
+    }
+    
+    [data-theme] {
+        --white: #ffffff !important;
+        --text-primary: #000000 !important;
+        --bg-primary: #ffffff !important;
+        --border-primary: #cccccc !important;
+        --primary: #000000 !important;
+    }
+    
+    .categories-title {
+        background: none !important;
+        -webkit-background-clip: initial !important;
+        background-clip: initial !important;
+        color: #000000 !important;
+    }
+}
+
+/* ==========================================================================
+   Loading States
+   ========================================================================== */
+
+.categories-loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.categories-loading .main-category-card,
+.categories-loading .featured-deal-card {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+/* ==========================================================================
+   Theme Variables to Add to Your themes.css
+   ========================================================================== */
+
+/*
+Add these to your themes.css if not already present:
+
+
+*/
+
+/* ==========================================================================
+   End of Categories Index CSS
+   ========================================================================== */
