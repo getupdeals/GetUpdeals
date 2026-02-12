@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - GetUpDeals | Money Saving Tips & Shopping Guides</title>
+    <meta name="description" content="Read our blog for money-saving tips, shopping guides, and expert advice on getting the best deals online.">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="shopping tips, save money, deal guides, online shopping, discount tips">
+    <meta property="og:title" content="GetUpDeals Blog | Smart Shopping Guides">
+    <meta property="og:description" content="Expert tips and guides to help you save money while shopping online.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://getupdeals.com/blog/">
+    <meta property="og:image" content="https://getupdeals.com/assets/images/blog/blog-og.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/themes.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/blog/blog-listing.css">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Skip to Content -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <span class="deal-alert">
+                    <i class="fas fa-bolt"></i> Flash Sale: 50% OFF on Fashion
+                </span>
+                <div class="top-bar-links">
+                    <a href="../pages/about.html">About</a>
+                    <a href="../pages/contact.html">Contact</a>
+                    <a href="./" class="active">Blog</a>
+                    <a href="../pages/affiliate-disclosure.html" class="affiliate-badge">Affiliate</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-container">
+                <a href="../index.html" class="logo">
+                    <span class="brand-name">GetUpDeals</span>
+                </a>
+            </div>
+            
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-dropdown">
+                        <a href="../categories/" class="nav-link">
+                            Categories <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="../categories/fashion.html" class="dropdown-item">
+                                <i class="fas fa-tshirt"></i> Fashion
+                            </a>
+                            <a href="../categories/electronics.html" class="dropdown-item">
+                                <i class="fas fa-laptop"></i> Electronics
+                            </a>
+                            <a href="../categories/gadgets.html" class="dropdown-item">
+                                <i class="fas fa-mobile-alt"></i> Gadgets
+                            </a>
+                            <a href="../categories/home-appliances.html" class="dropdown-item">
+                                <i class="fas fa-blender"></i> Home Appliances
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href="../deals/" class="nav-link">Today's Deals</a></li>
+                    <li><a href="./" class="nav-link active">Blog</a></li>
+                    <li><a href="../pages/contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="search-container">
+                    <form class="search-form" id="searchForm">
+                        <input type="search" placeholder="Search blog posts..." class="search-input">
+                        <button type="submit" class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <a href="../index.html" class="mobile-logo">
+                <span class="brand-name">GetUpDeals</span>
+            </a>
+            <button class="mobile-nav-close" id="mobileNavClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="mobile-search">
+            <form class="mobile-search-form">
+                <input type="search" placeholder="Search blog posts...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        
+        <nav class="mobile-nav-menu">
+            <a href="../index.html" class="mobile-nav-link">
+                <i class="fas fa-home"></i> Home
+            </a>
+            <div class="mobile-nav-dropdown">
+                <button class="mobile-nav-link">
+                    <i class="fas fa-th"></i> Categories
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="mobile-dropdown-menu">
+                    <a href="../categories/fashion.html" class="mobile-dropdown-item">
+                        <i class="fas fa-tshirt"></i> Fashion
+                    </a>
+                    <a href="../categories/electronics.html" class="mobile-dropdown-item">
+                        <i class="fas fa-laptop"></i> Electronics
+                    </a>
+                    <a href="../categories/gadgets.html" class="mobile-dropdown-item">
+                        <i class="fas fa-mobile-alt"></i> Gadgets
+                    </a>
+                    <a href="../categories/home-appliances.html" class="mobile-dropdown-item">
+                        <i class="fas fa-blender"></i> Home Appliances
+                    </a>
+                </div>
+            </div>
+            <a href="../deals/" class="mobile-nav-link">
+                <i class="fas fa-tag"></i> Today's Deals
+            </a>
+            <a href="./" class="mobile-nav-link active">
+                <i class="fas fa-blog"></i> Blog
+            </a>
+            <a href="../pages/contact.html" class="mobile-nav-link">
+                <i class="fas fa-envelope"></i> Contact
+            </a>
+        </nav>
+        
+        <div class="mobile-nav-footer">
+            <div class="theme-toggle-mobile">
+                <button class="theme-switch-btn" id="themeSwitchMobile">
+                    <span class="theme-icon">
+                        <i class="fas fa-moon"></i>
+                    </span>
+                    <span class="theme-text">Dark Mode</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content" class="main-content">
+        <!-- Blog Hero -->
+        <section class="blog-hero-section">
+            <div class="container">
+                <div class="blog-hero-content">
+                    <h1 class="blog-hero-title">GetUpDeals Blog</h1>
+                    <p class="blog-hero-subtitle">Smart shopping guides, money-saving tips, and expert advice to help you make the best buying decisions.</p>
+                    
+                    <div class="blog-stats">
+                        <div class="blog-stat">
+                            <span class="stat-number">200+</span>
+                            <span class="stat-label">Articles</span>
+                        </div>
+                        <div class="blog-stat">
+                            <span class="stat-number">500K+</span>
+                            <span class="stat-label">Monthly Readers</span>
+                        </div>
+                        <div class="blog-stat">
+                            <span class="stat-number">₹25 Cr+</span>
+                            <span class="stat-label">Total Savings</span>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-search-box">
+                        <input type="text" placeholder="Search blog posts (e.g., 'save money', 'shopping tips')" id="blogSearch">
+                        <button class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Categories -->
+        <section class="blog-categories-section">
+            <div class="container">
+                <div class="categories-filter">
+                    <button class="category-filter-btn active" data-category="all">All Categories</button>
+                    <button class="category-filter-btn" data-category="fashion">
+                        <i class="fas fa-tshirt"></i> Fashion
+                    </button>
+                    <button class="category-filter-btn" data-category="electronics">
+                        <i class="fas fa-laptop"></i> Electronics
+                    </button>
+                    <button class="category-filter-btn" data-category="gadgets">
+                        <i class="fas fa-mobile-alt"></i> Gadgets
+                    </button>
+                    <button class="category-filter-btn" data-category="home">
+                        <i class="fas fa-home"></i> Home & Kitchen
+                    </button>
+                    <button class="category-filter-btn" data-category="tips">
+                        <i class="fas fa-piggy-bank"></i> Money Tips
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Posts -->
+        <section class="featured-posts-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">🔥 Featured Articles</h2>
+                    <p class="section-subtitle">Most popular reads this month</p>
+                </div>
+                
+                <div class="featured-posts-grid">
+                    <!-- Featured Post 1 -->
+                    <article class="featured-post-card">
+                        <a href="./best-tshirts-under-999/" class="post-link">
+                            <div class="post-image-container">
+                                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                     alt="Best T-Shirts Under ₹999" 
+                                     class="post-image">
+                                <span class="featured-badge">Trending</span>
+                            </div>
+                            <div class="post-content">
+                                <span class="post-category">Fashion Guide</span>
+                                <h3 class="post-title">Best T-Shirts Under ₹999 for Men & Women (2024 Guide)</h3>
+                                <p class="post-excerpt">Complete guide to finding premium quality t-shirts from top brands at unbelievable prices. We've tested 50+ options...</p>
+                                <div class="post-meta">
+                                    <div class="author-info">
+                                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rajesh Sharma" class="author-avatar">
+                                        <div class="author-details">
+                                            <span class="author-name">Rajesh Sharma</span>
+                                            <span class="post-date">Dec 15, 2024</span>
+                                        </div>
+                                    </div>
+                                    <div class="post-stats">
+                                        <span class="stat"><i class="far fa-clock"></i> 8 min read</span>
+                                        <span class="stat"><i class="far fa-eye"></i> 25.4K</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <!-- Featured Post 2 -->
+                    <article class="featured-post-card">
+                        <a href="./top-gadgets-under-5000/" class="post-link">
+                            <div class="post-image-container">
+                                <img src="https://images.unsplash.com/photo-1546054451-aa7395f773fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                     alt="Gadgets Under ₹5000" 
+                                     class="post-image">
+                                <span class="featured-badge">Popular</span>
+                            </div>
+                            <div class="post-content">
+                                <span class="post-category">Tech Guide</span>
+                                <h3 class="post-title">Top 15 Gadgets Under ₹5000 That Are Worth Buying</h3>
+                                <p class="post-excerpt">From smart watches to wireless earphones - get the best tech gadgets without breaking the bank. Our top picks...</p>
+                                <div class="post-meta">
+                                    <div class="author-info">
+                                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya Patel" class="author-avatar">
+                                        <div class="author-details">
+                                            <span class="author-name">Priya Patel</span>
+                                            <span class="post-date">Dec 10, 2024</span>
+                                        </div>
+                                    </div>
+                                    <div class="post-stats">
+                                        <span class="stat"><i class="far fa-clock"></i> 10 min read</span>
+                                        <span class="stat"><i class="far fa-eye"></i> 18.7K</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <!-- Featured Post 3 -->
+                    <article class="featured-post-card">
+                        <a href="./amazon-flipkart-sale-tips/" class="post-link">
+                            <div class="post-image-container">
+                                <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                     alt="Sale Saving Tips" 
+                                     class="post-image">
+                                <span class="featured-badge">Essential</span>
+                            </div>
+                            <div class="post-content">
+                                <span class="post-category">Money Tips</span>
+                                <h3 class="post-title">Amazon & Flipkart Sale: 10 Tips to Save Maximum</h3>
+                                <p class="post-excerpt">Proven strategies to get the best discounts during big e-commerce sales. Learn insider tips from shopping experts...</p>
+                                <div class="post-meta">
+                                    <div class="author-info">
+                                        <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Arun Kumar" class="author-avatar">
+                                        <div class="author-details">
+                                            <span class="author-name">Arun Kumar</span>
+                                            <span class="post-date">Dec 1, 2024</span>
+                                        </div>
+                                    </div>
+                                    <div class="post-stats">
+                                        <span class="stat"><i class="far fa-clock"></i> 12 min read</span>
+                                        <span class="stat"><i class="far fa-eye"></i> 32.1K</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- All Blog Posts -->
+        <section class="all-posts-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">📚 Latest Articles</h2>
+                    <div class="sort-options">
+                        <select class="sort-select" id="sortSelect">
+                            <option value="newest">Newest First</option>
+                            <option value="popular">Most Popular</option>
+                            <option value="oldest">Oldest First</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="posts-grid" id="postsGrid">
+                    <!-- Post 1 -->
+                    <article class="post-card" data-category="fashion" data-popularity="25400">
+                        <a href="./best-tshirts-under-999/" class="post-link">
+                            <div class="post-image-container">
+                                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                                     alt="T-Shirts" 
+                                     class="post-image">
+                            </div>
+                            <div class="post-content">
+                                <span class="post-category">Fashion Guide</span>
+                                <h3 class="post-title">Best T-Shirts Under ₹999 for Men & Women</h3>
+                                <p class="post-excerpt">Curated list of premium quality t-shirts from top brands at unbelievable prices.</p>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> Dec 15, 2024</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 8 min read</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <!-- Post 2 -->
+                    <article class="post-card" data-category="fashion" data-popularity="18200">
+                        <a href="./best-jeans-under-999/" class="post-link">
+                            <div class="post-image-container">
+                                <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                                     alt="Jeans" 
+                                     class="post-image">
+                            </div>
+                            <div class="post-content">
+                                <span class="post-category">Fashion Guide</span>
+                                <h3 class="post-title">Top 10 Jeans Under ₹999 for Perfect Fit</h3>
+                                <p class="post-excerpt">Find the best jeans from Levi's, Lee, Wrangler and more at discounted prices.</p>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> Dec 12, 2024</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 7 min read</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <!-- Post 3 -->
+                    <article class="post-card" data-category="gadgets" data-popularity="22700">
+                        <a href="./top-gadgets-under-5000/" class="post-link">
+                            <div class="post-image-container">
+                                <img src="https://images.unsplash.com/photo-1546054451-aa7395f773fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                                     alt="Gadgets" 
+                                     class="post-image">
+                            </div>
+                            <div class="post-content">
+                                <span class="post-category">Tech Guide</span>
+                                <h3 class="post-title">Top 15 Gadgets Under ₹5000 Worth Buying</h3>
+                                <p class="post-excerpt">From smart watches to wireless earphones - get the best tech on a budget.</p>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> Dec 10, 2024</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 10 min read</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <!-- Post 4 -->
+                    <article class="post-card" data-category="electronics" data-popularity="15300">
+                        <a href="./best-wireless-earphones/" class="post-link">
+                            <div class="post-image-container">
+                                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                                     alt="Wireless Earphones" 
+                                     class="post-image">
+                            </div>
+                            <div class="post-content">
+                                <span class="post-category">Electronics</span>
+                                <h3 class="post-title">Best Wireless Earphones Under ₹3000 (2024 Review)</h3>
+                                <p class="post-excerpt">Comprehensive review of top wireless earphones with great sound and battery life.</p>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> Dec 8, 2024</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 9 min read</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <!-- Post 5 -->
+                    <article class="post-card" data-category="home" data-popularity="12800">
+                        <a href="./kitchen-appliances-sale/" class="post-link">
+                            <div class="post-image-container">
+                                <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                                     alt="Kitchen Appliances" 
+                                     class="post-image">
+                            </div>
+                            <div class="post-content">
+                                <span class="post-category">Home & Kitchen</span>
+                                <h3 class="post-title">Kitchen Appliances Sale: Save Up to 70%</h3>
+                                <p class="post-excerpt">Best deals on mixer grinders, air fryers, microwaves, and other kitchen essentials.</p>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> Dec 5, 2024</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 6 min read</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <!-- Post 6 -->
+                    <article class="post-card" data-category="tips" data-popularity="28900">
+                        <a href="./amazon-flipkart-sale-tips/" class="post-link">
+                            <div class="post-image-container">
+                                <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                                     alt="Sale Tips" 
+                                     class="post-image">
+                            </div>
+                            <div class="post-content">
+                                <span class="post-category">Money Tips</span>
+                                <h3 class="post-title">Amazon & Flipkart Sale: 10 Tips to Save Maximum</h3>
+                                <p class="post-excerpt">Proven strategies to get the best discounts during big e-commerce sales.</p>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> Dec 1, 2024</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 11 min read</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <!-- Post 7 -->
+                    <article class="post-card" data-category="gadgets" data-popularity="14200">
+                        <a href="./best-smart-watches/" class="post-link">
+                            <div class="post-image-container">
+                                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                                     alt="Smart Watches" 
+                                     class="post-image">
+                            </div>
+                            <div class="post-content">
+                                <span class="post-category">Gadgets</span>
+                                <h3 class="post-title">Best Smart Watches Under ₹5000 for Fitness Tracking</h3>
+                                <p class="post-excerpt">Top smart watches with heart rate monitoring, GPS, and long battery life.</p>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> Nov 28, 2024</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 9 min read</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <!-- Post 8 -->
+                    <article class="post-card" data-category="fashion" data-popularity="11800">
+                        <a href="./winter-wear-guide/" class="post-link">
+                            <div class="post-image-container">
+                                <img src="https://images.unsplash.com/photo-1515434126000-961d90ff09db?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                                     alt="Winter Wear" 
+                                     class="post-image">
+                            </div>
+                            <div class="post-content">
+                                <span class="post-category">Fashion Guide</span>
+                                <h3 class="post-title">Winter Wear Guide: Best Jackets & Sweaters Under ₹2000</h3>
+                                <p class="post-excerpt">Stay warm this winter with our curated selection of affordable winter clothing.</p>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> Nov 25, 2024</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 8 min read</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                
+                <!-- Load More Button -->
+                <div class="load-more-container">
+                    <button class="load-more-btn" id="loadMoreBtn">
+                        Load More Articles <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="blog-newsletter-section">
+            <div class="container">
+                <div class="newsletter-card">
+                    <div class="newsletter-content">
+                        <h2>Never Miss a Money-Saving Tip</h2>
+                        <p>Join 50,000+ smart shoppers who receive our weekly newsletter with exclusive deals, shopping guides, and money-saving strategies.</p>
+                        
+                        <form class="newsletter-form" id="newsletterForm">
+                            <div class="form-group">
+                                <input type="email" 
+                                       placeholder="Enter your email address" 
+                                       required 
+                                       class="newsletter-input">
+                                <button type="submit" class="btn-subscribe">
+                                    Subscribe Now <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                            <p class="form-note">No spam. Unsubscribe anytime. We respect your privacy.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Categories -->
+        <section class="popular-categories-section">
+            <div class="container">
+                <h2 class="section-title">Browse by Category</h2>
+                <p class="section-subtitle">Find articles based on your interests</p>
+                
+                <div class="categories-grid">
+                    <a href="#fashion" class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <div class="category-content">
+                            <h3>Fashion & Style</h3>
+                            <p>Clothing, footwear, accessories and style guides</p>
+                            <span class="category-count">42 Articles</span>
+                        </div>
+                    </a>
+                    
+                    <a href="#electronics" class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <div class="category-content">
+                            <h3>Electronics</h3>
+                            <p>Mobiles, laptops, TVs, cameras and audio gear</p>
+                            <span class="category-count">35 Articles</span>
+                        </div>
+                    </a>
+                    
+                    <a href="#gadgets" class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="category-content">
+                            <h3>Gadgets & Tech</h3>
+                            <p>Smart devices, wearables, and tech accessories</p>
+                            <span class="category-count">28 Articles</span>
+                        </div>
+                    </a>
+                    
+                    <a href="#home" class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="category-content">
+                            <h3>Home & Kitchen</h3>
+                            <p>Appliances, furniture, decor and kitchen essentials</p>
+                            <span class="category-count">24 Articles</span>
+                        </div>
+                    </a>
+                    
+                    <a href="#tips" class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-piggy-bank"></i>
+                        </div>
+                        <div class="category-content">
+                            <h3>Money Saving Tips</h3>
+                            <p>Strategies to save money while shopping online</p>
+                            <span class="category-count">38 Articles</span>
+                        </div>
+                    </a>
+                    
+                    <a href="#guides" class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="category-content">
+                            <h3>Shopping Guides</h3>
+                            <p>Comprehensive buying guides and product reviews</p>
+                            <span class="category-count">45 Articles</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo-container">
+                        <a href="../index.html" class="logo">
+                            <span class="brand-name">GetUpDeals</span>
+                        </a>
+                    </div>
+                    <p class="footer-description">
+                        Your trusted source for the best e-commerce deals, discounts, and affiliate offers.
+                    </p>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Pinterest">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Blog Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="#fashion">Fashion Guides</a></li>
+                        <li><a href="#electronics">Electronics Reviews</a></li>
+                        <li><a href="#gadgets">Gadget Guides</a></li>
+                        <li><a href="#home">Home & Kitchen</a></li>
+                        <li><a href="#tips">Money Saving Tips</a></li>
+                        <li><a href="#guides">Shopping Guides</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Popular Articles</h3>
+                    <ul class="footer-links">
+                        <li><a href="./best-tshirts-under-999/">Best T-Shirts Under ₹999</a></li>
+                        <li><a href="./top-gadgets-under-5000/">Gadgets Under ₹5000</a></li>
+                        <li><a href="./amazon-flipkart-sale-tips/">Sale Saving Tips</a></li>
+                        <li><a href="./best-wireless-earphones/">Wireless Earphones Review</a></li>
+                        <li><a href="./kitchen-appliances-sale/">Kitchen Appliances Sale</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact & Legal</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:contact@getupdeals.com">contact@getupdeals.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>Support: +91 98765 43210</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="footer-legal-links">
+                        <a href="../pages/privacy-policy.html">Privacy Policy</a>
+                        <a href="../pages/terms-of-service.html">Terms of Service</a>
+                        <a href="../pages/affiliate-disclosure.html">Affiliate Disclosure</a>
+                        <a href="../pages/disclaimer.html">Disclaimer</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 GetUpDeals.com. All rights reserved.</p>
+                    <p>This blog may contain affiliate links. We only recommend products we believe in.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/theme-switcher.js"></script>
+    <script src="../assets/js/navigation.js"></script>
+    <script src="../assets/js/blog-filter.js"></script>
+    
+    <!-- Blog Listing JS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Category filtering
+            const categoryFilterBtns = document.querySelectorAll('.category-filter-btn');
+            const postCards = document.querySelectorAll('.post-card');
+            const featuredPostCards = document.querySelectorAll('.featured-post-card');
+            const sortSelect = document.getElementById('sortSelect');
+            const loadMoreBtn = document.getElementById('loadMoreBtn');
+            const blogSearch = document.getElementById('blogSearch');
+            const searchBtn = blogSearch.nextElementSibling;
+            
+            let visiblePosts = 8;
+            const totalPosts = postCards.length;
+            
+            // Initialize - hide extra posts
+            postCards.forEach((card, index) => {
+                if (index >= visiblePosts) {
+                    card.style.display = 'none';
+                }
+            });
+            
+            // Category filter
+            categoryFilterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    categoryFilterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const category = this.dataset.category;
+                    
+                    // Filter posts
+                    postCards.forEach(card => {
+                        if (category === 'all' || card.dataset.category === category) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                    
+                    // Filter featured posts
+                    featuredPostCards.forEach(card => {
+                        if (category === 'all' || card.dataset.category === category) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Sort functionality
+            sortSelect.addEventListener('change', function() {
+                const sortBy = this.value;
+                const postsContainer = document.getElementById('postsGrid');
+                const postsArray = Array.from(postCards);
+                
+                postsArray.sort((a, b) => {
+                    switch(sortBy) {
+                        case 'newest':
+                            // Sort by date (assuming data-date attribute)
+                            return new Date(b.dataset.date || 0) - new Date(a.dataset.date || 0);
+                        case 'popular':
+                            // Sort by popularity
+                            return parseInt(b.dataset.popularity || 0) - parseInt(a.dataset.popularity || 0);
+                        case 'oldest':
+                            // Sort by date oldest first
+                            return new Date(a.dataset.date || 0) - new Date(b.dataset.date || 0);
+                        default:
+                            return 0;
+                    }
+                });
+                
+                // Re-append sorted posts
+                postsArray.forEach(post => postsContainer.appendChild(post));
+            });
+            
+            // Load more functionality
+            if (loadMoreBtn) {
+                loadMoreBtn.addEventListener('click', function() {
+                    visiblePosts += 4;
+                    
+                    // Show next set of posts
+                    postCards.forEach((card, index) => {
+                        if (index < visiblePosts) {
+                            card.style.display = 'block';
+                        }
+                    });
+                    
+                    // Hide button if all posts are visible
+                    if (visiblePosts >= totalPosts) {
+                        loadMoreBtn.style.display = 'none';
+                    }
+                });
+                
+                // Hide button initially if not enough posts
+                if (totalPosts <= visiblePosts) {
+                    loadMoreBtn.style.display = 'none';
+                }
+            }
+            
+            // Search functionality
+            searchBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const searchTerm = blogSearch.value.toLowerCase().trim();
+                
+                if (!searchTerm) return;
+                
+                let foundPosts = 0;
+                
+                postCards.forEach(card => {
+                    const title = card.querySelector('.post-title').textContent.toLowerCase();
+                    const excerpt = card.querySelector('.post-excerpt').textContent.toLowerCase();
+                    const category = card.querySelector('.post-category').textContent.toLowerCase();
+                    
+                    if (title.includes(searchTerm) || 
+                        excerpt.includes(searchTerm) || 
+                        category.includes(searchTerm)) {
+                        card.style.display = 'block';
+                        foundPosts++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+                
+                // Show message if no posts found
+                const postsGrid = document.getElementById('postsGrid');
+                let noResultsMsg = postsGrid.querySelector('.no-results');
+                
+                if (foundPosts === 0) {
+                    if (!noResultsMsg) {
+                        noResultsMsg = document.createElement('div');
+                        noResultsMsg.className = 'no-results';
+                        noResultsMsg.innerHTML = `
+                            <div class="no-results-content">
+                                <i class="fas fa-search"></i>
+                                <h3>No articles found</h3>
+                                <p>Try searching with different keywords</p>
+                                <button class="clear-search-btn">Clear Search</button>
+                            </div>
+                        `;
+                        postsGrid.appendChild(noResultsMsg);
+                        
+                        // Clear search button
+                        const clearBtn = noResultsMsg.querySelector('.clear-search-btn');
+                        clearBtn.addEventListener('click', function() {
+                            blogSearch.value = '';
+                            postCards.forEach(card => card.style.display = 'block');
+                            noResultsMsg.remove();
+                        });
+                    }
+                } else if (noResultsMsg) {
+                    noResultsMsg.remove();
+                }
+            });
+            
+            // Enter key for search
+            blogSearch.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    searchBtn.click();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
