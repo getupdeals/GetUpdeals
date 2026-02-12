@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop All Categories - Fashion, Electronics, Home & More | GetUpDeals</title>
+    <meta name="description" content="Browse all shopping categories on GetUpDeals. Find best deals in fashion, electronics, gadgets, home appliances, beauty, travel & more.">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="shopping categories, deals by category, fashion deals, electronics offers, home appliances, travel deals">
+    <meta property="og:title" content="Shop All Categories - GetUpDeals">
+    <meta property="og:description" content="Browse deals by category: fashion, electronics, home, beauty, travel, gadgets & more.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://getupdeals.com/categories/">
+    <meta property="og:image" content="https://getupdeals.com/assets/images/categories/all-categories-og.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://getupdeals.com/categories/">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "All Shopping Categories",
+      "description": "Browse deals by category on GetUpDeals: fashion, electronics, home appliances, gadgets, beauty, travel & more",
+      "url": "https://getupdeals.com/categories/",
+      "mainEntity": {
+        "@type": "ItemList",
+        "numberOfItems": 12,
+        "itemListOrder": "https://schema.org/ItemListOrderDescending",
+        "itemListElement": []
+      }
+    }
+    </script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/themes.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/categories-index.css">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo/favicon-set/favicon.ico">
+</head>
+<body>
+    <!-- Skip to Content -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <span class="deal-alert">
+                    <i class="fas fa-bolt"></i> New Categories Added: Beauty & Travel!
+                </span>
+                <div class="top-bar-links">
+                    <a href="../pages/about.html">About</a>
+                    <a href="../pages/contact.html">Contact</a>
+                    <a href="../blog/">Blog</a>
+                    <a href="../pages/affiliate-disclosure.html" class="affiliate-badge">Affiliate</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo-container">
+                <a href="../index.html" class="logo">
+                    <span class="brand-name">GetUpDeals</span>
+                </a>
+            </div>
+            
+            <!-- Main Navigation -->
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-dropdown active">
+                        <a href="./" class="nav-link">
+                            Categories <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="./fashion.html" class="dropdown-item">
+                                <i class="fas fa-tshirt"></i> Fashion
+                            </a>
+                            <a href="./electronics.html" class="dropdown-item">
+                                <i class="fas fa-laptop"></i> Electronics
+                            </a>
+                            <a href="./gadgets.html" class="dropdown-item">
+                                <i class="fas fa-mobile-alt"></i> Gadgets
+                            </a>
+                            <a href="./home-appliances.html" class="dropdown-item">
+                                <i class="fas fa-blender"></i> Home Appliances
+                            </a>
+                            <a href="./" class="dropdown-item view-all active">
+                                <i class="fas fa-th"></i> View All Categories
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href="../deals/" class="nav-link">Today's Deals</a></li>
+                    <li><a href="../blog/" class="nav-link">Blog</a></li>
+                    <li><a href="../pages/contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <form class="search-form" id="searchForm">
+                        <input type="search" placeholder="Search across all categories..." class="search-input">
+                        <button type="submit" class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </nav>
+            
+            <!-- Header Actions -->
+            <div class="header-actions">
+                <!-- Theme Toggle -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <a href="../index.html" class="mobile-logo">
+                <span class="brand-name">GetUpDeals</span>
+            </a>
+            <button class="mobile-nav-close" id="mobileNavClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="mobile-search">
+            <form class="mobile-search-form">
+                <input type="search" placeholder="Search categories...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        
+        <nav class="mobile-nav-menu">
+            <a href="../index.html" class="mobile-nav-link">
+                <i class="fas fa-home"></i> Home
+            </a>
+            <div class="mobile-nav-dropdown active">
+                <button class="mobile-nav-link">
+                    <i class="fas fa-th"></i> Categories
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="mobile-dropdown-menu">
+                    <a href="./fashion.html" class="mobile-dropdown-item">
+                        <i class="fas fa-tshirt"></i> Fashion
+                    </a>
+                    <a href="./electronics.html" class="mobile-dropdown-item">
+                        <i class="fas fa-laptop"></i> Electronics
+                    </a>
+                    <a href="./gadgets.html" class="mobile-dropdown-item">
+                        <i class="fas fa-mobile-alt"></i> Gadgets
+                    </a>
+                    <a href="./home-appliances.html" class="mobile-dropdown-item">
+                        <i class="fas fa-blender"></i> Home Appliances
+                    </a>
+                    <a href="./" class="mobile-dropdown-item active">
+                        <i class="fas fa-eye"></i> View All
+                    </a>
+                </div>
+            </div>
+            <a href="../deals/" class="mobile-nav-link">
+                <i class="fas fa-tag"></i> Today's Deals
+            </a>
+            <a href="../blog/" class="mobile-nav-link">
+                <i class="fas fa-blog"></i> Blog
+            </a>
+            <a href="../pages/contact.html" class="mobile-nav-link">
+                <i class="fas fa-envelope"></i> Contact
+            </a>
+            <a href="../pages/about.html" class="mobile-nav-link">
+                <i class="fas fa-info-circle"></i> About
+            </a>
+        </nav>
+        
+        <div class="mobile-nav-footer">
+            <div class="theme-toggle-mobile">
+                <span>Theme:</span>
+                <button class="theme-switch-btn" id="themeSwitchMobile">
+                    <span class="theme-icon">
+                        <i class="fas fa-moon"></i>
+                    </span>
+                    Dark Mode
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content" class="main-content categories-index-page">
+        
+        <!-- Categories Header -->
+        <section class="categories-header">
+            <div class="container">
+                <nav class="breadcrumb">
+                    <a href="../index.html">Home</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span class="current">All Categories</span>
+                </nav>
+                
+                <div class="categories-hero">
+                    <div class="categories-hero-content">
+                        <h1 class="categories-title">
+                            <i class="fas fa-th-large"></i> Shop by Category
+                        </h1>
+                        <p class="categories-description">
+                            Browse thousands of deals organized by category. Find exactly what you're looking for with our curated collection of the best offers across all shopping categories.
+                        </p>
+                        
+                        <div class="categories-stats">
+                            <div class="stat">
+                                <span class="stat-number">12</span>
+                                <span class="stat-label">Main Categories</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">58</span>
+                                <span class="stat-label">Subcategories</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">3,500+</span>
+                                <span class="stat-label">Active Deals</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">Up to 80%</span>
+                                <span class="stat-label">Discount</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Category Search -->
+                        <div class="category-search-container">
+                            <form class="category-search-form">
+                                <input type="search" placeholder="Search categories (e.g., smartphones, fashion, home decor)" class="category-search-input">
+                                <button type="submit" class="category-search-btn">
+                                    <i class="fas fa-search"></i> Search Categories
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div class="categories-hero-image">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Shop by Category">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Categories Grid -->
+        <section class="main-categories-section">
+            <div class="container">
+                <h2 class="section-title">All Shopping Categories</h2>
+                <p class="section-subtitle">Browse deals in your favorite shopping categories</p>
+                
+                <div class="main-categories-grid">
+                    <!-- Electronics -->
+                    <a href="./electronics.html" class="main-category-card" data-category="electronics">
+                        <div class="category-card-header">
+                            <div class="category-icon">
+                                <i class="fas fa-laptop"></i>
+                            </div>
+                            <span class="deal-count">895 Deals</span>
+                        </div>
+                        <h3>Electronics</h3>
+                        <p>Smartphones, laptops, TVs, cameras, audio devices & home appliances.</p>
+                        <div class="category-tags">
+                            <span class="tag">Smartphones</span>
+                            <span class="tag">Laptops</span>
+                            <span class="tag">TVs</span>
+                            <span class="tag">+5 more</span>
+                        </div>
+                        <span class="view-category">View Electronics Deals <i class="fas fa-arrow-right"></i></span>
+                    </a>
+                    
+                    <!-- Fashion -->
+                    <a href="./fashion.html" class="main-category-card" data-category="fashion">
+                        <div class="category-card-header">
+                            <div class="category-icon">
+                                <i class="fas fa-tshirt"></i>
+                            </div>
+                            <span class="deal-count">1,240 Deals</span>
+                        </div>
+                        <h3>Fashion</h3>
+                        <p>Clothing, footwear, accessories, jewelry, watches & luxury fashion.</p>
+                        <div class="category-tags">
+                            <span class="tag">Clothing</span>
+                            <span class="tag">Footwear</span>
+                            <span class="tag">Accessories</span>
+                            <span class="tag">+6 more</span>
+                        </div>
+                        <span class="view-category">View Fashion Deals <i class="fas fa-arrow-right"></i></span>
+                    </a>
+                    
+                    <!-- Home Appliances -->
+                    <a href="./home-appliances.html" class="main-category-card" data-category="home-appliances">
+                        <div class="category-card-header">
+                            <div class="category-icon">
+                                <i class="fas fa-blender"></i>
+                            </div>
+                            <span class="deal-count">560 Deals</span>
+                        </div>
+                        <h3>Home Appliances</h3>
+                        <p>Kitchen appliances, cleaning devices, air conditioners, refrigerators.</p>
+                        <div class="category-tags">
+                            <span class="tag">Kitchen</span>
+                            <span class="tag">Cleaning</span>
+                            <span class="tag">Cooling</span>
+                            <span class="tag">+3 more</span>
+                        </div>
+                        <span class="view-category">View Home Deals <i class="fas fa-arrow-right"></i></span>
+                    </a>
+                    
+                    <!-- Gadgets -->
+                    <a href="./gadgets.html" class="main-category-card" data-category="gadgets">
+                        <div class="category-card-header">
+                            <div class="category-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <span class="deal-count">420 Deals</span>
+                        </div>
+                        <h3>Gadgets & Tech</h3>
+                        <p>Smart devices, wearables, gaming consoles, drones & tech accessories.</p>
+                        <div class="category-tags">
+                            <span class="tag">Wearables</span>
+                            <span class="tag">Gaming</span>
+                            <span class="tag">Drones</span>
+                            <span class="tag">+4 more</span>
+                        </div>
+                        <span class="view-category">View Gadget Deals <i class="fas fa-arrow-right"></i></span>
+                    </a>
+                    
+                    <!-- Beauty -->
+                    <a href="./beauty.html" class="main-category-card" data-category="beauty">
+                        <div class="category-card-header">
+                            <div class="category-icon">
+                                <i class="fas fa-spa"></i>
+                            </div>
+                            <span class="deal-count">380 Deals</span>
+                        </div>
+                        <h3>Beauty & Personal Care</h3>
+                        <p>Skincare, haircare, makeup, fragrances, grooming & wellness products.</p>
+                        <div class="category-tags">
+                            <span class="tag">Skincare</span>
+                            <span class="tag">Makeup</span>
+                            <span class="tag">Fragrances</span>
+                            <span class="tag">+5 more</span>
+                        </div>
+                        <span class="view-category">View Beauty Deals <i class="fas fa-arrow-right"></i></span>
+                    </a>
+                    
+                    <!-- Travel -->
+                    <a href="./travel.html" class="main-category-card" data-category="travel">
+                        <div class="category-card-header">
+                            <div class="category-icon">
+                                <i class="fas fa-plane"></i>
+                            </div>
+                            <span class="deal-count">275 Deals</span>
+                        </div>
+                        <h3>Travel & Vacations</h3>
+                        <p>Flight tickets, hotel bookings, tour packages, travel accessories.</p>
+                        <div class="category-tags">
+                            <span class="tag">Flights</span>
+                            <span class="tag">Hotels</span>
+                            <span class="tag">Packages</span>
+                            <span class="tag">+3 more</span>
+                        </div>
+                        <span class="view-category">View Travel Deals <i class="fas fa-arrow-right"></i></span>
+                    </a>
+                    
+                    <!-- Home & Kitchen -->
+                    <a href="./home-kitchen.html" class="main-category-card" data-category="home-kitchen">
+                        <div class="category-card-header">
+                            <div class="category-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <span class="deal-count">510 Deals</span>
+                        </div>
+                        <h3>Home & Kitchen</h3>
+                        <p>Furniture, home decor, kitchenware, bedding, lighting & storage.</p>
+                        <div class="category-tags">
+                            <span class="tag">Furniture</span>
+                            <span class="tag">Decor</span>
+                            <span class="tag">Kitchenware</span>
+                            <span class="tag">+5 more</span>
+                        </div>
+                        <span class="view-category">View Home & Kitchen <i class="fas fa-arrow-right"></i></span>
+                    </a>
+                    
+                    <!-- Sports & Fitness -->
+                    <a href="./sports-fitness.html" class="main-category-card" data-category="sports-fitness">
+                        <div class="category-card-header">
+                            <div class="category-icon">
+                                <i class="fas fa-dumbbell"></i>
+                            </div>
+                            <span class="deal-count">320 Deals</span>
+                        </div>
+                        <h3>Sports & Fitness</h3>
+                        <p>Fitness equipment, sportswear, outdoor gear, nutrition & supplements.</p>
+                        <div class="category-tags">
+                            <span class="tag">Fitness</span>
+                            <span class="tag">Sportswear</span>
+                            <span class="tag">Outdoor</span>
+                            <span class="tag">+4 more</span>
+                        </div>
+                        <span class="view-category">View Sports Deals <i class="fas fa-arrow-right"></i></span>
+                    </a>
+                    
+                    <!-- Books & Media -->
+                    <a href="./books-media.html" class="main-category-card" data-category="books-media">
+                        <div class="category-card-header">
+                            <div class="category-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <span class="deal-count">180 Deals</span>
+                        </div>
+                        <h3>Books & Media</h3>
+                        <p>Books, e-books, audiobooks, music, movies, streaming subscriptions.</p>
+                        <div class="category-tags">
+                            <span class="tag">Books</span>
+                            <span class="tag">E-books</span>
+                            <span class="tag">Streaming</span>
+                            <span class="tag">+3 more</span>
+                        </div>
+                        <span class="view-category">View Books Deals <i class="fas fa-arrow-right"></i></span>
+                    </a>
+                    
+                    <!-- Automotive -->
+                    <a href="./automotive.html" class="main-category-card" data-category="automotive">
+                        <div class="category-card-header">
+                            <div class="category-icon">
+                                <i class="fas fa-car"></i>
+                            </div>
+                            <span class="deal-count">210 Deals</span>
+                        </div>
+                        <h3>Automotive</h3>
+                        <p>Car accessories, maintenance, parts, bike gear & automotive tools.</p>
+                        <div class="category-tags">
+                            <span class="tag">Accessories</span>
+                            <span class="tag">Maintenance</span>
+                            <span class="tag">Bike Gear</span>
+                            <span class="tag">+3 more</span>
+                        </div>
+                        <span class="view-category">View Auto Deals <i class="fas fa-arrow-right"></i></span>
+                    </a>
+                    
+                    <!-- Grocery -->
+                    <a href="./grocery.html" class="main-category-card" data-category="grocery">
+                        <div class="category-card-header">
+                            <div class="category-icon">
+                                <i class="fas fa-shopping-basket"></i>
+                            </div>
+                            <span class="deal-count">450 Deals</span>
+                        </div>
+                        <h3>Grocery & Food</h3>
+                        <p>Food delivery, groceries, beverages, snacks, gourmet & organic foods.</p>
+                        <div class="category-tags">
+                            <span class="tag">Groceries</span>
+                            <span class="tag">Food Delivery</span>
+                            <span class="tag">Beverages</span>
+                            <span class="tag">+4 more</span>
+                        </div>
+                        <span class="view-category">View Grocery Deals <i class="fas fa-arrow-right"></i></span>
+                    </a>
+                    
+                    <!-- Pets -->
+                    <a href="./pets.html" class="main-category-card" data-category="pets">
+                        <div class="category-card-header">
+                            <div class="category-icon">
+                                <i class="fas fa-paw"></i>
+                            </div>
+                            <span class="deal-count">165 Deals</span>
+                        </div>
+                        <h3>Pet Supplies</h3>
+                        <p>Pet food, toys, grooming, health care, accessories & pet services.</p>
+                        <div class="category-tags">
+                            <span class="tag">Pet Food</span>
+                            <span class="tag">Toys</span>
+                            <span class="tag">Grooming</span>
+                            <span class="tag">+3 more</span>
+                        </div>
+                        <span class="view-category">View Pet Deals <i class="fas fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Category Deals -->
+        <section class="featured-categories-section">
+            <div class="container">
+                <h2 class="section-title">Featured Category Deals</h2>
+                <p class="section-subtitle">Top deals from our most popular categories</p>
+                
+                <div class="featured-categories-tabs">
+                    <div class="tabs-header">
+                        <button class="tab-btn active" data-tab="electronics">Electronics</button>
+                        <button class="tab-btn" data-tab="fashion">Fashion</button>
+                        <button class="tab-btn" data-tab="home">Home</button>
+                        <button class="tab-btn" data-tab="travel">Travel</button>
+                    </div>
+                    
+                    <div class="tabs-content">
+                        <!-- Electronics Tab -->
+                        <div class="tab-pane active" id="electronics-tab">
+                            <div class="featured-deals-grid">
+                                <div class="featured-deal-card">
+                                    <div class="deal-badge">60% OFF</div>
+                                    <div class="deal-image">
+                                        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Smartphone Deal">
+                                    </div>
+                                    <div class="deal-content">
+                                        <h3>OnePlus 11R 5G</h3>
+                                        <p class="deal-price">
+                                            <span class="original-price">₹39,999</span>
+                                            <span class="discounted-price">₹29,999</span>
+                                        </p>
+                                        <p class="deal-store">
+                                            <i class="fab fa-amazon"></i> Amazon
+                                        </p>
+                                        <a href="./electronics.html#oneplus" class="deal-link">View Deal →</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="featured-deal-card">
+                                    <div class="deal-badge">45% OFF</div>
+                                    <div class="deal-image">
+                                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Laptop Deal">
+                                    </div>
+                                    <div class="deal-content">
+                                        <h3>Dell Inspiron 15 Laptop</h3>
+                                        <p class="deal-price">
+                                            <span class="original-price">₹64,999</span>
+                                            <span class="discounted-price">₹49,999</span>
+                                        </p>
+                                        <p class="deal-store">
+                                            <i class="fab fa-amazon"></i> Amazon
+                                        </p>
+                                        <a href="./electronics.html#laptops" class="deal-link">View Deal →</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="featured-deal-card">
+                                    <div class="deal-badge">55% OFF</div>
+                                    <div class="deal-image">
+                                        <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="TV Deal">
+                                    </div>
+                                    <div class="deal-content">
+                                        <h3>Sony Bravia 55" 4K TV</h3>
+                                        <p class="deal-price">
+                                            <span class="original-price">₹89,999</span>
+                                            <span class="discounted-price">₹64,999</span>
+                                        </p>
+                                        <p class="deal-store">
+                                            <img src="../assets/images/ui/flipkart-icon.png" alt="Flipkart"> Flipkart
+                                        </p>
+                                        <a href="./electronics.html#televisions" class="deal-link">View Deal →</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-footer">
+                                <a href="./electronics.html" class="view-all-link">View All Electronics Deals →</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Fashion Tab -->
+                        <div class="tab-pane" id="fashion-tab">
+                            <div class="featured-deals-grid">
+                                <div class="featured-deal-card">
+                                    <div class="deal-badge">70% OFF</div>
+                                    <div class="deal-image">
+                                        <img src="https://images.unsplash.com/photo-1562157873-818bc0726f68?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Shoes Deal">
+                                    </div>
+                                    <div class="deal-content">
+                                        <h3>Nike Air Max Shoes</h3>
+                                        <p class="deal-price">
+                                            <span class="original-price">₹12,999</span>
+                                            <span class="discounted-price">₹3,899</span>
+                                        </p>
+                                        <p class="deal-store">
+                                            <i class="fab fa-amazon"></i> Amazon
+                                        </p>
+                                        <a href="./fashion.html" class="deal-link">View Deal →</a>
+                                    </div>
+                                </div>
+                                
+                                <!-- More fashion deals would go here -->
+                            </div>
+                            <div class="tab-footer">
+                                <a href="./fashion.html" class="view-all-link">View All Fashion Deals →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Shop Categories -->
+        <section class="how-to-section">
+            <div class="container">
+                <h2 class="section-title center">How to Shop by Category</h2>
+                <p class="section-subtitle center">Get the most out of GetUpDeals with these tips</p>
+                
+                <div class="how-to-grid">
+                    <div class="how-to-card">
+                        <div class="how-to-number">1</div>
+                        <div class="how-to-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Browse Categories</h3>
+                        <p>Start by selecting a main category that matches what you're looking for.</p>
+                    </div>
+                    
+                    <div class="how-to-card">
+                        <div class="how-to-number">2</div>
+                        <div class="how-to-icon">
+                            <i class="fas fa-filter"></i>
+                        </div>
+                        <h3>Apply Filters</h3>
+                        <p>Use filters to narrow down by price, brand, discount, ratings and more.</p>
+                    </div>
+                    
+                    <div class="how-to-card">
+                        <div class="how-to-number">3</div>
+                        <div class="how-to-icon">
+                            <i class="fas fa-tag"></i>
+                        </div>
+                        <h3>Find Best Deals</h3>
+                        <p>Compare prices across stores and find the best discount for your product.</p>
+                    </div>
+                    
+                    <div class="how-to-card">
+                        <div class="how-to-number">4</div>
+                        <div class="how-to-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>Shop with Affiliate Links</h3>
+                        <p>Click through our verified affiliate links to complete your purchase.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-card">
+                    <div class="newsletter-content">
+                        <h2>📬 Get Deals from All Categories</h2>
+                        <p>Subscribe to our newsletter and receive weekly roundups of the best deals across all categories. Customize which categories you want updates for.</p>
+                        
+                        <form class="newsletter-form" id="allCategoriesNewsletter">
+                            <div class="form-group">
+                                <input type="email" placeholder="Enter your email" required>
+                                <button type="submit" class="btn-subscribe">
+                                    Subscribe <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                            <div class="form-options">
+                                <label class="checkbox">
+                                    <input type="checkbox" checked>
+                                    <span>Electronics</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" checked>
+                                    <span>Fashion</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    <span>Home & Kitchen</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    <span>Travel</span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="newsletter-image">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w-600&q=80" alt="All Categories Newsletter">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Company Info -->
+                <div class="footer-col">
+                    <div class="logo-container">
+                        <a href="../index.html" class="logo">
+                            <span class="brand-name">GetUpDeals</span>
+                        </a>
+                    </div>
+                    <p class="footer-description">
+                        Your one-stop destination for the best deals across all shopping categories.
+                    </p>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Top Categories -->
+                <div class="footer-col">
+                    <h3 class="footer-title">Top Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="./electronics.html">Electronics</a></li>
+                        <li><a href="./fashion.html">Fashion</a></li>
+                        <li><a href="./home-appliances.html">Home Appliances</a></li>
+                        <li><a href="./gadgets.html">Gadgets & Tech</a></li>
+                        <li><a href="./beauty.html">Beauty & Personal Care</a></li>
+                        <li><a href="./travel.html">Travel & Vacations</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../deals/">Today's Deals</a></li>
+                        <li><a href="./">All Categories</a></li>
+                        <li><a href="../blog/">Blog</a></li>
+                        <li><a href="../pages/contact.html">Contact</a></li>
+                        <li><a href="../pages/affiliate-disclosure.html">Affiliate Disclosure</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact & Support</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:support@getupdeals.com">support@getupdeals.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>Support: +91 98765 43210</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Sat: 9 AM - 9 PM</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="footer-legal-links">
+                        <a href="../pages/privacy-policy.html">Privacy Policy</a>
+                        <a href="../pages/terms-of-service.html">Terms of Service</a>
+                        <a href="../pages/disclaimer.html">Disclaimer</a>
+                    </div>
+                    
+                    <div class="footer-apps">
+                        <p>Get Deal Alerts</p>
+                        <div class="app-buttons">
+                            <a href="#" class="app-btn">
+                                <i class="fab fa-telegram"></i> Telegram
+                            </a>
+                            <a href="#" class="app-btn">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 GetUpDeals.com. All deals are verified and updated regularly across all categories.</p>
+                <div class="payment-methods">
+                    <span>Secure Payments:</span>
+                    <div class="payment-icons">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-google-pay"></i>
+                        <i class="fab fa-apple-pay"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript Files -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/theme-switcher.js"></script>
+    <script src="../assets/js/navigation.js"></script>
+    <script src="../assets/js/categories-tabs.js"></script>
+    <script src="../assets/js/analytics.js"></script>
+    <script src="../assets/js/optimizations.js"></script>
+</body>
+</html>
