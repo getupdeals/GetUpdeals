@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Winter Wear Guide 2024: Stay Warm Under ₹3000 | GetUpDeals</title>
+    <meta name="description" content="Complete winter wear guide - jackets, sweaters, thermals, gloves and more under ₹3000. Stay warm in style this winter.">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="winter wear, winter clothing, jackets under 3000, sweaters under 2000, thermals, winter accessories, woolen clothes">
+    <meta property="og:title" content="Complete Winter Wear Guide 2024 - Stay Warm Under ₹3000">
+    <meta property="og:description" content="Get premium winter wear from top brands at unbelievable prices. Complete guide with layering tips and buying recommendations.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://getupdeals.com/blog/winter-wear-guide/">
+    <meta property="og:image" content="../../assets/images/blog/winter-wear-og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <!-- Article Specific Meta -->
+    <meta property="article:published_time" content="2024-11-20T10:00:00Z">
+    <meta property="article:modified_time" content="2024-11-25T10:00:00Z">
+    <meta property="article:author" content="Ananya Kapoor">
+    <meta property="article:section" content="Fashion">
+    <meta property="article:tag" content="winter">
+    <meta property="article:tag" content="clothing">
+    <meta property="article:tag" content="seasonal">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Complete Winter Wear Guide 2024: Stay Warm in Style">
+    <meta name="twitter:description" content="Get premium winter wear from top brands at unbelievable prices under ₹3000.">
+    <meta name="twitter:image" content="../../assets/images/blog/winter-twitter.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://getupdeals.com/blog/winter-wear-guide/">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Complete Winter Wear Guide 2024: Stay Warm Under ₹3000",
+        "description": "Complete winter wear guide - jackets, sweaters, thermals, gloves and more under ₹3000.",
+        "image": [
+            "https://getupdeals.com/blog/winter-wear-guide/images/hero.jpg"
+        ],
+        "author": {
+            "@type": "Person",
+            "name": "Ananya Kapoor",
+            "url": "https://getupdeals.com/author/ananya-kapoor/"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "GetUpDeals",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://getupdeals.com/assets/images/logo/logo-full.svg"
+            }
+        },
+        "datePublished": "2024-11-20T10:00:00Z",
+        "dateModified": "2024-11-25T10:00:00Z",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://getupdeals.com/blog/winter-wear-guide/"
+        },
+        "keywords": "winter, clothing, jackets, sweaters, thermals, winter accessories"
+    }
+    </script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/components.css">
+    <link rel="stylesheet" href="../../assets/css/themes.css">
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+    <link rel="stylesheet" href="../../assets/css/blog/blog-post.css">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Skip to Content -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <span class="deal-alert">
+                    <i class="fas fa-snowflake"></i> Winter Sale: Up to 70% OFF on Winter Wear
+                </span>
+                <div class="top-bar-links">
+                    <a href="../../pages/about.html">About</a>
+                    <a href="../../pages/contact.html">Contact</a>
+                    <a href="../">Blog</a>
+                    <a href="../../pages/affiliate-disclosure.html" class="affiliate-badge">Affiliate</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-container">
+                <a href="../../index.html" class="logo">
+                    <span class="brand-name">GetUpDeals</span>
+                </a>
+            </div>
+            
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="../../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-dropdown">
+                        <a href="../../categories/" class="nav-link">
+                            Categories <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="../../categories/fashion.html" class="dropdown-item">
+                                <i class="fas fa-tshirt"></i> Fashion
+                            </a>
+                            <a href="../../categories/electronics.html" class="dropdown-item">
+                                <i class="fas fa-laptop"></i> Electronics
+                            </a>
+                            <a href="../../categories/gadgets.html" class="dropdown-item">
+                                <i class="fas fa-mobile-alt"></i> Gadgets
+                            </a>
+                            <a href="../../categories/home-appliances.html" class="dropdown-item">
+                                <i class="fas fa-blender"></i> Home Appliances
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href="../../deals/" class="nav-link">Today's Deals</a></li>
+                    <li><a href="../" class="nav-link active">Blog</a></li>
+                    <li><a href="../../pages/contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="search-container">
+                    <form class="search-form" id="searchForm">
+                        <input type="search" placeholder="Search blog posts..." class="search-input">
+                        <button type="submit" class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <a href="../../index.html" class="mobile-logo">
+                <span class="brand-name">GetUpDeals</span>
+            </a>
+            <button class="mobile-nav-close" id="mobileNavClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="mobile-search">
+            <form class="mobile-search-form">
+                <input type="search" placeholder="Search blog posts...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        
+        <nav class="mobile-nav-menu">
+            <a href="../../index.html" class="mobile-nav-link">
+                <i class="fas fa-home"></i> Home
+            </a>
+            <div class="mobile-nav-dropdown">
+                <button class="mobile-nav-link">
+                    <i class="fas fa-th"></i> Categories
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="mobile-dropdown-menu">
+                    <a href="../../categories/fashion.html" class="mobile-dropdown-item">
+                        <i class="fas fa-tshirt"></i> Fashion
+                    </a>
+                    <a href="../../categories/electronics.html" class="mobile-dropdown-item">
+                        <i class="fas fa-laptop"></i> Electronics
+                    </a>
+                    <a href="../../categories/gadgets.html" class="mobile-dropdown-item">
+                        <i class="fas fa-mobile-alt"></i> Gadgets
+                    </a>
+                </div>
+            </div>
+            <a href="../../deals/" class="mobile-nav-link">
+                <i class="fas fa-tag"></i> Today's Deals
+            </a>
+            <a href="../" class="mobile-nav-link active">
+                <i class="fas fa-blog"></i> Blog
+            </a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content" class="main-content">
+        <!-- Article Hero -->
+        <section class="article-hero">
+            <div class="container">
+                <!-- Breadcrumb -->
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <ol>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../">Blog</a></li>
+                        <li><a href="../#fashion">Fashion</a></li>
+                        <li aria-current="page">Complete Winter Wear Guide</li>
+                    </ol>
+                </nav>
+                
+                <!-- Article Header -->
+                <header class="article-header">
+                    <div class="article-meta">
+                        <span class="article-category">Seasonal Guide</span>
+                        <span class="article-reading-time">
+                            <i class="far fa-clock"></i> 15 min read
+                        </span>
+                        <span class="article-date">
+                            <i class="far fa-calendar"></i> November 25, 2024
+                        </span>
+                    </div>
+                    
+                    <h1 class="article-title">Complete Winter Wear Guide 2024: Stay Warm Under ₹3000</h1>
+                    
+                    <div class="article-excerpt">
+                        <p>Everything you need to survive winter in style without breaking the bank. Jackets, sweaters, thermals and accessories under ₹3000.</p>
+                    </div>
+                    
+                    <div class="article-author">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Ananya Kapoor" class="author-avatar">
+                        <div class="author-info">
+                            <span class="author-name">Ananya Kapoor</span>
+                            <span class="author-title">Fashion Editor & Winter Wear Expert</span>
+                        </div>
+                    </div>
+                    
+                    <div class="article-stats">
+                        <div class="stat-item">
+                            <i class="far fa-eye"></i>
+                            <span>32,156 views</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="far fa-comment"></i>
+                            <span>187 comments</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-share-alt"></i>
+                            <span>621 shares</span>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </section>
+
+        <!-- Featured Image -->
+        <div class="article-featured-image">
+            <div class="container">
+                <img src="https://images.unsplash.com/photo-1515434126000-961d90ff09db?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                     alt="Complete Winter Wear Collection"
+                     loading="lazy">
+                <p class="image-caption">Essential winter wear pieces to stay warm and stylish</p>
+            </div>
+        </div>
+
+        <!-- Article Content -->
+        <article class="article-content">
+            <div class="container">
+                <div class="content-wrapper">
+                    <!-- Main Article -->
+                    <div class="main-article">
+                        <!-- Table of Contents -->
+                        <div class="table-of-contents" id="toc">
+                            <h3><i class="fas fa-list"></i> Table of Contents</h3>
+                            <nav>
+                                <ul>
+                                    <li><a href="#introduction" class="toc-link">Winter Wardrobe Essentials</a></li>
+                                    <li><a href="#layering-guide" class="toc-link">Layering Guide for Indian Winter</a></li>
+                                    <li><a href="#jackets-guide" class="toc-link">Jackets Under ₹3000</a></li>
+                                    <li><a href="#sweaters-guide" class="toc-link">Sweaters & Pullovers Under ₹2000</a></li>
+                                    <li><a href="#thermals-guide" class="toc-link">Thermals & Base Layers</a></li>
+                                    <li><a href="#accessories-guide" class="toc-link">Winter Accessories Guide</a></li>
+                                    <li><a href="#fabric-guide" class="toc-link">Winter Fabric Guide</a></li>
+                                    <li><a href="#faq" class="toc-link">FAQs</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        
+                        <!-- Introduction -->
+                        <section id="introduction" class="article-section">
+                            <h2>Building Your Winter Wardrobe on a Budget</h2>
+                            <p>Staying warm and stylish during Indian winters doesn't require spending thousands. With smart shopping and proper layering, you can create a complete winter wardrobe for under ₹5000.</p>
+                            <p>Our team tested winter wear from brands like <strong>HRX, Roadster, Levi's, Allen Solly, Puma,</strong> and more to find the best value options. This guide covers everything from jackets to thermals.</p>
+                            
+                            <div class="info-box">
+                                <div class="info-icon">
+                                    <i class="fas fa-thermometer-half"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h4>Temperature Guide for Indian Cities</h4>
+                                    <p><strong>North India (Delhi, Chandigarh):</strong> 5-15°C - Heavy layering needed<br>
+                                       <strong>Central India (Mumbai, Pune):</strong> 15-25°C - Light to medium layering<br>
+                                       <strong>South India (Bangalore, Chennai):</strong> 20-30°C - Light layers only</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Layering Guide -->
+                        <section id="layering-guide" class="article-section">
+                            <div class="section-header">
+                                <h2>🧥 Smart Layering for Indian Winter</h2>
+                                <p class="section-subtitle">Master the art of staying warm without bulk</p>
+                            </div>
+                            
+                            <div class="product-cards">
+                                <!-- Layer 1 -->
+                                <div class="product-card featured">
+                                    <div class="product-rank">Layer 1</div>
+                                    <div class="product-image">
+                                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                             alt="Thermal Wear" 
+                                             loading="lazy">
+                                    </div>
+                                    <div class="product-content">
+                                        <span class="product-category">Base Layer</span>
+                                        <h3>Thermal Wear Essentials</h3>
+                                        <div class="product-price">
+                                            <span class="current-price">₹299-₹899</span>
+                                            <span class="original-price">₹799-₹1,599</span>
+                                            <span class="discount">Up to 50% OFF</span>
+                                        </div>
+                                        <p>Moisture-wicking fabric keeps you dry. Essential for North Indian winters.</p>
+                                        <ul class="product-features">
+                                            <li><i class="fas fa-check-circle"></i> Cotton or Merino Wool</li>
+                                            <li><i class="fas fa-check-circle"></i> Moisture Wicking</li>
+                                            <li><i class="fas fa-check-circle"></i> Skin-friendly Fabric</li>
+                                            <li><i class="fas fa-check-circle"></i> Odor Resistant</li>
+                                        </ul>
+                                        <div class="product-actions">
+                                            <a href="#" class="btn-buy" data-affiliate="thermals">
+                                                <i class="fas fa-shopping-cart"></i> Shop Thermals
+                                            </a>
+                                            <a href="#" class="btn-compare">
+                                                <i class="fas fa-balance-scale"></i> Compare Brands
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Layer 2 -->
+                                <div class="product-card">
+                                    <div class="product-rank">Layer 2</div>
+                                    <div class="product-image">
+                                        <img src="https://images.unsplash.com/photo-1574180045827-681f8a1a9622?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                             alt="Sweaters" 
+                                             loading="lazy">
+                                    </div>
+                                    <div class="product-content">
+                    
