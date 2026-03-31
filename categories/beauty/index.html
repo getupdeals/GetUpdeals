@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Deals – GetUpDeals</title>
+    <meta name="description" content="Find the best beauty deals on skincare, makeup, haircare, fragrances, and more. Save big on top brands like Maybelline, L'Oreal, Nykaa, and Lakme.">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="beauty deals, skincare discounts, makeup offers, haircare sale, cosmetics, fragrances">
+    <meta property="og:title" content="Beauty Deals – GetUpDeals">
+    <meta property="og:description" content="Find the best beauty deals on skincare, makeup, haircare, fragrances, and more. Save big on top brands.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://getupdeals.com/categories/beauty/">
+    <meta property="og:image" content="https://getupdeals.com/assets/images/logo/logo-og.png">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Beauty Deals – GetUpDeals">
+    <meta name="twitter:description" content="Find the best beauty deals on skincare, makeup, haircare, fragrances, and more.">
+    
+    <!-- PWA -->
+    <link rel="manifest" href="../../manifest.json">
+    <meta name="theme-color" content="#2563eb">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../assets/images/logo/favicon-set/favicon.ico">
+    <link rel="apple-touch-icon" href="../../assets/images/logo/favicon-set/apple-touch-icon.png">
+    
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../../assets/css/critical.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/components.css">
+    <link rel="stylesheet" href="../../assets/css/themes.css">
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+    
+    <!-- Page‑specific CSS for beauty -->
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Skip to Content -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    
+    <!-- Top Bar -->
+    <div class="top-bar" role="banner" aria-label="Announcements">
+        <div class="container">
+            <div class="top-bar-content">
+                <span class="deal-alert">
+                    <i class="fas fa-bolt" aria-hidden="true"></i> Beauty Bonanza: Up to 50% OFF on Skincare & Makeup!
+                </span>
+                <div class="top-bar-links">
+                    <a href="../../pages/about/index.html">About</a>
+                    <a href="../../pages/contact/index.html">Contact</a>
+                    <a href="../../blog/index.html">Blog</a>
+                    <a href="../../pages/affiliate-disclosure/index.html" class="affiliate-badge">Affiliate</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Main Header -->
+    <header class="main-header" role="banner">
+        <div class="container">
+            <div class="logo-container">
+                <a href="../../index.html" class="logo" aria-label="GetUpDeals home">
+                    <span class="brand-name">GetUpDeals</span>
+                </a>
+            </div>
+            
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="../../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-dropdown">
+                        <a href="../all-categories/index.html" class="nav-link active" aria-current="page" aria-haspopup="true" aria-expanded="false">
+                            Categories <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </a>
+                        <div class="dropdown-menu" role="menu">
+                            <a href="../fashion/index.html" class="dropdown-item" role="menuitem">
+                                <i class="fas fa-tshirt" aria-hidden="true"></i> Fashion
+                            </a>
+                            <a href="../electronics/index.html" class="dropdown-item" role="menuitem">
+                                <i class="fas fa-laptop" aria-hidden="true"></i> Electronics
+                            </a>
+                            <a href="../gadgets/index.html" class="dropdown-item" role="menuitem">
+                                <i class="fas fa-mobile-alt" aria-hidden="true"></i> Gadgets
+                            </a>
+                            <a href="../home-appliances/index.html" class="dropdown-item" role="menuitem">
+                                <i class="fas fa-blender" aria-hidden="true"></i> Home Appliances
+                            </a>
+                            <a href="./index.html" class="dropdown-item" role="menuitem">
+                                <i class="fas fa-smile" aria-hidden="true"></i> Beauty
+                            </a>
+                            <a href="../all-categories/index.html" class="dropdown-item view-all" role="menuitem">
+                                <i class="fas fa-th" aria-hidden="true"></i> View All Categories
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href="../../deals/index.html" class="nav-link">Today's Deals</a></li>
+                    <li><a href="../../blog/index.html" class="nav-link">Blog</a></li>
+                    <li><a href="../../pages/contact/index.html" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="search-container" role="search">
+                    <form class="search-form" action="../../api/deals/search.php" method="get">
+                        <input type="search" name="q" placeholder="Search for deals..." class="search-input" aria-label="Search deals">
+                        <button type="submit" class="search-btn" aria-label="Submit search">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                </div>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme">
+                    <i class="fas fa-moon" aria-hidden="true"></i>
+                    <i class="fas fa-sun" aria-hidden="true"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobileNav">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation (full panel) – abbreviated for brevity, include in actual file -->
+    <div class="mobile-nav" id="mobileNav" role="dialog" aria-modal="true" aria-label="Mobile menu" hidden>
+        <!-- ... same as other pages, with Beauty added ... -->
+    </div>
+
+    <main id="main-content" class="main-content">
+        <!-- Category Hero -->
+        <section class="category-hero" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=1200&q=80') center/cover no-repeat;">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Beauty & Personal Care</h1>
+                    <p>Discover amazing deals on skincare, makeup, haircare, fragrances, and more. Top brands, everyday low prices.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Subcategories Navigation -->
+        <section class="subcategories-section">
+            <div class="container">
+                <h2 class="section-title">Shop by Subcategory</h2>
+                <div class="subcategory-grid" id="subcategoryGrid">
+                    <a href="?sub=skincare" class="subcategory-card" data-sub="skincare">
+                        <div class="subcategory-icon"><i class="fas fa-spa"></i></div>
+                        <h3>Skincare</h3>
+                        <p>Moisturizers, Serums, Cleansers, Sunscreen</p>
+                    </a>
+                    <a href="?sub=makeup" class="subcategory-card" data-sub="makeup">
+                        <div class="subcategory-icon"><i class="fas fa-magic"></i></div>
+                        <h3>Makeup</h3>
+                        <p>Foundation, Lipstick, Eyeshadow, Mascara</p>
+                    </a>
+                    <a href="?sub=haircare" class="subcategory-card" data-sub="haircare">
+                        <div class="subcategory-icon"><i class="fas fa-cut"></i></div>
+                        <h3>Haircare</h3>
+                        <p>Shampoo, Conditioner, Styling, Oils</p>
+                    </a>
+                    <a href="?sub=fragrances" class="subcategory-card" data-sub="fragrances">
+                        <div class="subcategory-icon"><i class="fas fa-bath"></i></div>
+                        <h3>Fragrances</h3>
+                        <p>Perfumes, Body Mists, Deodorants</p>
+                    </a>
+                    <a href="?sub=bath-body" class="subcategory-card" data-sub="bath-body">
+                        <div class="subcategory-icon"><i class="fas fa-shower"></i></div>
+                        <h3>Bath & Body</h3>
+                        <p>Body Wash, Lotions, Soaps, Scrubs</p>
+                    </a>
+                    <a href="?sub=mens-grooming" class="subcategory-card" data-sub="mens-grooming">
+                        <div class="subcategory-icon"><i class="fas fa-user"></i></div>
+                        <h3>Men's Grooming</h3>
+                        <p>Beard Care, Shaving, Cologne</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deals Section with Filter Tabs -->
+        <section class="deals-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">🔥 Top Beauty Deals</h2>
+                    <div class="subcategory-tabs" id="subcategoryTabs">
+                        <button class="tab-btn active" data-filter="all">All</button>
+                        <button class="tab-btn" data-filter="skincare">Skincare</button>
+                        <button class="tab-btn" data-filter="makeup">Makeup</button>
+                        <button class="tab-btn" data-filter="haircare">Haircare</button>
+                        <button class="tab-btn" data-filter="fragrances">Fragrances</button>
+                        <button class="tab-btn" data-filter="bath-body">Bath & Body</button>
+                        <button class="tab-btn" data-filter="mens-grooming">Men's Grooming</button>
+                    </div>
+                </div>
+
+                <!-- Deals Grid with data-subcategory attributes -->
+                <div class="deals-grid" id="beautyDealsGrid">
+                    <!-- Skincare -->
+                    <div class="deal-card" data-subcategory="skincare">
+                        <a href="../../deals/beauty/deal-1/">
+                            <div class="deal-image">
+                                <img src="https://images.unsplash.com/photo-1570194066300-f0a1e6e7b9f8?w=400&q=80" alt="Moisturizer" loading="lazy">
+                                <span class="discount-badge">30% OFF</span>
+                            </div>
+                            <div class="deal-content">
+                                <h3>CeraVe Moisturizing Cream</h3>
+                                <div class="price"><span class="original">₹1,650</span> ₹1,155</div>
+                                <div class="store">Nykaa</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="deal-card" data-subcategory="skincare">
+                        <a href="../../deals/beauty/deal-2/">
+                            <div class="deal-image">
+                                <img src="https://images.unsplash.com/photo-1611089931568-4c27ba1b45e7?w=400&q=80" alt="Vitamin C Serum" loading="lazy">
+                                <span class="discount-badge">25% OFF</span>
+                            </div>
+                            <div class="deal-content">
+                                <h3>The Ordinary Vitamin C Serum</h3>
+                                <div class="price"><span class="original">₹800</span> ₹600</div>
+                                <div class="store">Amazon</div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Makeup -->
+                    <div class="deal-card" data-subcategory="makeup">
+                        <a href="../../deals/beauty/deal-3/">
+                            <div class="deal-image">
+                                <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400&q=80" alt="Lipstick" loading="lazy">
+                                <span class="discount-badge">40% OFF</span>
+                            </div>
+                            <div class="deal-content">
+                                <h3>Maybelline Superstay Matte Ink</h3>
+                                <div class="price"><span class="original">₹699</span> ₹419</div>
+                                <div class="store">Flipkart</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="deal-card" data-subcategory="makeup">
+                        <a href="../../deals/beauty/deal-4/">
+                            <div class="deal-image">
+                                <img src="https://images.unsplash.com/photo-1631730359585-38a4935cbec4?w=400&q=80" alt="Foundation" loading="lazy">
+                                <span class="discount-badge">20% OFF</span>
+                            </div>
+                            <div class="deal-content">
+                                <h3>L'Oreal Paris Infallible Foundation</h3>
+                                <div class="price"><span class="original">₹1,299</span> ₹1,039</div>
+                                <div class="store">Nykaa</div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Haircare -->
+                    <div class="deal-card" data-subcategory="haircare">
+                        <a href="../../deals/beauty/deal-5/">
+                            <div class="deal-image">
+                                <img src="https://images.unsplash.com/photo-1628061047039-7d8f6e71b6b3?w=400&q=80" alt="Shampoo" loading="lazy">
+                                <span class="discount-badge">15% OFF</span>
+                            </div>
+                            <div class="deal-content">
+                                <h3>Biotique Bio Green Apple Shampoo</h3>
+                                <div class="price"><span class="original">₹299</span> ₹254</div>
+                                <div class="store">Amazon</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="deal-card" data-subcategory="haircare">
+                        <a href="../../deals/beauty/deal-6/">
+                            <div class="deal-image">
+                                <img src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?w=400&q=80" alt="Hair Oil" loading="lazy">
+                                <span class="discount-badge">30% OFF</span>
+                            </div>
+                            <div class="deal-content">
+                                <h3>Parachute Advanced Coconut Oil</h3>
+                                <div class="price"><span class="original">₹250</span> ₹175</div>
+                                <div class="store">Flipkart</div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Fragrances -->
+                    <div class="deal-card" data-subcategory="fragrances">
+                        <a href="../../deals/beauty/deal-7/">
+                            <div class="deal-image">
+                                <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=400&q=80" alt="Perfume" loading="lazy">
+                                <span class="discount-badge">20% OFF</span>
+                            </div>
+                            <div class="deal-content">
+                                <h3>Davidoff Cool Water</h3>
+                                <div class="price"><span class="original">₹3,499</span> ₹2,799</div>
+                                <div class="store">Nykaa</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="deal-card" data-subcategory="fragrances">
+                        <a href="../../deals/beauty/deal-8/">
+                            <div class="deal-image">
+                                <img src="https://images.unsplash.com/photo-1587017539504-67cfbddac569?w=400&q=80" alt="Body Mist" loading="lazy">
+                                <span class="discount-badge">25% OFF</span>
+                            </div>
+                            <div class="deal-content">
+                                <h3>Plum Body Lovin' Vanilla Mist</h3>
+                                <div class="price"><span class="original">₹499</span> ₹374</div>
+                                <div class="store">Amazon</div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Bath & Body -->
+                    <div class="deal-card" data-subcategory="bath-body">
+                        <a href="../../deals/beauty/deal-9/">
+                            <div class="deal-image">
+                                <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&q=80" alt="Body Lotion" loading="lazy">
+                                <span class="discount-badge">30% OFF</span>
+                            </div>
+                            <div class="deal-content">
+                                <h3>Nivea Nourishing Body Lotion</h3>
+                                <div class="price"><span class="original">₹399</span> ₹279</div>
+                                <div class="store">Flipkart</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="deal-card" data-subcategory="bath-body">
+                        <a href="../../deals/beauty/deal-10/">
+                            <div class="deal-image">
+                                <img src="https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?w=400&q=80" alt="Soap" loading="lazy">
+                                <span class="discount-badge">40% OFF</span>
+                            </div>
+                            <div class="deal-content">
+                                <h3>Dove Beauty Cream Bar (4-pack)</h3>
+                                <div class="price"><span class="original">₹380</span> ₹228</div>
+                                <div class="store">Amazon</div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Men's Grooming -->
+                    <div class="deal-card" data-subcategory="mens-grooming">
+                        <a href="../../deals/beauty/deal-11/">
+                            <div class="deal-image">
+                                <img src="https://images.unsplash.com/photo-1621607512214-68297480165e?w=400&q=80" alt="Beard Oil" loading="lazy">
+                                <span class="discount-badge">20% OFF</span>
+                            </div>
+                            <div class="deal-content">
+                                <h3>The Man Company Beard Oil</h3>
+                                <div class="price"><span class="original">₹499</span> ₹399</div>
+                                <div class="store">Nykaa</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="deal-card" data-subcategory="mens-grooming">
+                        <a href="../../deals/beauty/deal-12/">
+                            <div class="deal-image">
+                                <img src="https://images.unsplash.com/photo-1626285861696-9f0bf5a49c6d?w=400&q=80" alt="Razor" loading="lazy">
+                                <span class="discount-badge">15% OFF</span>
+                            </div>
+                            <div class="deal-content">
+                                <h3>Gillette Mach3 Razor Kit</h3>
+                                <div class="price"><span class="original">₹1,099</span> ₹934</div>
+                                <div class="store">Flipkart</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="section-footer">
+                    <a href="../../deals/beauty/index.html" class="btn-view-all">
+                        View All Beauty Deals <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Content for Beauty -->
+        <section class="blog-preview-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">📚 Beauty & Skincare Guides</h2>
+                    <a href="../../blog/index.html?category=beauty" class="section-link">More Articles <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <a href="../../blog/skincare-routine-for-beginners/">
+                            <div class="blog-image">
+                                <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=800&q=80" alt="Skincare" loading="lazy">
+                                <span class="blog-category">Skincare</span>
+                            </div>
+                            <div class="blog-content">
+                                <h3>Simple Skincare Routine for Beginners</h3>
+                                <p>Learn the basics of cleansing, moisturizing, and sun protection – plus product recommendations under ₹500.</p>
+                                <div class="blog-meta">
+                                    <span><i class="far fa-clock"></i> 6 min read</span>
+                                    <span><i class="far fa-calendar"></i> Dec 10, 2024</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <article class="blog-card">
+                        <a href="../../blog/best-lipsticks-under-500/">
+                            <div class="blog-image">
+                                <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=800&q=80" alt="Lipstick" loading="lazy">
+                                <span class="blog-category">Makeup</span>
+                            </div>
+                            <div class="blog-content">
+                                <h3>Top 10 Long-Lasting Lipsticks Under ₹500</h3>
+                                <p>From Maybelline to Lakme – find the perfect shade that stays all day without breaking the bank.</p>
+                                <div class="blog-meta">
+                                    <span><i class="far fa-clock"></i> 5 min read</span>
+                                    <span><i class="far fa-calendar"></i> Dec 5, 2024</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <article class="blog-card">
+                        <a href="../../blog/hair-care-tips-for-damaged-hair/">
+                            <div class="blog-image">
+                                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80" alt="Haircare" loading="lazy">
+                                <span class="blog-category">Haircare</span>
+                            </div>
+                            <div class="blog-content">
+                                <h3>7 Hair Care Tips for Damaged Hair + Product Picks</h3>
+                                <p>Repair split ends and revive your hair with these affordable shampoos, masks, and oils.</p>
+                                <div class="blog-meta">
+                                    <span><i class="far fa-clock"></i> 7 min read</span>
+                                    <span><i class="far fa-calendar"></i> Nov 28, 2024</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Store Links (Beauty-focused) -->
+        <section class="store-links-section">
+            <div class="container">
+                <h2 class="section-title center">Shop Beauty at Top Stores</h2>
+                <div class="store-buttons">
+                    <a href="../../deals/index.html?store=nykaa" class="store-button"><span class="store-icon">n</span> Nykaa</a>
+                    <a href="../../deals/index.html?store=amazon&category=beauty" class="store-button"><i class="fab fa-amazon"></i> Amazon</a>
+                    <a href="../../deals/index.html?store=flipkart&category=beauty" class="store-button"><span class="store-icon">fk</span> Flipkart</a>
+                    <a href="../../deals/index.html?store=purplle" class="store-button"><span class="store-icon">p</span> Purplle</a>
+                    <a href="../../deals/index.html?store=myntra&category=beauty" class="store-button"><span class="store-icon">m</span> Myntra</a>
+                    <a href="../../deals/index.html?store=tatacliq&category=beauty" class="store-button"><span class="store-icon">t</span> Tata CLiQ</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Company Info -->
+                <div class="footer-col">
+                    <div class="logo-container">
+                        <a href="../../index.html" class="logo" aria-label="GetUpDeals home">
+                            <span class="brand-name">GetUpDeals</span>
+                        </a>
+                    </div>
+                    <p class="footer-description">
+                        Your trusted source for the best e-commerce deals, discounts, and affiliate offers. We help you shop smarter and save more.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter" rel="noopener"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram" rel="noopener"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="Pinterest" rel="noopener"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" class="social-link" aria-label="YouTube" rel="noopener"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link" aria-label="Telegram" rel="noopener"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../../deals/index.html">Today's Deals</a></li>
+                        <li><a href="../../blog/index.html">Blog</a></li>
+                        <li><a href="../all-categories/index.html">All Categories</a></li>
+                        <li><a href="../../pages/about/index.html">About Us</a></li>
+                        <li><a href="../../pages/contact/index.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Beauty Subcategories -->
+                <div class="footer-col">
+                    <h3 class="footer-title">Beauty</h3>
+                    <ul class="footer-links">
+                        <li><a href="?sub=skincare">Skincare</a></li>
+                        <li><a href="?sub=makeup">Makeup</a></li>
+                        <li><a href="?sub=haircare">Haircare</a></li>
+                        <li><a href="?sub=fragrances">Fragrances</a></li>
+                        <li><a href="?sub=bath-body">Bath & Body</a></li>
+                        <li><a href="?sub=mens-grooming">Men's Grooming</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact & Legal -->
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact & Legal</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:contact@getupdeals.com">contact@getupdeals.com</a></li>
+                        <li><i class="fas fa-phone"></i> <span>Support: +91 98765 43210</span></li>
+                        <li><i class="fas fa-map-marker-alt"></i> <span>Mumbai, India</span></li>
+                    </ul>
+                    <div class="footer-legal-links">
+                        <a href="../../pages/privacy-policy/index.html">Privacy Policy</a>
+                        <a href="../../pages/terms-of-service/index.html">Terms of Service</a>
+                        <a href="../../pages/affiliate-disclosure/index.html">Affiliate Disclosure</a>
+                        <a href="../../pages/disclaimer/index.html">Disclaimer</a>
+                        <a href="../../pages/sitemap/index.html">Sitemap</a>
+                        <a href="../../pages/cookie-policy/index.html">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 GetUpDeals.com. All rights reserved.</p>
+                    <div class="payment-methods">
+                        <span>We Support:</span>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-visa" title="Visa"></i>
+                            <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+                            <i class="fab fa-cc-amex" title="American Express"></i>
+                            <i class="fab fa-cc-paypal" title="PayPal"></i>
+                            <i class="fas fa-university" title="Net Banking"></i>
+                            <i class="fas fa-mobile-alt" title="UPI"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="affiliate-partners">
+                    <span>Trusted Partner Stores:</span>
+                    <div class="partner-logos">
+                        <span class="partner-logo amazon">Amazon</span>
+                        <span class="partner-logo flipkart">Flipkart</span>
+                        <span class="partner-logo myntra">Myntra</span>
+                        <span class="partner-logo nykaa">Nykaa</span>
+                        <span class="partner-logo purplle">Purplle</span>
+                        <span class="partner-logo tata">Tata CLiQ</span>
+                        <span class="partner-logo more">+15 More</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Loading Overlay (hidden by default) -->
+    <div class="loading-overlay" id="loadingOverlay" role="alert" aria-live="assertive" hidden>
+        <div class="loader">
+            <div class="loader-spinner" aria-label="Loading"></div>
+            <p>Loading best deals...</p>
+        </div>
+    </div>
+
+    <!-- Cookie Consent -->
+    <div class="cookie-consent" id="cookieConsent" role="dialog" aria-label="Cookie consent" hidden>
+        <div class="cookie-content">
+            <p>We use cookies to enhance your browsing experience and analyze our traffic. By clicking "Accept", you consent to our use of cookies.</p>
+            <div class="cookie-buttons">
+                <button class="cookie-btn accept" id="cookieAccept">Accept</button>
+                <button class="cookie-btn decline" id="cookieDecline">Decline</button>
+                <a href="../../pages/privacy-policy/index.html" class="cookie-link">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Global JavaScript -->
+    <script src="../../assets/js/main.js" defer></script>
+    <script src="../../assets/js/theme-switcher.js" defer></script>
+    <script src="../../assets/js/navigation.js" defer></script>
+    <script src="../../assets/js/affiliate-integrations.js" defer></script>
+    <script src="../../assets/js/analytics.js" defer></script>
+    <script src="../../assets/js/optimizations.js" defer></script>
+    <script src="../../assets/js/cookie-consent.js" defer></script>
+    
+    <!-- Page‑specific JavaScript for beauty category -->
+    <script src="./js/custom.js" defer></script>
+
+    <!-- Inline script for subcategory filtering (can be moved to custom.js) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.tab-btn');
+            const deals = document.querySelectorAll('.deal-card');
+            
+            if (tabs.length && deals.length) {
+                tabs.forEach(tab => {
+                    tab.addEventListener('click', function() {
+                        // Update active tab
+                        tabs.forEach(t => t.classList.remove('active'));
+                        this.classList.add('active');
+                        
+                        const filter = this.dataset.filter;
+                        
+                        // Filter deals
+                        deals.forEach(deal => {
+                            if (filter === 'all' || deal.dataset.subcategory === filter) {
+                                deal.style.display = 'block';
+                            } else {
+                                deal.style.display = 'none';
+                            }
+                        });
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
