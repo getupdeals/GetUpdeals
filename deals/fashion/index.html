@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Deals - GetUpDeals</title>
+    <meta name="description" content="Best fashion deals on clothing, footwear, accessories and more. Save big on top brands at Amazon, Flipkart, Myntra and Ajio.">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="fashion deals, clothing discounts, branded clothes, shoe deals, accessory offers">
+    <meta property="og:title" content="Fashion Deals | GetUpDeals">
+    <meta property="og:description" content="Discover the latest fashion deals and save on your favourite brands.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://getupdeals.com/deals/fashion/">
+    <meta property="og:image" content="https://getupdeals.com/assets/images/logo/logo-og.png">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Fashion Deals | GetUpDeals">
+    <meta name="twitter:description" content="Discover the latest fashion deals.">
+    
+    <!-- PWA -->
+    <link rel="manifest" href="../../manifest.json">
+    <meta name="theme-color" content="#2563eb">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../assets/images/logo/favicon-set/favicon.ico">
+    <link rel="apple-touch-icon" href="../../assets/images/logo/favicon-set/apple-touch-icon.png">
+    
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../../assets/css/critical.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/components.css">
+    <link rel="stylesheet" href="../../assets/css/themes.css">
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+    
+    <!-- Page‑specific CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Skip to Content -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    
+    <!-- Top Bar -->
+    <div class="top-bar" role="banner" aria-label="Announcements">
+        <div class="container">
+            <div class="top-bar-content">
+                <span class="deal-alert">
+                    <i class="fas fa-bolt" aria-hidden="true"></i> Flash Sale: 50% OFF on Fashion – Ends Tonight!
+                </span>
+                <div class="top-bar-links">
+                    <a href="../../pages/about/index.html">About</a>
+                    <a href="../../pages/contact/index.html">Contact</a>
+                    <a href="../../blog/index.html">Blog</a>
+                    <a href="../../pages/affiliate-disclosure/index.html" class="affiliate-badge">Affiliate</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Main Header -->
+    <header class="main-header" role="banner">
+        <div class="container">
+            <div class="logo-container">
+                <a href="../../index.html" class="logo" aria-label="GetUpDeals home">
+                    <span class="brand-name">GetUpDeals</span>
+                </a>
+            </div>
+            
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="../../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-dropdown">
+                        <a href="../../categories/all-categories/index.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
+                            Categories <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </a>
+                        <div class="dropdown-menu" role="menu">
+                            <a href="../../categories/fashion/index.html" class="dropdown-item" role="menuitem"><i class="fas fa-tshirt" aria-hidden="true"></i> Fashion</a>
+                            <a href="../../categories/electronics/index.html" class="dropdown-item" role="menuitem"><i class="fas fa-laptop" aria-hidden="true"></i> Electronics</a>
+                            <a href="../../categories/gadgets/index.html" class="dropdown-item" role="menuitem"><i class="fas fa-mobile-alt" aria-hidden="true"></i> Gadgets</a>
+                            <a href="../../categories/home-appliances/index.html" class="dropdown-item" role="menuitem"><i class="fas fa-blender" aria-hidden="true"></i> Home Appliances</a>
+                            <a href="../../categories/all-categories/index.html" class="dropdown-item view-all" role="menuitem"><i class="fas fa-th" aria-hidden="true"></i> View All Categories</a>
+                        </div>
+                    </li>
+                    <li><a href="../index.html" class="nav-link">Today's Deals</a></li>
+                    <li><a href="../../blog/index.html" class="nav-link">Blog</a></li>
+                    <li><a href="../../pages/contact/index.html" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="search-container" role="search">
+                    <form class="search-form" action="../../api/deals/search.php" method="get">
+                        <input type="search" name="q" placeholder="Search for deals..." class="search-input" aria-label="Search deals">
+                        <button type="submit" class="search-btn" aria-label="Submit search"><i class="fas fa-search" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme"><i class="fas fa-moon" aria-hidden="true"></i><i class="fas fa-sun" aria-hidden="true"></i></button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobileNav">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav" role="dialog" aria-modal="true" aria-label="Mobile menu" hidden>
+        <div class="mobile-nav-header">
+            <a href="../../index.html" class="mobile-logo" tabindex="-1"><span class="brand-name">GetUpDeals</span></a>
+            <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu" tabindex="-1"><i class="fas fa-times" aria-hidden="true"></i></button>
+        </div>
+        <div class="mobile-search" role="search">
+            <form class="mobile-search-form" action="../../api/deals/search.php" method="get">
+                <input type="search" name="q" placeholder="Search deals..." aria-label="Search" tabindex="-1">
+                <button type="submit" aria-label="Submit" tabindex="-1"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <nav class="mobile-nav-menu" aria-label="Mobile navigation">
+            <a href="../../index.html" class="mobile-nav-link" tabindex="-1"><i class="fas fa-home" aria-hidden="true"></i> Home</a>
+            <div class="mobile-nav-dropdown">
+                <button class="mobile-nav-link" aria-expanded="false" tabindex="-1"><i class="fas fa-th" aria-hidden="true"></i> Categories <i class="fas fa-chevron-down" aria-hidden="true"></i></button>
+                <div class="mobile-dropdown-menu">
+                    <a href="../../categories/fashion/index.html" class="mobile-dropdown-item" tabindex="-1"><i class="fas fa-tshirt" aria-hidden="true"></i> Fashion</a>
+                    <a href="../../categories/electronics/index.html" class="mobile-dropdown-item" tabindex="-1"><i class="fas fa-laptop" aria-hidden="true"></i> Electronics</a>
+                    <a href="../../categories/gadgets/index.html" class="mobile-dropdown-item" tabindex="-1"><i class="fas fa-mobile-alt" aria-hidden="true"></i> Gadgets</a>
+                    <a href="../../categories/home-appliances/index.html" class="mobile-dropdown-item" tabindex="-1"><i class="fas fa-blender" aria-hidden="true"></i> Home Appliances</a>
+                    <a href="../../categories/all-categories/index.html" class="mobile-dropdown-item" tabindex="-1"><i class="fas fa-eye" aria-hidden="true"></i> View All</a>
+                </div>
+            </div>
+            <a href="../index.html" class="mobile-nav-link" tabindex="-1"><i class="fas fa-tag" aria-hidden="true"></i> Today's Deals</a>
+            <a href="../../blog/index.html" class="mobile-nav-link" tabindex="-1"><i class="fas fa-blog" aria-hidden="true"></i> Blog</a>
+            <a href="../../pages/contact/index.html" class="mobile-nav-link" tabindex="-1"><i class="fas fa-envelope" aria-hidden="true"></i> Contact</a>
+            <a href="../../pages/about/index.html" class="mobile-nav-link" tabindex="-1"><i class="fas fa-info-circle" aria-hidden="true"></i> About</a>
+        </nav>
+        <div class="mobile-nav-footer">
+            <div class="theme-toggle-mobile">
+                <span>Theme:</span>
+                <button class="theme-switch-btn" id="themeSwitchMobile" tabindex="-1"><span class="theme-icon"><i class="fas fa-moon" aria-hidden="true"></i></span> Dark Mode</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content" class="main-content">
+        
+        <!-- Page Header -->
+        <section class="page-header fashion-header" aria-labelledby="page-title">
+            <div class="container">
+                <h1 class="page-title" id="page-title">Fashion Deals</h1>
+                <p class="page-subtitle">Clothing, footwear, accessories – grab the best offers from top brands.</p>
+                
+                <!-- Store filters -->
+                <div class="store-filters" role="group" aria-label="Filter by store">
+                    <button class="filter-btn active" data-store="all">All Stores</button>
+                    <button class="filter-btn" data-store="amazon"><i class="fab fa-amazon" aria-hidden="true"></i> Amazon</button>
+                    <button class="filter-btn" data-store="flipkart"><span class="store-icon">fk</span> Flipkart</button>
+                    <button class="filter-btn" data-store="myntra"><span class="store-icon">m</span> Myntra</button>
+                    <button class="filter-btn" data-store="ajio"><span class="store-icon">aj</span> Ajio</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Subcategories Grid -->
+        <section class="subcategories-section" aria-labelledby="subcategories-title">
+            <div class="container">
+                <h2 class="section-title" id="subcategories-title">Shop by Subcategory</h2>
+                <div class="subcategory-grid" role="list">
+                    <a href="?subcat=mens-tshirts" class="subcategory-card" role="listitem">
+                        <div class="subcategory-icon"><i class="fas fa-male"></i></div>
+                        <h3>Men's T‑Shirts</h3>
+                        <span class="deal-count">48 deals</span>
+                    </a>
+                    <a href="?subcat=mens-jeans" class="subcategory-card" role="listitem">
+                        <div class="subcategory-icon"><i class="fas fa-male"></i></div>
+                        <h3>Men's Jeans</h3>
+                        <span class="deal-count">32 deals</span>
+                    </a>
+                    <a href="?subcat=womens-ethnic" class="subcategory-card" role="listitem">
+                        <div class="subcategory-icon"><i class="fas fa-female"></i></div>
+                        <h3>Women's Ethnic</h3>
+                        <span class="deal-count">27 deals</span>
+                    </a>
+                    <a href="?subcat=womens-jeans" class="subcategory-card" role="listitem">
+                        <div class="subcategory-icon"><i class="fas fa-female"></i></div>
+                        <h3>Women's Jeans</h3>
+                        <span class="deal-count">22 deals</span>
+                    </a>
+                    <a href="?subcat=kids-wear" class="subcategory-card" role="listitem">
+                        <div class="subcategory-icon"><i class="fas fa-child"></i></div>
+                        <h3>Kids Wear</h3>
+                        <span class="deal-count">21 deals</span>
+                    </a>
+                    <a href="?subcat=footwear-men" class="subcategory-card" role="listitem">
+                        <div class="subcategory-icon"><i class="fas fa-shoe-prints"></i></div>
+                        <h3>Men's Footwear</h3>
+                        <span class="deal-count">34 deals</span>
+                    </a>
+                    <a href="?subcat=footwear-women" class="subcategory-card" role="listitem">
+                        <div class="subcategory-icon"><i class="fas fa-shoe-prints"></i></div>
+                        <h3>Women's Footwear</h3>
+                        <span class="deal-count">28 deals</span>
+                    </a>
+                    <a href="?subcat=watches" class="subcategory-card" role="listitem">
+                        <div class="subcategory-icon"><i class="fas fa-clock"></i></div>
+                        <h3>Watches</h3>
+                        <span class="deal-count">19 deals</span>
+                    </a>
+                    <a href="?subcat=sunglasses" class="subcategory-card" role="listitem">
+                        <div class="subcategory-icon"><i class="fas fa-glasses"></i></div>
+                        <h3>Sunglasses</h3>
+                        <span class="deal-count">14 deals</span>
+                    </a>
+                    <a href="?subcat=bags" class="subcategory-card" role="listitem">
+                        <div class="subcategory-icon"><i class="fas fa-bag"></i></div>
+                        <h3>Bags & Luggage</h3>
+                        <span class="deal-count">17 deals</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Fashion Deals -->
+        <section class="featured-deals-section" aria-labelledby="featured-title">
+            <div class="container">
+                <h2 class="section-title" id="featured-title">🔥 Top Fashion Deals Today</h2>
+                <div class="deals-grid" role="list">
+                    <!-- Deal 1 -->
+                    <article class="deal-card" role="listitem" data-store="amazon">
+                        <div class="deal-badge">40% OFF</div>
+                        <div class="deal-image">
+                            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="USPA T-shirt" loading="lazy">
+                            <span class="store-tag amazon"><i class="fab fa-amazon"></i> Amazon</span>
+                        </div>
+                        <div class="deal-content">
+                            <h3 class="deal-title"><a href="deal-1/index.html">US Polo Assn. Men's Polo T‑shirt</a></h3>
+                            <div class="deal-price">
+                                <span class="current-price">₹899</span>
+                                <span class="original-price">₹1,499</span>
+                                <span class="discount">40% off</span>
+                            </div>
+                            <p class="deal-desc">Cotton, slim fit, assorted colours</p>
+                            <div class="deal-footer">
+                                <span class="deal-expiry">Ends in 2 days</span>
+                                <a href="deal-1/index.html" class="btn-view-deal">View Deal <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Deal 2 -->
+                    <article class="deal-card" role="listitem" data-store="flipkart">
+                        <div class="deal-badge">50% OFF</div>
+                        <div class="deal-image">
+                            <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Levi's Jeans" loading="lazy">
+                            <span class="store-tag flipkart">Flipkart</span>
+                        </div>
+                        <div class="deal-content">
+                            <h3 class="deal-title"><a href="deal-2/index.html">Levi's 512 Slim Fit Jeans</a></h3>
+                            <div class="deal-price">
+                                <span class="current-price">₹1,799</span>
+                                <span class="original-price">₹3,599</span>
+                                <span class="discount">50% off</span>
+                            </div>
+                            <p class="deal-desc">Slim taper, stretch denim</p>
+                            <div class="deal-footer">
+                                <span class="deal-expiry">Limited stock</span>
+                                <a href="deal-2/index.html" class="btn-view-deal">View Deal <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Deal 3 -->
+                    <article class="deal-card" role="listitem" data-store="myntra">
+                        <div class="deal-badge">BOGO</div>
+                        <div class="deal-image">
+                            <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Nike Shoes" loading="lazy">
+                            <span class="store-tag myntra">Myntra</span>
+                        </div>
+                        <div class="deal-content">
+                            <h3 class="deal-title"><a href="deal-1/index.html">Nike Revolution 6 Running Shoes</a></h3>
+                            <div class="deal-price">
+                                <span class="current-price">₹2,495</span>
+                                <span class="original-price">₹4,995</span>
+                                <span class="discount">50% off</span>
+                            </div>
+                            <p class="deal-desc">Breathable mesh, cushioned sole</p>
+                            <div class="deal-footer">
+                                <span class="deal-expiry">Today only</span>
+                                <a href="deal-1/index.html" class="btn-view-deal">View Deal <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Deal 4 -->
+                    <article class="deal-card" role="listitem" data-store="ajio">
+                        <div class="deal-badge">30% OFF</div>
+                        <div class="deal-image">
+                            <img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Women's Dress" loading="lazy">
+                            <span class="store-tag ajio">Ajio</span>
+                        </div>
+                        <div class="deal-content">
+                            <h3 class="deal-title"><a href="deal-2/index.html">Women's Midi Dress</a></h3>
+                            <div class="deal-price">
+                                <span class="current-price">₹1,299</span>
+                                <span class="original-price">₹1,899</span>
+                                <span class="discount">31% off</span>
+                            </div>
+                            <p class="deal-desc">Floral print, lightweight fabric</p>
+                            <div class="deal-footer">
+                                <span class="deal-expiry">Ends in 3 days</span>
+                                <a href="deal-2/index.html" class="btn-view-deal">View Deal <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Deal 5 -->
+                    <article class="deal-card" role="listitem" data-store="amazon">
+                        <div class="deal-badge">60% OFF</div>
+                        <div class="deal-image">
+                            <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Fossil Watch" loading="lazy">
+                            <span class="store-tag amazon"><i class="fab fa-amazon"></i> Amazon</span>
+                        </div>
+                        <div class="deal-content">
+                            <h3 class="deal-title"><a href="deal-1/index.html">Fossil Grant Chronograph Watch</a></h3>
+                            <div class="deal-price">
+                                <span class="current-price">₹8,999</span>
+                                <span class="original-price">₹22,495</span>
+                                <span class="discount">60% off</span>
+                            </div>
+                            <p class="deal-desc">Brown leather, analog display</p>
+                            <div class="deal-footer">
+                                <span class="deal-expiry">Ends in 5 days</span>
+                                <a href="deal-1/index.html" class="btn-view-deal">View Deal <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Deal 6 -->
+                    <article class="deal-card" role="listitem" data-store="flipkart">
+                        <div class="deal-badge">25% OFF</div>
+                        <div class="deal-image">
+                            <img src="https://images.unsplash.com/photo-1556905055-8f358a7d47b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Sunglasses" loading="lazy">
+                            <span class="store-tag flipkart">Flipkart</span>
+                        </div>
+                        <div class="deal-content">
+                            <h3 class="deal-title"><a href="deal-2/index.html">Ray-Ban Aviator Sunglasses</a></h3>
+                            <div class="deal-price">
+                                <span class="current-price">₹5,999</span>
+                                <span class="original-price">₹7,999</span>
+                                <span class="discount">25% off</span>
+                            </div>
+                            <p class="deal-desc">Gold frame, green lenses</p>
+                            <div class="deal-footer">
+                                <span class="deal-expiry">Limited stock</span>
+                                <a href="deal-2/index.html" class="btn-view-deal">View Deal <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <!-- Load More / Pagination -->
+                <div class="pagination-container">
+                    <button class="btn-load-more" id="loadMoreDeals">Load More Fashion Deals</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand Store Cards -->
+        <section class="brand-stores-section" aria-labelledby="brands-title">
+            <div class="container">
+                <h2 class="section-title" id="brands-title">Shop by Brand</h2>
+                <div class="brand-grid" role="list">
+                    <a href="#" class="brand-card" role="listitem">
+                        <img src="https://via.placeholder.com/150x80?text=Levi's" alt="Levi's">
+                    </a>
+                    <a href="#" class="brand-card" role="listitem">
+                        <img src="https://via.placeholder.com/150x80?text=USPA" alt="USPA">
+                    </a>
+                    <a href="#" class="brand-card" role="listitem">
+                        <img src="https://via.placeholder.com/150x80?text=ADIDAS" alt="Adidas">
+                    </a>
+                    <a href="#" class="brand-card" role="listitem">
+                        <img src="https://via.placeholder.com/150x80?text=NIKE" alt="Nike">
+                    </a>
+                    <a href="#" class="brand-card" role="listitem">
+                        <img src="https://via.placeholder.com/150x80?text=ZARA" alt="Zara">
+                    </a>
+                    <a href="#" class="brand-card" role="listitem">
+                        <img src="https://via.placeholder.com/150x80?text=H&M" alt="H&M">
+                    </a>
+                    <a href="#" class="brand-card" role="listitem">
+                        <img src="https://via.placeholder.com/150x80?text=PUMA" alt="Puma">
+                    </a>
+                    <a href="#" class="brand-card" role="listitem">
+                        <img src="https://via.placeholder.com/150x80?text=TOMMY" alt="Tommy Hilfiger">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fashion Blog Content -->
+        <section class="blog-preview-section" aria-labelledby="blog-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" id="blog-title">📚 Fashion Buying Guides</h2>
+                    <a href="../../blog/index.html" class="section-link">Read All Articles <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="blog-grid" role="list">
+                    <article class="blog-card" role="listitem">
+                        <a href="../../blog/best-tshirts-under-999/index.html">
+                            <div class="blog-image">
+                                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Best T-Shirts" loading="lazy">
+                                <span class="blog-category">Fashion</span>
+                            </div>
+                            <div class="blog-content">
+                                <h3>Best T-Shirts Under ₹999 for Men & Women</h3>
+                                <p>Curated list of premium quality t-shirts from top brands at unbelievable prices.</p>
+                                <div class="blog-meta">
+                                    <span><i class="far fa-clock"></i> 5 min read</span>
+                                    <span><i class="far fa-calendar"></i> Dec 15, 2024</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <article class="blog-card" role="listitem">
+                        <a href="../../blog/best-jeans-under-999/index.html">
+                            <div class="blog-image">
+                                <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Best Jeans" loading="lazy">
+                                <span class="blog-category">Fashion</span>
+                            </div>
+                            <div class="blog-content">
+                                <h3>Top 10 Jeans Under ₹999 for Perfect Fit</h3>
+                                <p>Find the best jeans from Levi's, Lee, Wrangler and more at discounted prices.</p>
+                                <div class="blog-meta">
+                                    <span><i class="far fa-clock"></i> 7 min read</span>
+                                    <span><i class="far fa-calendar"></i> Dec 12, 2024</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <article class="blog-card" role="listitem">
+                        <a href="../../blog/how-to-save-money-online/index.html">
+                            <div class="blog-image">
+                                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Save Money" loading="lazy">
+                                <span class="blog-category">Tips</span>
+                            </div>
+                            <div class="blog-content">
+                                <h3>How to Save Money on Fashion Online</h3>
+                                <p>Use coupons, cashback sites and price tracking to get the best deals on clothing.</p>
+                                <div class="blog-meta">
+                                    <span><i class="far fa-clock"></i> 4 min read</span>
+                                    <span><i class="far fa-calendar"></i> Dec 8, 2024</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Newsletter Section -->
+        <section class="newsletter-section" aria-labelledby="newsletter-title">
+            <div class="container">
+                <div class="newsletter-card">
+                    <div class="newsletter-content">
+                        <h2 id="newsletter-title">Never Miss a Fashion Deal!</h2>
+                        <p>Subscribe to get the latest fashion discounts and style inspiration.</p>
+                        <form class="newsletter-form" action="../../api/newsletter/subscribe.php" method="post">
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Your email" required aria-label="Your email">
+                                <button type="submit" class="btn-subscribe">Subscribe <i class="fas fa-paper-plane"></i></button>
+                            </div>
+                            <label class="checkbox">
+                                <input type="checkbox" name="preferences[]" value="fashion" checked> Send me fashion deals
+                            </label>
+                        </form>
+                    </div>
+                    <div class="newsletter-image">
+                        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Fashion shopping" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo-container">
+                        <a href="../../index.html" class="logo" aria-label="GetUpDeals home">
+                            <span class="brand-name">GetUpDeals</span>
+                        </a>
+                    </div>
+                    <p class="footer-description">
+                        Your trusted source for the best e-commerce deals, discounts, and affiliate offers.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../index.html">Today's Deals</a></li>
+                        <li><a href="../../blog/index.html">Blog</a></li>
+                        <li><a href="../../categories/all-categories/index.html">Categories</a></li>
+                        <li><a href="../../pages/about/index.html">About Us</a></li>
+                        <li><a href="../../pages/contact/index.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Top Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="../../categories/fashion/index.html">Fashion</a></li>
+                        <li><a href="../../categories/electronics/index.html">Electronics</a></li>
+                        <li><a href="../../categories/gadgets/index.html">Gadgets</a></li>
+                        <li><a href="../../categories/home-appliances/index.html">Home Appliances</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact & Legal</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:contact@getupdeals.com">contact@getupdeals.com</a></li>
+                        <li><i class="fas fa-phone"></i> <span>+91 98765 43210</span></li>
+                    </ul>
+                    <div class="footer-legal-links">
+                        <a href="../../pages/privacy-policy/index.html">Privacy</a>
+                        <a href="../../pages/terms-of-service/index.html">Terms</a>
+                        <a href="../../pages/affiliate-disclosure/index.html">Affiliate Disclosure</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GetUpDeals.com. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+    <!-- Cookie Consent -->
+    <div class="cookie-consent" id="cookieConsent" role="dialog" aria-label="Cookie consent" hidden>
+        <div class="cookie-content">
+            <p>We use cookies to enhance your experience. By continuing, you agree to our use of cookies.</p>
+            <div class="cookie-buttons">
+                <button class="cookie-btn accept" id="cookieAccept">Accept</button>
+                <button class="cookie-btn decline" id="cookieDecline">Decline</button>
+                <a href="../../pages/privacy-policy/index.html">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript files -->
+    <script src="../../assets/js/main.js" defer></script>
+    <script src="../../assets/js/theme-switcher.js" defer></script>
+    <script src="../../assets/js/navigation.js" defer></script>
+    <script src="../../assets/js/deals-loader.js" defer></script>
+    <script src="../../assets/js/affiliate-integrations.js" defer></script>
+    <script src="../../assets/js/analytics.js" defer></script>
+    <script src="../../assets/js/optimizations.js" defer></script>
+    <script src="../../assets/js/cookie-consent.js" defer></script>
+    <!-- Page-specific JS -->
+    <script src="./js/custom.js" defer></script>
+</body>
+</html>
