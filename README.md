@@ -46,7 +46,7 @@ cp .env.example .env.local
 npm run dev
 ```
 
-Open http://localhost:3000 to view it in the browser.
+Open https://getupdeals.com to view it in the browser.
 
 ---
 
