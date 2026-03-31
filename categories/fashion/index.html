@@ -1,0 +1,688 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Deals – GetUpDeals</title>
+    <meta name="description" content="Find the best fashion deals on clothing, footwear, accessories, and more. Save big on top brands like Levi's, Adidas, Zara, H&M.">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="fashion deals, clothing discounts, footwear offers, accessories sale, branded clothes">
+    <meta property="og:title" content="Fashion Deals – GetUpDeals">
+    <meta property="og:description" content="Find the best fashion deals on clothing, footwear, accessories, and more. Save big on top brands.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://getupdeals.com/categories/fashion/">
+    <meta property="og:image" content="https://getupdeals.com/assets/images/logo/logo-og.png">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Fashion Deals – GetUpDeals">
+    <meta name="twitter:description" content="Find the best fashion deals on clothing, footwear, accessories, and more.">
+    
+    <!-- PWA -->
+    <link rel="manifest" href="../../manifest.json">
+    <meta name="theme-color" content="#2563eb">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../assets/images/logo/favicon-set/favicon.ico">
+    <link rel="apple-touch-icon" href="../../assets/images/logo/favicon-set/apple-touch-icon.png">
+    
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../../assets/css/critical.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/components.css">
+    <link rel="stylesheet" href="../../assets/css/themes.css">
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+    
+    <!-- Page‑specific CSS for fashion -->
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Skip to Content -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    
+    <!-- Top Bar -->
+    <div class="top-bar" role="banner" aria-label="Announcements">
+        <div class="container">
+            <div class="top-bar-content">
+                <span class="deal-alert">
+                    <i class="fas fa-bolt" aria-hidden="true"></i> Flash Sale: 50% OFF on Fashion – Ends Tonight!
+                </span>
+                <div class="top-bar-links">
+                    <a href="../../pages/about/index.html">About</a>
+                    <a href="../../pages/contact/index.html">Contact</a>
+                    <a href="../../blog/index.html">Blog</a>
+                    <a href="../../pages/affiliate-disclosure/index.html" class="affiliate-badge">Affiliate</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Main Header -->
+    <header class="main-header" role="banner">
+        <div class="container">
+            <div class="logo-container">
+                <a href="../../index.html" class="logo" aria-label="GetUpDeals home">
+                    <span class="brand-name">GetUpDeals</span>
+                </a>
+            </div>
+            
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="../../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-dropdown">
+                        <a href="../all-categories/index.html" class="nav-link active" aria-current="page" aria-haspopup="true" aria-expanded="false">
+                            Categories <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </a>
+                        <div class="dropdown-menu" role="menu">
+                            <a href="./index.html" class="dropdown-item" role="menuitem">
+                                <i class="fas fa-tshirt" aria-hidden="true"></i> Fashion
+                            </a>
+                            <a href="../electronics/index.html" class="dropdown-item" role="menuitem">
+                                <i class="fas fa-laptop" aria-hidden="true"></i> Electronics
+                            </a>
+                            <a href="../gadgets/index.html" class="dropdown-item" role="menuitem">
+                                <i class="fas fa-mobile-alt" aria-hidden="true"></i> Gadgets
+                            </a>
+                            <a href="../home-appliances/index.html" class="dropdown-item" role="menuitem">
+                                <i class="fas fa-blender" aria-hidden="true"></i> Home Appliances
+                            </a>
+                            <a href="../all-categories/index.html" class="dropdown-item view-all" role="menuitem">
+                                <i class="fas fa-th" aria-hidden="true"></i> View All Categories
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href="../../deals/index.html" class="nav-link">Today's Deals</a></li>
+                    <li><a href="../../blog/index.html" class="nav-link">Blog</a></li>
+                    <li><a href="../../pages/contact/index.html" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="search-container" role="search">
+                    <form class="search-form" action="../../api/deals/search.php" method="get">
+                        <input type="search" name="q" placeholder="Search for deals..." class="search-input" aria-label="Search deals">
+                        <button type="submit" class="search-btn" aria-label="Submit search">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                </div>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme">
+                    <i class="fas fa-moon" aria-hidden="true"></i>
+                    <i class="fas fa-sun" aria-hidden="true"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobileNav">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation (full panel) -->
+    <div class="mobile-nav" id="mobileNav" role="dialog" aria-modal="true" aria-label="Mobile menu" hidden>
+        <div class="mobile-nav-header">
+            <a href="../../index.html" class="mobile-logo" tabindex="-1">
+                <span class="brand-name">GetUpDeals</span>
+            </a>
+            <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu" tabindex="-1">
+                <i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+        </div>
+        
+        <div class="mobile-search" role="search">
+            <form class="mobile-search-form" action="../../api/deals/search.php" method="get">
+                <input type="search" name="q" placeholder="Search deals..." aria-label="Search" tabindex="-1">
+                <button type="submit" aria-label="Submit" tabindex="-1"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        
+        <nav class="mobile-nav-menu" aria-label="Mobile navigation">
+            <a href="../../index.html" class="mobile-nav-link" tabindex="-1">
+                <i class="fas fa-home" aria-hidden="true"></i> Home
+            </a>
+            <div class="mobile-nav-dropdown">
+                <button class="mobile-nav-link active" aria-expanded="false" tabindex="-1">
+                    <i class="fas fa-th" aria-hidden="true"></i> Categories
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div class="mobile-dropdown-menu">
+                    <a href="./index.html" class="mobile-dropdown-item" tabindex="-1">
+                        <i class="fas fa-tshirt" aria-hidden="true"></i> Fashion
+                    </a>
+                    <a href="../electronics/index.html" class="mobile-dropdown-item" tabindex="-1">
+                        <i class="fas fa-laptop" aria-hidden="true"></i> Electronics
+                    </a>
+                    <a href="../gadgets/index.html" class="mobile-dropdown-item" tabindex="-1">
+                        <i class="fas fa-mobile-alt" aria-hidden="true"></i> Gadgets
+                    </a>
+                    <a href="../home-appliances/index.html" class="mobile-dropdown-item" tabindex="-1">
+                        <i class="fas fa-blender" aria-hidden="true"></i> Home Appliances
+                    </a>
+                    <a href="../all-categories/index.html" class="mobile-dropdown-item" tabindex="-1">
+                        <i class="fas fa-eye" aria-hidden="true"></i> View All
+                    </a>
+                </div>
+            </div>
+            <a href="../../deals/index.html" class="mobile-nav-link" tabindex="-1">
+                <i class="fas fa-tag" aria-hidden="true"></i> Today's Deals
+            </a>
+            <a href="../../blog/index.html" class="mobile-nav-link" tabindex="-1">
+                <i class="fas fa-blog" aria-hidden="true"></i> Blog
+            </a>
+            <a href="../../pages/contact/index.html" class="mobile-nav-link" tabindex="-1">
+                <i class="fas fa-envelope" aria-hidden="true"></i> Contact
+            </a>
+            <a href="../../pages/about/index.html" class="mobile-nav-link" tabindex="-1">
+                <i class="fas fa-info-circle" aria-hidden="true"></i> About
+            </a>
+        </nav>
+        
+        <div class="mobile-nav-footer">
+            <div class="theme-toggle-mobile">
+                <span>Theme:</span>
+                <button class="theme-switch-btn" id="themeSwitchMobile" tabindex="-1">
+                    <span class="theme-icon"><i class="fas fa-moon" aria-hidden="true"></i></span> Dark Mode
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <main id="main-content" class="main-content">
+        <!-- Category Hero -->
+        <section class="category-hero" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1445205170230-053b83016050?w=1200&q=80') center/cover no-repeat;">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Fashion & Apparel</h1>
+                    <p>Discover the latest trends at unbeatable prices. From casual wear to party outfits, save big on top brands.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Subcategories Navigation -->
+        <section class="subcategories-section">
+            <div class="container">
+                <h2 class="section-title">Shop by Subcategory</h2>
+                <div class="subcategory-grid" id="subcategoryGrid">
+                    <!-- Subcategory cards (linked with filter or page) -->
+                    <a href="?sub=men" class="subcategory-card" data-sub="men">
+                        <div class="subcategory-icon"><i class="fas fa-male"></i></div>
+                        <h3>Men's Fashion</h3>
+                        <p>Shirts, Jeans, Suits, Accessories</p>
+                    </a>
+                    <a href="?sub=women" class="subcategory-card" data-sub="women">
+                        <div class="subcategory-icon"><i class="fas fa-female"></i></div>
+                        <h3>Women's Fashion</h3>
+                        <p>Dresses, Tops, Ethnic Wear, Handbags</p>
+                    </a>
+                    <a href="?sub=footwear" class="subcategory-card" data-sub="footwear">
+                        <div class="subcategory-icon"><i class="fas fa-shoe-prints"></i></div>
+                        <h3>Footwear</h3>
+                        <p>Sports Shoes, Heels, Sandals, Boots</p>
+                    </a>
+                    <a href="?sub=accessories" class="subcategory-card" data-sub="accessories">
+                        <div class="subcategory-icon"><i class="fas fa-glasses"></i></div>
+                        <h3>Accessories</h3>
+                        <p>Watches, Sunglasses, Belts, Jewellery</p>
+                    </a>
+                    <a href="?sub=winterwear" class="subcategory-card" data-sub="winterwear">
+                        <div class="subcategory-icon"><i class="fas fa-thermometer-half"></i></div>
+                        <h3>Winter Wear</h3>
+                        <p>Jackets, Sweaters, Thermals</p>
+                    </a>
+                    <a href="?sub=ethnic" class="subcategory-card" data-sub="ethnic">
+                        <div class="subcategory-icon"><i class="fas fa-sari"></i></div>
+                        <h3>Ethnic Wear</h3>
+                        <p>Kurtas, Sarees, Lehengas</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deals Section with Filter Tabs (JS enhanced) -->
+        <section class="deals-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">🔥 Hot Fashion Deals</h2>
+                    <div class="subcategory-tabs" id="subcategoryTabs">
+                        <button class="tab-btn active" data-filter="all">All</button>
+                        <button class="tab-btn" data-filter="men">Men</button>
+                        <button class="tab-btn" data-filter="women">Women</button>
+                        <button class="tab-btn" data-filter="footwear">Footwear</button>
+                        <button class="tab-btn" data-filter="accessories">Accessories</button>
+                        <button class="tab-btn" data-filter="winterwear">Winter</button>
+                        <button class="tab-btn" data-filter="ethnic">Ethnic</button>
+                    </div>
+                </div>
+
+                <!-- Deals Grid (each deal has data-subcategory attribute) -->
+                <div class="deals-grid" id="fashionDealsGrid">
+                    <!-- Men's deals -->
+                    <div class="deal-card" data-subcategory="men">
+                        <a href="../../deals/fashion/deal-1/">
+                            <div class="deal-image">
+                                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&q=80" alt="Men's T-Shirt" loading="lazy">
+                                <span class="discount-badge">50% OFF</span>
+                            </div>
+                            <div class="deal-content">
+                                <h3>Men's Cotton T-Shirt</h3>
+                                <div class="price"><span class="original">₹999</span> ₹499</div>
+                                <div class="store">Amazon</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="deal-card" data-subcategory="men">
+                        <a href="../../deals/fashion/deal-2/">
+                            <div class="deal-image">
+                                <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?w=400&q=80" alt="Men's Jeans" loading="lazy">
+                                <span class="discount-badge">40% OFF</span>
+                            </div>
+                            <div class="deal-content">
+                                <h3>Men's Slim Fit Jeans</h3>
+                                <div class="price"><span class="original">₹1,799</span> ₹1,079</div>
+                                <div class="store">Flipkart</div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Women's deals -->
+                    <div class="deal-card" data-subcategory="women">
+                        <a href="../../deals/fashion/deal-3/">
+                            <div class="deal-image">
+                                <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&q=80" alt="Women's Jeans" loading="lazy">
+                                <span class="discount-badge">40% OFF</span>
+                            </div>
+                            <div class="deal-content">
+                                <h3>Women's Skinny Jeans</h3>
+                                <div class="price"><span class="original">₹1,299</span> ₹779</div>
+                                <div class="store">Myntra</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="deal-card" data-subcategory="women">
+                        <a href="../../deals/fashion/deal-4/">
+                            <div class="deal-image">
+                                <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=400&q=80" alt="Women's Top" loading="lazy">
+                                <span class="discount-badge">35% OFF</span>
+                            </div>
+                            <div class="deal-content">
+                                <h3>Women's Printed Top</h3>
+                                <div class="price"><span class="original">₹899</span> ₹584</div>
+                                <div class="store">Ajio</div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Footwear deals -->
+                    <div class="deal-card" data-subcategory="footwear">
+                        <a href="../../deals/fashion/deal-5/">
+                            <div class="deal-image">
+                                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80" alt="Running Shoes" loading="lazy">
+                                <span class="discount-badge">30% OFF</span>
+                            </div>
+                            <div class="deal-content">
+                                <h3>Nike Running Shoes</h3>
+                                <div class="price"><span class="original">₹3,999</span> ₹2,799</div>
+                                <div class="store">Flipkart</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="deal-card" data-subcategory="footwear">
+                        <a href="../../deals/fashion/deal-6/">
+                            <div class="deal-image">
+                                <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?w=400&q=80" alt="Sneakers" loading="lazy">
+                                <span class="discount-badge">40% OFF</span>
+                            </div>
+                            <div class="deal-content">
+                                <h3>Puma Sneakers</h3>
+                                <div class="price"><span class="original">₹3,999</span> ₹2,399</div>
+                                <div class="store">Amazon</div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Accessories deals -->
+                    <div class="deal-card" data-subcategory="accessories">
+                        <a href="../../deals/fashion/deal-7/">
+                            <div class="deal-image">
+                                <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400&q=80" alt="Wrist Watch" loading="lazy">
+                                <span class="discount-badge">25% OFF</span>
+                            </div>
+                            <div class="deal-content">
+                                <h3>Fossil Analog Watch</h3>
+                                <div class="price"><span class="original">₹5,995</span> ₹4,499</div>
+                                <div class="store">Amazon</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="deal-card" data-subcategory="accessories">
+                        <a href="../../deals/fashion/deal-8/">
+                            <div class="deal-image">
+                                <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400&q=80" alt="Handbag" loading="lazy">
+                                <span class="discount-badge">15% OFF</span>
+                            </div>
+                            <div class="deal-content">
+                                <h3>Women's Handbag</h3>
+                                <div class="price"><span class="original">₹1,999</span> ₹1,699</div>
+                                <div class="store">Myntra</div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Winterwear deals -->
+                    <div class="deal-card" data-subcategory="winterwear">
+                        <a href="../../deals/fashion/deal-9/">
+                            <div class="deal-image">
+                                <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&q=80" alt="Men's Jacket" loading="lazy">
+                                <span class="discount-badge">20% OFF</span>
+                            </div>
+                            <div class="deal-content">
+                                <h3>Men's Puffer Jacket</h3>
+                                <div class="price"><span class="original">₹2,499</span> ₹1,999</div>
+                                <div class="store">Amazon</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="deal-card" data-subcategory="winterwear">
+                        <a href="../../deals/fashion/deal-10/">
+                            <div class="deal-image">
+                                <img src="https://images.unsplash.com/photo-1539533018447-63fcce267498?w=400&q=80" alt="Women Sweater" loading="lazy">
+                                <span class="discount-badge">30% OFF</span>
+                            </div>
+                            <div class="deal-content">
+                                <h3>Women's Cable Knit Sweater</h3>
+                                <div class="price"><span class="original">₹1,899</span> ₹1,329</div>
+                                <div class="store">Myntra</div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Ethnic wear deals -->
+                    <div class="deal-card" data-subcategory="ethnic">
+                        <a href="../../deals/fashion/deal-11/">
+                            <div class="deal-image">
+                                <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=400&q=80" alt="Kurta" loading="lazy">
+                                <span class="discount-badge">45% OFF</span>
+                            </div>
+                            <div class="deal-content">
+                                <h3>Men's Cotton Kurta</h3>
+                                <div class="price"><span class="original">₹1,499</span> ₹824</div>
+                                <div class="store">Ajio</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="deal-card" data-subcategory="ethnic">
+                        <a href="../../deals/fashion/deal-12/">
+                            <div class="deal-image">
+                                <img src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=400&q=80" alt="Saree" loading="lazy">
+                                <span class="discount-badge">50% OFF</span>
+                            </div>
+                            <div class="deal-content">
+                                <h3>Women's Silk Saree</h3>
+                                <div class="price"><span class="original">₹3,999</span> ₹1,999</div>
+                                <div class="store">Myntra</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="section-footer">
+                    <a href="../../deals/fashion/index.html" class="btn-view-all">
+                        View All Fashion Deals <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Content for Fashion -->
+        <section class="blog-preview-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">📚 Fashion Buying Guides</h2>
+                    <a href="../../blog/index.html?category=fashion" class="section-link">More Fashion Articles <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <a href="../../blog/best-tshirts-under-999/">
+                            <div class="blog-image">
+                                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&q=80" alt="Best T-Shirts" loading="lazy">
+                                <span class="blog-category">Fashion</span>
+                            </div>
+                            <div class="blog-content">
+                                <h3>Best T-Shirts Under ₹999 for Men & Women</h3>
+                                <p>Curated list of premium quality t-shirts from top brands at unbelievable prices.</p>
+                                <div class="blog-meta">
+                                    <span><i class="far fa-clock"></i> 5 min read</span>
+                                    <span><i class="far fa-calendar"></i> Dec 15, 2024</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <article class="blog-card">
+                        <a href="../../blog/best-jeans-under-999/">
+                            <div class="blog-image">
+                                <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=800&q=80" alt="Best Jeans" loading="lazy">
+                                <span class="blog-category">Fashion</span>
+                            </div>
+                            <div class="blog-content">
+                                <h3>Top 10 Jeans Under ₹999 for Perfect Fit</h3>
+                                <p>Find the best jeans from Levi's, Lee, Wrangler and more at discounted prices.</p>
+                                <div class="blog-meta">
+                                    <span><i class="far fa-clock"></i> 7 min read</span>
+                                    <span><i class="far fa-calendar"></i> Dec 12, 2024</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <article class="blog-card">
+                        <a href="../../blog/how-to-style-winter-wear/">
+                            <div class="blog-image">
+                                <img src="https://images.unsplash.com/photo-1515434126000-961d90ff09db?w=800&q=80" alt="Winter Wear" loading="lazy">
+                                <span class="blog-category">Fashion</span>
+                            </div>
+                            <div class="blog-content">
+                                <h3>Winter Fashion on a Budget: Style Guide</h3>
+                                <p>Stay warm and stylish without breaking the bank – tips and deals inside.</p>
+                                <div class="blog-meta">
+                                    <span><i class="far fa-clock"></i> 6 min read</span>
+                                    <span><i class="far fa-calendar"></i> Dec 5, 2024</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Store Links (Fashion-specific) -->
+        <section class="store-links-section">
+            <div class="container">
+                <h2 class="section-title center">Shop Fashion at Your Favorite Stores</h2>
+                <div class="store-buttons">
+                    <a href="../../deals/index.html?store=amazon&category=fashion" class="store-button"><i class="fab fa-amazon"></i> Amazon Fashion</a>
+                    <a href="../../deals/index.html?store=myntra" class="store-button"><span class="store-icon">m</span> Myntra</a>
+                    <a href="../../deals/index.html?store=ajio" class="store-button"><span class="store-icon">aj</span> Ajio</a>
+                    <a href="../../deals/index.html?store=flipkart&category=fashion" class="store-button"><span class="store-icon">fk</span> Flipkart Fashion</a>
+                    <a href="../../deals/index.html?store=tatacliq&category=fashion" class="store-button"><span class="store-icon">t</span> Tata CLiQ Fashion</a>
+                    <a href="../../deals/index.html?store=nykaa&category=fashion" class="store-button"><span class="store-icon">n</span> Nykaa Fashion</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Company Info -->
+                <div class="footer-col">
+                    <div class="logo-container">
+                        <a href="../../index.html" class="logo" aria-label="GetUpDeals home">
+                            <span class="brand-name">GetUpDeals</span>
+                        </a>
+                    </div>
+                    <p class="footer-description">
+                        Your trusted source for the best e-commerce deals, discounts, and affiliate offers. We help you shop smarter and save more.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter" rel="noopener"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram" rel="noopener"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="Pinterest" rel="noopener"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" class="social-link" aria-label="YouTube" rel="noopener"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link" aria-label="Telegram" rel="noopener"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../../deals/index.html">Today's Deals</a></li>
+                        <li><a href="../../blog/index.html">Blog</a></li>
+                        <li><a href="../all-categories/index.html">All Categories</a></li>
+                        <li><a href="../../pages/about/index.html">About Us</a></li>
+                        <li><a href="../../pages/contact/index.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Fashion Subcategories -->
+                <div class="footer-col">
+                    <h3 class="footer-title">Fashion</h3>
+                    <ul class="footer-links">
+                        <li><a href="?sub=men">Men's Clothing</a></li>
+                        <li><a href="?sub=women">Women's Clothing</a></li>
+                        <li><a href="?sub=footwear">Footwear</a></li>
+                        <li><a href="?sub=accessories">Accessories</a></li>
+                        <li><a href="?sub=winterwear">Winter Wear</a></li>
+                        <li><a href="?sub=ethnic">Ethnic Wear</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact & Legal -->
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact & Legal</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:contact@getupdeals.com">contact@getupdeals.com</a></li>
+                        <li><i class="fas fa-phone"></i> <span>Support: +91 98765 43210</span></li>
+                        <li><i class="fas fa-map-marker-alt"></i> <span>Mumbai, India</span></li>
+                    </ul>
+                    <div class="footer-legal-links">
+                        <a href="../../pages/privacy-policy/index.html">Privacy Policy</a>
+                        <a href="../../pages/terms-of-service/index.html">Terms of Service</a>
+                        <a href="../../pages/affiliate-disclosure/index.html">Affiliate Disclosure</a>
+                        <a href="../../pages/disclaimer/index.html">Disclaimer</a>
+                        <a href="../../pages/sitemap/index.html">Sitemap</a>
+                        <a href="../../pages/cookie-policy/index.html">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 GetUpDeals.com. All rights reserved.</p>
+                    <div class="payment-methods">
+                        <span>We Support:</span>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-visa" title="Visa"></i>
+                            <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+                            <i class="fab fa-cc-amex" title="American Express"></i>
+                            <i class="fab fa-cc-paypal" title="PayPal"></i>
+                            <i class="fas fa-university" title="Net Banking"></i>
+                            <i class="fas fa-mobile-alt" title="UPI"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="affiliate-partners">
+                    <span>Trusted Partner Stores:</span>
+                    <div class="partner-logos">
+                        <span class="partner-logo amazon">Amazon</span>
+                        <span class="partner-logo flipkart">Flipkart</span>
+                        <span class="partner-logo myntra">Myntra</span>
+                        <span class="partner-logo ajio">Ajio</span>
+                        <span class="partner-logo tata">Tata CLiQ</span>
+                        <span class="partner-logo nykaa">Nykaa</span>
+                        <span class="partner-logo meesho">Meesho</span>
+                        <span class="partner-logo more">+15 More</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Loading Overlay (hidden by default) -->
+    <div class="loading-overlay" id="loadingOverlay" role="alert" aria-live="assertive" hidden>
+        <div class="loader">
+            <div class="loader-spinner" aria-label="Loading"></div>
+            <p>Loading best deals...</p>
+        </div>
+    </div>
+
+    <!-- Cookie Consent -->
+    <div class="cookie-consent" id="cookieConsent" role="dialog" aria-label="Cookie consent" hidden>
+        <div class="cookie-content">
+            <p>We use cookies to enhance your browsing experience and analyze our traffic. By clicking "Accept", you consent to our use of cookies.</p>
+            <div class="cookie-buttons">
+                <button class="cookie-btn accept" id="cookieAccept">Accept</button>
+                <button class="cookie-btn decline" id="cookieDecline">Decline</button>
+                <a href="../../pages/privacy-policy/index.html" class="cookie-link">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Global JavaScript -->
+    <script src="../../assets/js/main.js" defer></script>
+    <script src="../../assets/js/theme-switcher.js" defer></script>
+    <script src="../../assets/js/navigation.js" defer></script>
+    <script src="../../assets/js/affiliate-integrations.js" defer></script>
+    <script src="../../assets/js/analytics.js" defer></script>
+    <script src="../../assets/js/optimizations.js" defer></script>
+    <script src="../../assets/js/cookie-consent.js" defer></script>
+    
+    <!-- Page‑specific JavaScript for fashion category -->
+    <script src="./js/custom.js" defer></script>
+
+    <!-- Inline script for subcategory filtering (can be moved to custom.js) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.tab-btn');
+            const deals = document.querySelectorAll('.deal-card');
+            
+            if (tabs.length && deals.length) {
+                tabs.forEach(tab => {
+                    tab.addEventListener('click', function() {
+                        // Update active tab
+                        tabs.forEach(t => t.classList.remove('active'));
+                        this.classList.add('active');
+                        
+                        const filter = this.dataset.filter;
+                        
+                        // Filter deals
+                        deals.forEach(deal => {
+                            if (filter === 'all' || deal.dataset.subcategory === filter) {
+                                deal.style.display = 'block';
+                            } else {
+                                deal.style.display = 'none';
+                            }
+                        });
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
