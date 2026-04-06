@@ -1,4 +1,4 @@
-// deals-loader.js - Dynamically loads deals into your homepage
+// deals-loader.js - Dynamically loads deals from Firebase (Products Manager)
 class DealsLoader {
     constructor() {
         this.dealsContainer = document.getElementById('dealsGrid');
@@ -6,22 +6,16 @@ class DealsLoader {
         this.currentFilter = 'all';
         this.deals = [];
         this.isLoading = false;
+        // Firebase references (global firebase assumed)
+        this.db = firebase.firestore();
     }
 
     async init() {
         try {
-            // Show loading skeletons
             this.showLoadingSkeletons();
-            
-            // Load deals data
             await this.loadDealsData();
-            
-            // Render initial deals
             this.renderDeals(this.deals);
-            
-            // Setup event listeners
             this.setupEventListeners();
-            
         } catch (error) {
             console.error('Error initializing DealsLoader:', error);
             this.showErrorState();
@@ -29,131 +23,102 @@ class DealsLoader {
     }
 
     showLoadingSkeletons() {
-        // Skeleton loaders are already in your HTML
         const loadingOverlay = document.getElementById('loadingOverlay');
-        if (loadingOverlay) {
-            loadingOverlay.style.display = 'flex';
-        }
+        if (loadingOverlay) loadingOverlay.style.display = 'flex';
     }
 
     hideLoadingSkeletons() {
         const loadingOverlay = document.getElementById('loadingOverlay');
-        if (loadingOverlay) {
-            loadingOverlay.style.display = 'none';
-        }
+        if (loadingOverlay) loadingOverlay.style.display = 'none';
     }
 
     async loadDealsData() {
         try {
-            // First try to load from local JSON file
-            const response = await fetch('./assets/data/deals.json');
-            
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
+            // Fetch all active products from Firestore
+            const snapshot = await this.db.collection('products')
+                .where('status', '==', 'active')
+                .orderBy('createdAt', 'desc')
+                .get();
+
+            if (snapshot.empty) {
+                console.warn('No products found in Firestore');
+                this.deals = [];
+                return;
             }
-            
-            const data = await response.json();
-            this.deals = data.deals || [];
-            
+
+            this.deals = [];
+            snapshot.forEach(doc => {
+                const product = doc.data();
+                const deal = this.mapProductToDeal(product);
+                if (deal) this.deals.push(deal);
+            });
         } catch (error) {
-            console.warn('Could not load deals.json, using sample data:', error);
-            // Fallback to sample data
-            this.deals = this.getSampleDeals();
+            console.error('Firebase fetch error:', error);
+            throw error;
         }
     }
 
-    getSampleDeals() {
-        return [
-            {
-                id: "1",
-                title: "Wireless Headphones",
-                description: "Premium noise-cancelling headphones with 30hrs battery",
-                currentPrice: 1999,
-                originalPrice: 3999,
-                discount: 50,
-                category: "electronics",
-                store: "amazon",
-                affiliateLink: "https://amazon.in/dp/B0C5YHXYZ",
-                image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-                rating: 4.5,
-                reviews: 1243,
-                expiry: "2024-12-31",
-                isFeatured: true,
-                tags: ["bestseller", "limited-time", "audio"]
-            },
-            {
-                id: "2",
-                title: "Men's Casual Shirt",
-                description: "Premium cotton shirt with stylish pattern",
-                currentPrice: 599,
-                originalPrice: 1499,
-                discount: 60,
-                category: "fashion",
-                store: "myntra",
-                affiliateLink: "https://www.myntra.com/shirt123",
-                image: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-                rating: 4.2,
-                reviews: 567,
-                expiry: "2024-12-25",
-                isFeatured: true,
-                tags: ["fashion", "clothing", "bestseller"]
-            },
-            {
-                id: "3",
-                title: "Smart Watch Fitness Tracker",
-                description: "Waterproof smartwatch with heart rate monitor",
-                currentPrice: 2999,
-                originalPrice: 5999,
-                discount: 50,
-                category: "gadgets",
-                store: "flipkart",
-                affiliateLink: "https://dl.flipkart.com/s/smartwatch123",
-                image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-                rating: 4.3,
-                reviews: 892,
-                expiry: "2024-12-28",
-                isFeatured: true,
-                tags: ["gadget", "fitness", "wearable"]
-            },
-            {
-                id: "4",
-                title: "Kitchen Mixer Grinder",
-                description: "750W powerful mixer with 3 jars",
-                currentPrice: 2499,
-                originalPrice: 3999,
-                discount: 38,
-                category: "home-appliances",
-                store: "amazon",
-                affiliateLink: "https://amazon.in/dp/B0C5YHXYZ",
-                image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-                rating: 4.4,
-                reviews: 345,
-                expiry: "2024-12-30",
-                isFeatured: true,
-                tags: ["kitchen", "appliance", "bestseller"]
-            }
-        ];
+    mapProductToDeal(product) {
+        // Extract primary affiliate link (first one from affiliateLinks array)
+        let affiliateLink = '#';
+        let store = 'unknown';
+        if (product.affiliateLinks && product.affiliateLinks.length > 0) {
+            affiliateLink = product.affiliateLinks[0].url;
+            store = product.affiliateLinks[0].store.toLowerCase();
+        }
+
+        // Use extraFields for description if available
+        let description = product.extraFields?.description || 
+                         product.extraFields?.shortDesc || 
+                         `${product.title} - Grab this amazing deal!`;
+
+        // Rating & reviews (optional)
+        const rating = product.rating || 0;
+        const reviews = product.reviews || 0;
+
+        // Expiry date (from extraFields or null)
+        const expiry = product.extraFields?.expiry || null;
+
+        // Featured flag (check tags)
+        const isFeatured = product.tags?.includes('featured') || 
+                           product.tags?.includes('hot') || 
+                           false;
+
+        // Ensure required fields exist
+        if (!product.title || !product.price) return null;
+
+        return {
+            id: product.id,
+            title: product.title,
+            description: description,
+            currentPrice: product.price,
+            originalPrice: product.originalPrice || product.price,
+            discount: product.discount || 0,
+            category: product.category || 'uncategorized',
+            store: store,
+            affiliateLink: affiliateLink,
+            image: product.image || '', // main image URL
+            rating: rating,
+            reviews: reviews,
+            expiry: expiry,
+            isFeatured: isFeatured,
+            tags: product.tags || []
+        };
     }
 
     renderDeals(deals) {
-        // Clear existing content including skeletons
         this.dealsContainer.innerHTML = '';
-        
-        // Filter deals based on current filter
         const filteredDeals = this.currentFilter === 'all' 
             ? deals 
             : deals.filter(deal => deal.store === this.currentFilter);
         
-        // Render each deal
         filteredDeals.forEach(deal => {
             const dealCard = this.createDealCard(deal);
             this.dealsContainer.appendChild(dealCard);
         });
         
-        // Hide loading overlay
         this.hideLoadingSkeletons();
         
-        // If no deals found
         if (filteredDeals.length === 0) {
             this.showNoDealsMessage();
         }
@@ -166,7 +131,6 @@ class DealsLoader {
         card.dataset.category = deal.category;
         card.dataset.dealId = deal.id;
         
-        // Format price with Indian Rupee symbol
         const formattedCurrentPrice = `₹${deal.currentPrice.toLocaleString('en-IN')}`;
         const formattedOriginalPrice = `₹${deal.originalPrice.toLocaleString('en-IN')}`;
         
@@ -205,7 +169,7 @@ class DealsLoader {
                 
                 <div class="deal-expiry">
                     <i class="far fa-clock"></i>
-                    <span>Deal ends: ${this.formatDate(deal.expiry)}</span>
+                    <span>Deal ends: ${deal.expiry ? this.formatDate(deal.expiry) : 'Limited time'}</span>
                 </div>
                 
                 <div class="deal-actions">
@@ -266,23 +230,19 @@ class DealsLoader {
     }
 
     setupEventListeners() {
-        // Filter button clicks
         this.filterButtons.forEach(button => {
             button.addEventListener('click', () => {
                 this.filterButtons.forEach(btn => btn.classList.remove('active'));
                 button.classList.add('active');
-                
                 this.currentFilter = button.dataset.filter;
                 this.renderDeals(this.deals);
             });
         });
         
-        // Wishlist button clicks
         this.dealsContainer.addEventListener('click', (e) => {
             if (e.target.closest('.wishlist-btn')) {
                 this.toggleWishlist(e.target.closest('.wishlist-btn'));
             }
-            
             if (e.target.closest('.share-btn')) {
                 this.shareDeal(e.target.closest('.share-btn'));
             }
@@ -297,18 +257,13 @@ class DealsLoader {
             icon.classList.remove('far');
             icon.classList.add('fas');
             button.setAttribute('aria-label', 'Remove from wishlist');
-            
-            // Track wishlist add
-            if (window.analytics) {
-                window.analytics.trackEvent('wishlist_add', { dealId });
-            }
+            if (window.analytics) window.analytics.trackEvent('wishlist_add', { dealId });
         } else {
             icon.classList.remove('fas');
             icon.classList.add('far');
             button.setAttribute('aria-label', 'Add to wishlist');
         }
         
-        // Add animation
         button.classList.add('pulse');
         setTimeout(() => button.classList.remove('pulse'), 300);
     }
@@ -324,18 +279,12 @@ class DealsLoader {
                 url: window.location.origin + `/deals/${deal.category}/${deal.id}/`
             });
         } else {
-            // Fallback: Copy to clipboard
             const dealUrl = window.location.origin + `/deals/${deal.category}/${deal.id}/`;
             navigator.clipboard.writeText(dealUrl);
-            
-            // Show toast notification
             this.showToast('Deal link copied to clipboard!');
         }
         
-        // Track share
-        if (window.analytics) {
-            window.analytics.trackEvent('deal_share', { dealId });
-        }
+        if (window.analytics) window.analytics.trackEvent('deal_share', { dealId });
     }
 
     showToast(message) {
@@ -343,16 +292,10 @@ class DealsLoader {
         toast.className = 'toast-message';
         toast.textContent = message;
         document.body.appendChild(toast);
-        
-        setTimeout(() => {
-            toast.classList.add('show');
-        }, 10);
-        
+        setTimeout(() => toast.classList.add('show'), 10);
         setTimeout(() => {
             toast.classList.remove('show');
-            setTimeout(() => {
-                document.body.removeChild(toast);
-            }, 300);
+            setTimeout(() => document.body.removeChild(toast), 300);
         }, 3000);
     }
 
@@ -376,10 +319,7 @@ class DealsLoader {
                 <button class="retry-btn" id="retryLoading">Retry</button>
             </div>
         `;
-        
-        document.getElementById('retryLoading')?.addEventListener('click', () => {
-            this.init();
-        });
+        document.getElementById('retryLoading')?.addEventListener('click', () => this.init());
     }
 }
 
