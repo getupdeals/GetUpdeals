@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian OS · Year 5 · Principal Infrastructure Architect · 12 months like Year 1</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #dee9f4;
+            font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+            padding: 2rem 1.8rem;
+            color: #142b3e;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 2.8rem;
+            box-shadow: 0 30px 60px -18px #0e314b;
+            padding: 2.5rem 2.2rem;
+        }
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            background: linear-gradient(140deg, #0f3553, #245e91);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            border-left: 16px solid #d64f1a;
+            padding-left: 2rem;
+            margin-bottom: 0.3rem;
+        }
+        .subhead {
+            font-size: 1.2rem;
+            margin-left: 3rem;
+            color: #1e4e78;
+            border-bottom: 2px solid #bad0ec;
+            padding-bottom: 0.7rem;
+            margin-bottom: 2rem;
+        }
+        .quarter-badge {
+            display: inline-block;
+            background: #103450;
+            color: white;
+            font-size: 1.6rem;
+            font-weight: 600;
+            padding: 0.3rem 2.5rem;
+            border-radius: 60px;
+            margin: 1.8rem 0 1.2rem 0;
+        }
+        .month-card {
+            background: #ecf4fd;
+            border-radius: 2.5rem;
+            padding: 2rem 2rem;
+            border: 2px solid #a1c2e3;
+            margin-bottom: 2.5rem;
+        }
+        .month-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #143f60;
+            margin-bottom: 0.5rem;
+        }
+        .week-box {
+            background: #ffffffd9;
+            border-radius: 2rem;
+            padding: 1.6rem 2rem;
+            margin: 2rem 0rem;
+            border: 2px solid #6d9fd3;
+            box-shadow: 0 8px 14px #acc8e9;
+        }
+        .week-header {
+            font-size: 1.8rem;
+            font-weight: 650;
+            background: #1a4a74;
+            color: white;
+            display: inline-block;
+            padding: 0.2rem 2rem;
+            border-radius: 40px;
+            margin-bottom: 1rem;
+        }
+        .week-aim {
+            background: #d8e6fb;
+            padding: 1rem 1.8rem;
+            border-radius: 2rem;
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin: 1rem 0 1.5rem 0;
+            border-left: 8px solid #b15724;
+        }
+        .week-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #f2f9ff;
+            border-radius: 1.5rem;
+            overflow: hidden;
+            margin: 1.2rem 0;
+            box-shadow: 0 4px 10px #b3cce8;
+        }
+        .week-table th {
+            background: #15476b;
+            color: white;
+            padding: 12px 5px;
+            font-size: 0.95rem;
+            text-align: center;
+        }
+        .week-table td {
+            border: 1px solid #b7d2ee;
+            padding: 10px 6px;
+            vertical-align: top;
+            background: #fbfeff;
+            font-size: 0.9rem;
+        }
+        .weekly-project {
+            background: #ffefe3;
+            border-left: 12px solid #c44d1c;
+            border-radius: 1.5rem;
+            padding: 1rem 2rem;
+            margin: 1.2rem 0 0.5rem 0;
+            font-weight: 500;
+        }
+        .chip {
+            background: #26648b;
+            color: white;
+            border-radius: 30px;
+            padding: 0.2rem 1rem;
+            font-size: 0.8rem;
+            display: inline-block;
+        }
+        .daily-struct {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            background: #0f2d45;
+            color: white;
+            padding: 1.2rem 1.8rem;
+            border-radius: 4rem;
+            margin: 1.8rem 0;
+            justify-content: space-evenly;
+        }
+        .daily-struct span {
+            background: #22547b;
+            padding: 0.3rem 1.2rem;
+            border-radius: 40px;
+            font-weight: 500;
+        }
+        hr { border: 3px dashed #92b7dd; margin: 2.2rem 0; }
+        footer { margin-top: 3rem; text-align: center; color: #1f4e75; }
+        .resource-section {
+            background: #f8f2e7;
+            border-radius: 2.5rem;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>🇮🇳 INDIAN OS · YEAR 5 — PRINCIPAL INFRASTRUCTURE ARCHITECT</h1>
+    <div class="subhead">ALL 12 MONTHS · each with 4 full weeks · weekly aim & project · like Year 1 Month 1</div>
+
+    <!-- ========== QUARTER 1 ========== -->
+    <div class="quarter-badge">📐 QUARTER 1 — Hyperscale Distributed Systems + Cloud Infrastructure (Months 1–3)</div>
+
+    <!-- MONTH 1 – Global Distributed Databases + Geo‑replication (detailed) -->
+    <div class="month-card">
+        <div class="month-title">MONTH 1 — GLOBAL DISTRIBUTED DATABASES & GEO‑REPLICATION</div>
+        <div class="daily-struct">
+            <span>07:30–09:30 Math</span><span>09:45–11:15 Distributed Systems</span><span>11:30–13:00 Go/Rust</span><span>14:00–15:30 Cloud</span><span>15:45–17:30 Project</span><span>17:30–18:30 Tools</span><span>19:30–21:00 Paper</span>
+        </div>
+        <!-- WEEK 1.1 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 1 · Spanner architecture / TrueTime</div>
+            <div class="week-aim">🎯 Spanner, TrueTime, external consistency.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>Distributed Systems</th><th>Go/Rust</th><th>Cloud</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>Clock synchronization</td><td>Spanner overview</td><td>gRPC</td><td>GCP regions</td><td>mock TrueTime</td></tr>
+                <tr><td>Tue</td><td>TrueTime uncertainty</td><td>Commit wait</td><td>protobuf</td><td>multi‑region</td><td>txn with wait</td></tr>
+                <tr><td>Wed</td><td>External consistency</td><td>Paxos per shard</td><td>raft vs spanner</td><td>placement driver</td><td>shard txn</td></tr>
+                <tr><td>Thu</td><td>Paper: "Spanner"</td><td>discussion</td><td>bench</td><td>latency</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>performance</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">⚡ project: Spanner‑like transaction with mock TrueTime</td></tr>
+                <tr><td>Sun</td><td colspan="5">revision + paper: "Spanner: Google's Globally Distributed Database"</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> mock TrueTime + distributed transaction coordinator.</div>
+        </div>
+        <!-- WEEK 1.2 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 2 · CockroachDB / Geo‑partitioning</div>
+            <div class="week-aim">🎯 CockroachDB architecture, range leases, partitioning.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>Distributed Systems</th><th>Go/Rust</th><th>Cloud</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>Consistent hashing</td><td>CockroachDB ranges</td><td>etcd/raft</td><td>AWS regions</td><td>range split</td></tr>
+                <tr><td>Tue</td><td>Rendezvous hashing</td><td>leaseholder</td><td>raft impl</td><td>multi‑AZ</td><td>leaseholder</td></tr>
+                <tr><td>Wed</td><td>Geo‑partitioning</td><td>follow‑the‑workload</td><td>latency based</td><td>edge</td><td>locality</td></tr>
+                <tr><td>Thu</td><td>Paper: "CockroachDB"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">🔨 project: range‑aware KV store with leaseholder</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> range‑aware KV store (simplified CockroachDB).</div>
+        </div>
+        <!-- WEEK 1.3 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 3 · Global replication / DynamoDB</div>
+            <div class="week-aim">🎯 DynamoDB global tables, replication, conflict resolution.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>Distributed Systems</th><th>Go/Rust</th><th>Cloud</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>Vector clocks</td><td>Dynamo global tables</td><td>DynamoDB API</td><td>global secondary</td><td>vector clock</td></tr>
+                <tr><td>Tue</td><td>Conflict resolution</td><td>last‑write‑wins</td><td>CRDT</td><td>replication</td><td>CRDT counter</td></tr>
+                <tr><td>Wed</td><td>Merkle trees</td><td>anti‑entropy</td><td>hash tree</td><td>eventual consistency</td><td>merkle tree</td></tr>
+                <tr><td>Thu</td><td>Paper: "Dynamo"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">⚡ elite: global KV store with vector clocks and merkle trees</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> Dynamo‑style global KV with vector clocks.</div>
+        </div>
+        <!-- WEEK 1.4 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 4 · Global load balancing / Multi‑region architectures</div>
+            <div class="week-aim">🎯 Global load balancing, Anycast, DNS‑based routing.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>Distributed Systems</th><th>Go/Rust</th><th>Cloud</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>Anycast</td><td>BGP routing</td><td>BIRD</td><td>CDN</td><td>anycast sim</td></tr>
+                <tr><td>Tue</td><td>DNS load balancing</td><td>latency based</td><td>geoip</td><td>Route53</td><td>geo router</td></tr>
+                <tr><td>Wed</td><td>Consistent hashing for LB</td><td>Maglev</td><td>Maglev impl</td><td>Google Front End</td><td>maglev lb</td></tr>
+                <tr><td>Thu</td><td>Paper: "Maglev"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">🔥 challenge: global load balancer (Maglev style)</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">CHALLENGE PROJECT</span> Maglev consistent hash load balancer.</div>
+        </div>
+        <div style="background:#c0dbef; padding:1rem;"><span class="chip">📌 MONTH 1</span> Spanner mock, range KV, global KV, Maglev LB · <span class="chip">⚡ global KV</span></div>
+    </div>
+
+    <!-- MONTH 2 – Distributed Consensus at Scale -->
+    <div class="month-card">
+        <div class="month-title">MONTH 2 — DISTRIBUTED CONSENSUS AT SCALE (PAXOS, RAFT, EPaxos)</div>
+        <div class="daily-struct"><span>07:30–09:30 Math</span><span>09:45–11:15 DS</span><span>11:30–13:00 Go/Rust</span><span>14:00–15:30 Cloud</span><span>15:45–17:30 Project</span><span>17:30–18:30 Tools</span><span>19:30–21:00 Paper</span></div>
+        <!-- WEEK 2.1 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 1 · Paxos variants (Fast Paxos, Vertical Paxos)</div>
+            <div class="week-aim">🎯 Fast Paxos, leader election optimizations.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>DS</th><th>Go/Rust</th><th>Cloud</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>Quorum theory</td><td>Fast Paxos</td><td>message passing</td><td>configuration</td><td>fast acceptor</td></tr>
+                <tr><td>Tue</td><td>Majority vs Fast</td><td>Fast quorum</td><td>leader</td><td>flexible</td><td>fast proposer</td></tr>
+                <tr><td>Wed</td><td>Vertical Paxos</td><td>reconfiguration</td><td>dynamic</td><td>cluster mgr</td><td>reconfig</td></tr>
+                <tr><td>Thu</td><td>Paper: "Fast Paxos"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">⚡ Fast Paxos simulator</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> Fast Paxos implementation.</div>
+        </div>
+        <!-- WEEK 2.2 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 2 · Multi‑Paxos and Leader Leases</div>
+            <div class="week-aim">🎯 leader leases, epoch numbers.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>DS</th><th>Go/Rust</th><th>Cloud</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>Lease mechanisms</td><td>leader lease</td><td>timeouts</td><td>fencing</td><td>lease manager</td></tr>
+                <tr><td>Tue</td><td>Epoch numbering</td><td>epoch based</td><td>counter</td><td>persistence</td><td>epoch impl</td></tr>
+                <tr><td>Wed</td><td>Lease renewal</td><td>heartbeats</td><td>RPC</td><td>failure detector</td><td>lease renew</td></tr>
+                <tr><td>Thu</td><td>Paper: "Leases"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">🔨 multi‑Paxos with leader lease</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> multi‑Paxos with leader lease.</div>
+        </div>
+        <!-- WEEK 2.3 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 3 · EPaxos (Egalitarian Paxos)</div>
+            <div class="week-aim">🎯 EPaxos, command ordering without leader.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>DS</th><th>Go/Rust</th><th>Cloud</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>Conflict detection</td><td>EPaxos</td><td>dependency</td><td>fast quorum</td><td>dep graph</td></tr>
+                <tr><td>Tue</td><td>Command ordering</td><td>sequence</td><td>commit</td><td>recovery</td><td>order</td></tr>
+                <tr><td>Wed</td><td>Leaderless</td><td>performance</td><td>bench</td><td>scalability</td><td>sim</td></tr>
+                <tr><td>Thu</td><td>Paper: "EPaxos"</td><td>discussion</td><td>bench</td><td>analysis</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">⚡ EPaxos simulator</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> EPaxos simulator.</div>
+        </div>
+        <!-- WEEK 2.4 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 4 · ZooKeeper / Zab and production systems</div>
+            <div class="week-aim">🎯 Zab, leader election, recovery.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>DS</th><th>Go/Rust</th><th>Cloud</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>Zab epochs</td><td>leader election</td><td>Zab protocol</td><td>ZK use</td><td>leader elect</td></tr>
+                <tr><td>Tue</td><td>Discovery</td><td>sync</td><td>broadcast</td><td>txn log</td><td>broadcast</td></tr>
+                <tr><td>Wed</td><td>Recovery</td><td>Zab vs Paxos</td><td>recovery</td><td>ZK internals</td><td>recovery</td></tr>
+                <tr><td>Thu</td><td>Paper: "Zab"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">🔥 challenge: Zab‑like protocol</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">CHALLENGE PROJECT</span> Zab‑like consensus simulation.</div>
+        </div>
+        <div style="background:#c0dbef; padding:1rem;"><span class="chip">📌 MONTH 2</span> Fast Paxos, leader lease, EPaxos, Zab · <span class="chip">⚡ EPaxos</span></div>
+    </div>
+
+    <!-- MONTH 3 – Cloud Orchestration (Kubernetes, Borg, Mesos) -->
+    <div class="month-card">
+        <div class="month-title">MONTH 3 — CLOUD ORCHESTRATION (KUBERNETES, BORG, MESOS)</div>
+        <div class="daily-struct"><span>07:30–09:30 Math</span><span>09:45–11:15 DS</span><span>11:30–13:00 Go</span><span>14:00–15:30 Cloud</span><span>15:45–17:30 Project</span><span>17:30–18:30 Tools</span><span>19:30–21:00 Paper</span></div>
+        <!-- WEEK 3.1 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 1 · Borg/Omega architecture</div>
+            <div class="week-aim">🎯 Borg cells, scheduler, Omega.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>DS</th><th>Go</th><th>Cloud</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>Bin‑packing</td><td>Borg cells</td><td>scheduler</td><td>cluster mgr</td><td>borg scheduler</td></tr>
+                <tr><td>Tue</td><td>Priority, preemption</td><td>Omega</td><td>parallel scheduler</td><td>multi‑tenant</td><td>preempt</td></tr>
+                <tr><td>Wed</td><td>Resource isolation</td><td>Borglet</td><td>agent</td><td>cgroups</td><td>borglet</td></tr>
+                <tr><td>Thu</td><td>Paper: "Borg"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">⚡ Borg scheduler simulator</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> Borg‑style scheduler simulator.</div>
+        </div>
+        <!-- WEEK 3.2 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 2 · Kubernetes control plane internals</div>
+            <div class="week-aim">🎯 API server, controller manager, scheduler, etcd.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>DS</th><th>Go</th><th>Cloud</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>etcd consistency</td><td>API server</td><td>client‑go</td><td>CRD</td><td>api server mock</td></tr>
+                <tr><td>Tue</td><td>Controller pattern</td><td>controller manager</td><td>controllers</td><td>reconciliation</td><td>controller</td></tr>
+                <tr><td>Wed</td><td>Scheduler framework</td><td>kube‑scheduler</td><td>plugin</td><td>extenders</td><td>scheduler plugin</td></tr>
+                <tr><td>Thu</td><td>Paper: "Kubernetes"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">🔨 custom controller</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> custom Kubernetes controller.</div>
+        </div>
+        <!-- WEEK 3.3 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 3 · Advanced scheduling (bin‑pack, preemption, fairness)</div>
+            <div class="week-aim">🎯 DRF, Kubernetes scheduler plugins.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>DS</th><th>Go</th><th>Cloud</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>Dominant Resource Fairness</td><td>DRF</td><td>DRF calculator</td><td>fair scheduling</td><td>DRF plugin</td></tr>
+                <tr><td>Tue</td><td>Bin‑packing algorithms</td><td>best‑fit</td><td>score functions</td><td>packing</td><td>bin‑pack plugin</td></tr>
+                <tr><td>Wed</td><td>Preemption strategies</td><td>priority</td><td>preempt</td><td>eviction</td><td>preempt plugin</td></tr>
+                <tr><td>Thu</td><td>Paper: "Dominant Resource Fairness"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">⚡ scheduler plugin (DRF)</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> scheduler plugin for Kubernetes (DRF).</div>
+        </div>
+        <!-- WEEK 3.4 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 4 · Cluster federation, multi‑cluster management</div>
+            <div class="week-aim">🎯 Federation v2, cluster registration.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>DS</th><th>Go</th><th>Cloud</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>Federation concepts</td><td>Federation v2</td><td>kubefed</td><td>cluster registry</td><td>federation api</td></tr>
+                <tr><td>Tue</td><td>Multi‑cluster scheduling</td><td>policy engine</td><td>placement</td><td>replication</td><td>placement controller</td></tr>
+                <tr><td>Wed</td><td>Cross‑cluster networking</td><td>service mesh</td><td>istio</td><td>multi‑cluster LB</td><td>mesh</td></tr>
+                <tr><td>Thu</td><td>Paper: "Federation"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">🔥 challenge: federation controller</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">CHALLENGE PROJECT</span> multi‑cluster federation controller.</div>
+        </div>
+        <div style="background:#c0dbef; padding:1rem;"><span class="chip">📌 MONTH 3</span> Borg sim, custom controller, DRF plugin, federation · <span class="chip">⚡ federation</span></div>
+    </div>
+
+    <!-- ========== QUARTER 2 ========== -->
+    <div class="quarter-badge">⚙️ QUARTER 2 — AI Infrastructure Platforms + Compilers (Months 4–6)</div>
+
+    <!-- MONTH 4 – Distributed Training Platforms (Horovod, Megatron, DeepSpeed) -->
+    <div class="month-card">
+        <div class="month-title">MONTH 4 — DISTRIBUTED TRAINING PLATFORMS</div>
+        <div class="daily-struct"><span>07:30–09:30 Math</span><span>09:45–11:15 AI Systems</span><span>11:30–13:00 Python/CUDA</span><span>14:00–15:30 Compiler</span><span>15:45–17:30 Project</span><span>17:30–18:30 Tools</span><span>19:30–21:00 Paper</span></div>
+        <!-- WEEK 4.1 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 1 · Horovod / ring all‑reduce, NCCL</div>
+            <div class="week-aim">🎯 Horovod architecture, ring all‑reduce.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>AI Systems</th><th>Python/CUDA</th><th>Compiler</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>Ring all‑reduce algorithm</td><td>Horovod design</td><td>MPI4Py</td><td>NCCL</td><td>ring skeleton</td></tr>
+                <tr><td>Tue</td><td>Butterfly all‑reduce</td><td>distributed optimizer</td><td>CUDA aware</td><td>fusion</td><td>ring impl</td></tr>
+                <tr><td>Wed</td><td>Fault tolerance</td><td>elastic training</td><td>checkpoint</td><td>recovery</td><td>elastic</td></tr>
+                <tr><td>Thu</td><td>Paper: "Horovod"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">⚡ all‑reduce from scratch (MPI + CUDA)</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> all‑reduce from scratch (MPI + CUDA).</div>
+        </div>
+        <!-- WEEK 4.2 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 2 · Megatron‑LM / model parallelism</div>
+            <div class="week-aim">🎯 tensor slicing, pipeline parallelism.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>AI Systems</th><th>Python/CUDA</th><th>Compiler</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>Tensor parallelism</td><td>Megatron</td><td>column/row split</td><td>communication</td><td>tensor parallel</td></tr>
+                <tr><td>Tue</td><td>Pipeline parallelism</td><td>GPipe</td><td>micro‑batches</td><td>scheduling</td><td>pipeline sim</td></tr>
+                <tr><td>Wed</td><td>Memory optimizations</td><td>activation recompute</td><td>checkpoint</td><td>mixed precision</td><td>recompute</td></tr>
+                <tr><td>Thu</td><td>Paper: "Megatron‑LM"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">🔨 megatron‑style model parallel</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> megatron‑style model parallelism (sim).</div>
+        </div>
+        <!-- WEEK 4.3 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 3 · DeepSpeed / ZeRO optimizer</div>
+            <div class="week-aim">🎯 ZeRO stages, offload.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>AI Systems</th><th>Python/CUDA</th><th>Compiler</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>ZeRO stage 1</td><td>optimizer state</td><td>partitioning</td><td>communication</td><td>stage1 impl</td></tr>
+                <tr><td>Tue</td><td>ZeRO stage 2</td><td>gradient partitioning</td><td>reduce scatter</td><td>all‑gather</td><td>stage2</td></tr>
+                <tr><td>Wed</td><td>ZeRO stage 3</td><td>parameter partitioning</td><td>offload</td><td>NVMe</td><td>stage3</td></tr>
+                <tr><td>Thu</td><td>Paper: "ZeRO"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">⚡ ZeRO‑stage1 implementation</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> ZeRO‑stage1 implementation.</div>
+        </div>
+        <!-- WEEK 4.4 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 4 · Cluster scheduling for ML (Gandiva, Tiresias)</div>
+            <div class="week-aim">🎯 GPU cluster scheduling.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>AI Systems</th><th>Python/CUDA</th><th>Compiler</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>Gandiva architecture</td><td>gang scheduling</td><td>GPU metrics</td><td>preemption</td><td>gang sim</td></tr>
+                <tr><td>Tue</td><td>Tiresias</td><td>two‑level scheduler</td><td>priority</td><td>fairness</td><td>tiresias sim</td></tr>
+                <tr><td>Wed</td><td>GPU sharing</td><td>MPS, MIG</td><td>CUDA MPS</td><td>isolation</td><td>sharing sim</td></tr>
+                <tr><td>Thu</td><td>Paper: "Gandiva"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">🔥 challenge: GPU scheduler sim</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">CHALLENGE PROJECT</span> GPU scheduler simulation (Gandiva style).</div>
+        </div>
+        <div style="background:#c0dbef; padding:1rem;"><span class="chip">📌 MONTH 4</span> all‑reduce, model parallel, ZeRO, GPU scheduler · <span class="chip">⚡ ZeRO</span></div>
+    </div>
+
+    <!-- MONTH 5 – AI Model Serving & Feature Stores -->
+    <div class="month-card">
+        <div class="month-title">MONTH 5 — AI MODEL SERVING & FEATURE STORES</div>
+        <div class="daily-struct"><span>07:30–09:30 Math</span><span>09:45–11:15 AI Infrastructure</span><span>11:30–13:00 Python/C++</span><span>14:00–15:30 Serving</span><span>15:45–17:30 Project</span><span>17:30–18:30 Tools</span><span>19:30–21:00 Paper</span></div>
+        <!-- WEEK 5.1 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 1 · Triton Inference Server architecture</div>
+            <div class="week-aim">🎯 concurrent model execution, dynamic batching.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>AI Infrastructure</th><th>Python/C++</th><th>Serving</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>Concurrency models</td><td>Triton architecture</td><td>HTTP/gRPC</td><td>model repository</td><td>triton stub</td></tr>
+                <tr><td>Tue</td><td>Dynamic batching</td><td>scheduler</td><td>queue</td><td>inference</td><td>batching</td></tr>
+                <tr><td>Wed</td><td>Concurrent execution</td><td>backend</td><td>CUDA</td><td>multi‑GPU</td><td>backend</td></tr>
+                <tr><td>Thu</td><td>Paper: "Triton"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">⚡ triton‑like server</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> triton‑like inference server (simplified).</div>
+        </div>
+        <!-- WEEK 5.2 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 2 · TensorFlow Serving / model versioning</div>
+            <div class="week-aim">🎯 model version policy, canary.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>AI Infrastructure</th><th>Python/C++</th><th>Serving</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>Versioning strategies</td><td>TF Serving</td><td>servables</td><td>loader</td><td>version manager</td></tr>
+                <tr><td>Tue</td><td>Canary deployments</td><td>traffic splitting</td><td>routing</td><td>A/B test</td><td>canary</td></tr>
+                <tr><td>Wed</td><td>Model warmup</td><td>optimization</td><td>JIT</td><td>XLA</td><td>warmup</td></tr>
+                <tr><td>Thu</td><td>Paper: "TF Serving"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">🔨 versioned model server</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> versioned model server.</div>
+        </div>
+        <!-- WEEK 5.3 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 3 · Feast / feature store architecture</div>
+            <div class="week-aim">🎯 online/offline features, serving.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>AI Infrastructure</th><th>Python/C++</th><th>Serving</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>Feature engineering</td><td>Feast design</td><td>Redis</td><td>online store</td><td>feature client</td></tr>
+                <tr><td>Tue</td><td>Offline store</td><td>BigQuery</td><td>spark</td><td>historical features</td><td>offline</td></tr>
+                <tr><td>Wed</td><td>Feature serving</td><td>gRPC</td><td>server</td><td>caching</td><td>feature server</td></tr>
+                <tr><td>Thu</td><td>Paper: "Feast"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">⚡ feature store (Redis)</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> feature store (Redis + gRPC).</div>
+        </div>
+        <!-- WEEK 5.4 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 4 · Large‑scale feature pipelines (Flink, Kafka)</div>
+            <div class="week-aim">🎯 stream processing for features.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>AI Infrastructure</th><th>Python/C++</th><th>Serving</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>Streaming concepts</td><td>Kafka</td><td>producer</td><td>consumer</td><td>kafka stream</td></tr>
+                <tr><td>Tue</td><td>Flink architecture</td><td>window</td><td>flink job</td><td>state</td><td>flink etl</td></tr>
+                <tr><td>Wed</td><td>Feature transformations</td><td>SQL</td><td>tumbling</td><td>sliding</td><td>feature job</td></tr>
+                <tr><td>Thu</td><td>Paper: "Kafka/Flink"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">🔥 challenge: feature streaming pipeline</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">CHALLENGE PROJECT</span> feature streaming pipeline (Kafka + Flink).</div>
+        </div>
+        <div style="background:#c0dbef; padding:1rem;"><span class="chip">📌 MONTH 5</span> triton‑like, versioning, feature store, stream · <span class="chip">⚡ feature store</span></div>
+    </div>
+
+    <!-- MONTH 6 – Domain‑Specific Compilers for AI (MLIR, XLA, TVM) -->
+    <div class="month-card">
+        <div class="month-title">MONTH 6 — DOMAIN‑SPECIFIC COMPILERS FOR AI</div>
+        <div class="daily-struct"><span>07:30–09:30 Math</span><span>09:45–11:15 Compiler</span><span>11:30–13:00 MLIR/C++</span><span>14:00–15:30 Runtime</span><span>15:45–17:30 Project</span><span>17:30–18:30 Tools</span><span>19:30–21:00 Paper</span></div>
+        <!-- WEEK 6.1 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 1 · MLIR infrastructure, dialects</div>
+            <div class="week-aim">🎯 MLIR, dialects, passes.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>Compiler</th><th>MLIR/C++</th><th>Runtime</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>MLIR concepts</td><td>dialects</td><td>op definitions</td><td>LLVM</td><td>custom dialect</td></tr>
+                <tr><td>Tue</td><td>Pass infrastructure</td><td>canonicalizer</td><td>pass</td><td>lowering</td><td>canonicalize</td></tr>
+                <tr><td>Wed</td><td>Affine dialect</td><td>loop transformations</td><td>affine ops</td><td>tiling</td><td>affine pass</td></tr>
+                <tr><td>Thu</td><td>Paper: "MLIR"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">⚡ custom MLIR dialect</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> custom MLIR dialect.</div>
+        </div>
+        <!-- WEEK 6.2 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 2 · XLA compiler, HLO optimizations</div>
+            <div class="week-aim">🎯 XLA, fusion, layout assignment.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>Compiler</th><th>MLIR/C++</th><th>Runtime</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>XLA HLO</td><td>HLO ops</td><td>HLO builder</td><td>CPU/GPU</td><td>HLO to LLVM</td></tr>
+                <tr><td>Tue</td><td>Fusion</td><td>fusion pass</td><td>instruction fusion</td><td>kernel</td><td>fusion impl</td></tr>
+                <tr><td>Wed</td><td>Layout assignment</td><td>memory layout</td><td>tiling</td><td>vectorization</td><td>layout pass</td></tr>
+                <tr><td>Thu</td><td>Paper: "XLA"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">🔨 XLA‑like pass</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> XLA‑like pass (fusion).</div>
+        </div>
+        <!-- WEEK 6.3 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 3 · TVM / Relax, Auto‑scheduling</div>
+            <div class="week-aim">🎯 TVM, Ansor, AutoTVM.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>Compiler</th><th>MLIR/C++</th><th>Runtime</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>TVM IR</td><td>Relax</td><td>tensor expression</td><td>schedule</td><td>TE</td></tr>
+                <tr><td>Tue</td><td>AutoTVM</td><td>cost model</td><td>search</td><td>tuning</td><td>auto‑tuner</td></tr>
+                <tr><td>Wed</td><td>Ansor</td><td>sketch</td><td>evolution</td><td>optimization</td><td>ansor sim</td></tr>
+                <tr><td>Thu</td><td>Paper: "TVM"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">⚡ auto‑scheduler sim</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> auto‑scheduler simulation.</div>
+        </div>
+        <!-- WEEK 6.4 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 4 · IREE / Vulkan SPIR‑V backend</div>
+            <div class="week-aim">🎯 IREE, Vulkan, GPU codegen.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>Compiler</th><th>MLIR/C++</th><th>Runtime</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>IREE architecture</td><td>hal</td><td>vulkan</td><td>SPIR‑V</td><td>vulkan shader</td></tr>
+                <tr><td>Tue</td><td>Streams</td><td>executable</td><td>compilation</td><td>dispatch</td><td>iree‑like</td></tr>
+                <tr><td>Wed</td><td>HAL</td><td>device</td><td>CPU/GPU</td><td>async</td><td>hal impl</td></tr>
+                <tr><td>Thu</td><td>Paper: "IREE"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">🔥 challenge: IREE‑like compiler</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">CHALLENGE PROJECT</span> IREE‑like compiler (Vulkan backend).</div>
+        </div>
+        <div style="background:#c0dbef; padding:1rem;"><span class="chip">📌 MONTH 6</span> MLIR dialect, XLA pass, TVM sim, IREE · <span class="chip">⚡ IREE compiler</span></div>
+    </div>
+
+    <!-- ========== QUARTER 3 ========== -->
+    <div class="quarter-badge">🎮 QUARTER 3 — HPC & GPU Systems + Robotics (Months 7–9)</div>
+
+    <!-- MONTH 7 – GPU Cluster Management -->
+    <div class="month-card">
+        <div class="month-title">MONTH 7 — GPU CLUSTER MANAGEMENT</div>
+        <div class="daily-struct"><span>07:30–09:30 Math</span><span>09:45–11:15 HPC</span><span>11:30–13:00 CUDA/C++</span><span>14:00–15:30 Scheduler</span><span>15:45–17:30 Project</span><span>17:30–18:30 Tools</span><span>19:30–21:00 Paper</span></div>
+        <!-- WEEK 7.1 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 1 · NVIDIA DGX / cluster design</div>
+            <div class="week-aim">🎯 DGX hardware, NVLink, InfiniBand.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>HPC</th><th>CUDA/C++</th><th>Scheduler</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>Topology</td><td>DGX</td><td>NVLink</td><td>fat tree</td><td>topology sim</td></tr>
+                <tr><td>Tue</td><td>InfiniBand</td><td>RDMA</td><td>verbs</td><td>routing</td><td>ib sim</td></tr>
+                <tr><td>Wed</td><td>GPU direct</td><td>GPUDirect</td><td>P2P</td><td>memory</td><td>p2p test</td></tr>
+                <tr><td>Thu</td><td>Paper: "DGX"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">⚡ topology simulator</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> cluster topology simulator (fat tree).</div>
+        </div>
+        <!-- WEEK 7.2 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 2 · Slurm / job scheduler for HPC</div>
+            <div class="week-aim">🎯 Slurm architecture, plugins.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>HPC</th><th>CUDA/C++</th><th>Scheduler</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>Slurm components</td><td>controller</td><td>slurmd</td><td>jobs</td><td>slurmctl sim</td></tr>
+                <tr><td>Tue</td><td>Partitions</td><td>queues</td><td>priority</td><td>fairness</td><td>queue sim</td></tr>
+                <tr><td>Wed</td><td>Job steps</td><td>parallel jobs</td><td>MPI</td><td>launch</td><td>job step</td></tr>
+                <tr><td>Thu</td><td>Paper: "Slurm"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">🔨 slurm‑like controller</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> slurm‑like job controller.</div>
+        </div>
+        <!-- WEEK 7.3 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 3 · Kubernetes GPU scheduling (device plugin)</div>
+            <div class="week-aim">🎯 NVIDIA device plugin, MIG.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>HPC</th><th>CUDA/C++</th><th>Scheduler</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>Device plugin</td><td>k8s device</td><td>GPU discovery</td><td>extended resource</td><td>plugin stub</td></tr>
+                <tr><td>Tue</td><td>MIG</td><td>multi‑instance</td><td>CUDA MIG</td><td>partitioning</td><td>MIG sim</td></tr>
+                <tr><td>Wed</td><td>Time slicing</td><td>GPU sharing</td><td>CUDA MPS</td><td>isolation</td><td>sharing sim</td></tr>
+                <tr><td>Thu</td><td>Paper: "NVIDIA k8s"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">⚡ GPU device plugin</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> NVIDIA device plugin (simulated).</div>
+        </div>
+        <!-- WEEK 7.4 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 4 · Multi‑tenancy and fairness (Gandiva)</div>
+            <div class="week-aim">🎯 preemption, gang scheduling.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>HPC</th><th>CUDA/C++</th><th>Scheduler</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>Gang scheduling</td><td>coscheduling</td><td>barrier</td><td>synchronization</td><td>gang sim</td></tr>
+                <tr><td>Tue</td><td>Preemption</td><td>checkpoint</td><td>CUDA</td><td>resume</td><td>preempt sim</td></tr>
+                <tr><td>Wed</td><td>Fairness</td><td>DRF</td><td>GPU</td><td>quotas</td><td>fairness</td></tr>
+                <tr><td>Thu</td><td>Paper: "Gandiva"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">🔥 challenge: gang scheduler</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">CHALLENGE PROJECT</span> gang scheduler simulation.</div>
+        </div>
+        <div style="background:#c0dbef; padding:1rem;"><span class="chip">📌 MONTH 7</span> topology, slurm, device plugin, gang · <span class="chip">⚡ gang scheduler</span></div>
+    </div>
+
+    <!-- MONTH 8 – Advanced CUDA Optimization & Heterogeneous Computing -->
+    <div class="month-card">
+        <div class="month-title">MONTH 8 — ADVANCED CUDA & HETEROGENEOUS COMPUTING</div>
+        <div class="daily-struct"><span>07:30–09:30 Math</span><span>09:45–11:15 HPC</span><span>11:30–13:00 CUDA/C++</span><span>14:00–15:30 Runtime</span><span>15:45–17:30 Project</span><span>17:30–18:30 Tools</span><span>19:30–21:00 Paper</span></div>
+        <!-- WEEK 8.1 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 1 · CUDA kernel optimization (shared mem, occupancy)</div>
+            <div class="week-aim">🎯 occupancy, bank conflicts, warp level.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>HPC</th><th>CUDA/C++</th><th>Runtime</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>Occupancy</td><td>launch config</td><td>CUDA occupancy</td><td>registers</td><td>occupancy calc</td></tr>
+                <tr><td>Tue</td><td>Shared memory banks</td><td>bank conflict</td><td>padding</td><td>transpose</td><td>transpose opt</td></tr>
+                <tr><td>Wed</td><td>Warp level</td><td>shuffle</td><td>reduce</td><td>warp reduce</td><td>shuffle reduce</td></tr>
+                <tr><td>Thu</td><td>Paper: "CUDA perf"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">⚡ matrix multiply (95% of cuBLAS)</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> matrix multiply (95% of cuBLAS).</div>
+        </div>
+        <!-- WEEK 8.2 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 2 · Multi‑GPU communication (NCCL, NVLink)</div>
+            <div class="week-aim">🎯 NCCL primitives, all‑reduce.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>HPC</th><th>CUDA/C++</th><th>Runtime</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>NCCL</td><td>ring</td><td>ncclAllReduce</td><td>NVLink</td><td>nccl stub</td></tr>
+                <tr><td>Tue</td><td>All‑reduce algorithms</td><td>tree</td><td>ring impl</td><td>bandwidth</td><td>all‑reduce</td></tr>
+                <tr><td>Wed</td><td>GPUDirect RDMA</td><td>P2P</td><td>cudaMemcpyPeer</td><td>latency</td><td>p2p bench</td></tr>
+                <tr><td>Thu</td><td>Paper: "NCCL"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">🔨 nccl‑style all‑reduce</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> nccl‑style all‑reduce (ring).</div>
+        </div>
+        <!-- WEEK 8.3 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 3 · Heterogeneous computing (CPU+GPU) / task graphs</div>
+            <div class="week-aim">🎯 CUDA graphs, dynamic parallelism.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>HPC</th><th>CUDA/C++</th><th>Runtime</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>CUDA graphs</td><td>capture</td><td>graph API</td><td>launch</td><td>graph capture</td></tr>
+                <tr><td>Tue</td><td>Dynamic parallelism</td><td>device kernels</td><td>cudaLaunch</td><td>synchronization</td><td>DP</td></tr>
+                <tr><td>Wed</td><td>Task graphs</td><td>dependencies</td><td>cudaGraph</td><td>execution</td><td>graph exec</td></tr>
+                <tr><td>Thu</td><td>Paper: "CUDA graphs"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">⚡ CUDA graph executor</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> CUDA graph executor.</div>
+        </div>
+        <!-- WEEK 8.4 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 4 · GPU virtualization (MIG, vGPU)</div>
+            <div class="week-aim">🎯 MIG, SR‑IOV, time slicing.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>HPC</th><th>CUDA/C++</th><th>Runtime</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>MIG</td><td>partitioning</td><td>CUDA MIG</td><td>isolation</td><td>MIG sim</td></tr>
+                <tr><td>Tue</td><td>vGPU</td><td>SR‑IOV</td><td>NVIDIA vGPU</td><td>hypervisor</td><td>vGPU sim</td></tr>
+                <tr><td>Wed</td><td>Time slicing</td><td>MPS</td><td>CUDA MPS</td><td>concurrent</td><td>MPS sim</td></tr>
+                <tr><td>Thu</td><td>Paper: "MIG"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">🔥 challenge: GPU partitioning simulator</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">CHALLENGE PROJECT</span> GPU partitioning simulator (MIG/MPS).</div>
+        </div>
+        <div style="background:#c0dbef; padding:1rem;"><span class="chip">📌 MONTH 8</span> matmul, all‑reduce, graph, MIG · <span class="chip">⚡ graph executor</span></div>
+    </div>
+
+    <!-- MONTH 9 – Robotics Autonomy Platforms (ROS2, Nav2, sensor fusion) -->
+    <div class="month-card">
+        <div class="month-title">MONTH 9 — ROBOTICS AUTONOMY PLATFORMS</div>
+        <div class="daily-struct"><span>07:30–09:30 Math</span><span>09:45–11:15 Robotics</span><span>11:30–13:00 C++/ROS2</span><span>14:00–15:30 Control</span><span>15:45–17:30 Project</span><span>17:30–18:30 Tools</span><span>19:30–21:00 Paper</span></div>
+        <!-- WEEK 9.1 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 1 · ROS2 architecture, DDS</div>
+            <div class="week-aim">🎯 ROS2 nodes, topics, services, DDS.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>Robotics</th><th>C++/ROS2</th><th>Control</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>DDS protocol</td><td>ROS2 nodes</td><td>rclcpp</td><td>QoS</td><td>talker/listener</td></tr>
+                <tr><td>Tue</td><td>Pub‑sub</td><td>topics</td><td>publisher</td><td>subscriber</td><td>custom msg</td></tr>
+                <tr><td>Wed</td><td>Services</td><td>RPC</td><td>client/server</td><td>srv</td><td>service</td></tr>
+                <tr><td>Thu</td><td>Paper: "ROS2"</td><td>discussion</td><td>bench</td><td>latency</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">⚡ custom DDS node</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> custom ROS2 node with DDS.</div>
+        </div>
+        <!-- WEEK 9.2 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 2 · Navigation2 (Nav2) stack</div>
+            <div class="week-aim">🎯 planner, controller, recovery.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>Robotics</th><th>C++/ROS2</th><th>Control</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>Nav2 architecture</td><td>planner server</td><td>nav2_planner</td><td>costmap</td><td>planner plugin</td></tr>
+                <tr><td>Tue</td><td>Controller server</td><td>DWB</td><td>controller</td><td>local planner</td><td>controller plugin</td></tr>
+                <tr><td>Wed</td><td>Recovery</td><td>behavior tree</td><td>recovery</td><td>BT</td><td>recovery plugin</td></tr>
+                <tr><td>Thu</td><td>Paper: "Nav2"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">🔨 nav2 plugin</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> nav2 planner plugin.</div>
+        </div>
+        <!-- WEEK 9.3 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 3 · Sensor fusion (EKF, UKF, particle)</div>
+            <div class="week-aim">🎯 robot_localization, fusion.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>Robotics</th><th>C++/ROS2</th><th>Control</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>EKF theory</td><td>robot_localization</td><td>ekf node</td><td>IMU/GPS</td><td>ekf fusion</td></tr>
+                <tr><td>Tue</td><td>UKF</td><td>unscented</td><td>ukf node</td><td>sigma points</td><td>ukf fusion</td></tr>
+                <tr><td>Wed</td><td>Particle filter</td><td>MCL</td><td>amcl</td><td>resampling</td><td>particle filter</td></tr>
+                <tr><td>Thu</td><td>Paper: "Fusion"</td><td>discussion</td><td>bench</td><td>accuracy</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">⚡ fusion node</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> sensor fusion node (EKF).</div>
+        </div>
+        <!-- WEEK 9.4 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 4 · Multi‑robot coordination</div>
+            <div class="week-aim">🎯 swarm, formation control.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>Robotics</th><th>C++/ROS2</th><th>Control</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>Swarm algorithms</td><td>consensus</td><td>flocking</td><td>formation</td><td>flocking sim</td></tr>
+                <tr><td>Tue</td><td>Formation control</td><td>leader‑follower</td><td>virtual structure</td><td>PID</td><td>formation sim</td></tr>
+                <tr><td>Wed</td><td>Multi‑robot SLAM</td><td>collaborative</td><td>map merge</td><td>communication</td><td>multi‑robot sim</td></tr>
+                <tr><td>Thu</td><td>Paper: "Swarm"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">🔥 challenge: swarm simulator</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">CHALLENGE PROJECT</span> multi‑robot swarm simulator.</div>
+        </div>
+        <div style="background:#c0dbef; padding:1rem;"><span class="chip">📌 MONTH 9</span> DDS node, nav2 plugin, fusion, swarm · <span class="chip">⚡ swarm</span></div>
+    </div>
+
+    <!-- ========== QUARTER 4 ========== -->
+    <div class="quarter-badge">🧠 QUARTER 4 — Simulation Engines + Sovereign Platform Capstone (Months 10–12)</div>
+
+    <!-- MONTH 10 – Large‑Scale Physics Simulation -->
+    <div class="month-card">
+        <div class="month-title">MONTH 10 — LARGE‑SCALE PHYSICS SIMULATION</div>
+        <div class="daily-struct"><span>07:30–09:30 Math</span><span>09:45–11:15 Simulation</span><span>11:30–13:00 C++/CUDA</span><span>14:00–15:30 Game Engine</span><span>15:45–17:30 Project</span><span>17:30–18:30 Tools</span><span>19:30–21:00 Paper</span></div>
+        <!-- WEEK 10.1 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 1 · Bullet / PhysX internals</div>
+            <div class="week-aim">🎯 broadphase, narrowphase, solver.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>Simulation</th><th>C++/CUDA</th><th>Game Engine</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>SAP algorithm</td><td>Bullet</td><td>btBroadphase</td><td>collision</td><td>SAP impl</td></tr>
+                <tr><td>Tue</td><td>GJK, EPA</td><td>PhysX</td><td>PxGeometry</td><td>narrowphase</td><td>GJK</td></tr>
+                <tr><td>Wed</td><td>Sequential impulse</td><td>solver</td><td>constraints</td><td>contact</td><td>solver</td></tr>
+                <tr><td>Thu</td><td>Paper: "Bullet"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">⚡ SAP broadphase</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> Sweep & Prune broadphase.</div>
+        </div>
+        <!-- WEEK 10.2 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 2 · Parallel physics (GPU, multi‑thread)</div>
+            <div class="week-aim">🎯 island simulation, parallel solver.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>Simulation</th><th>C++/CUDA</th><th>Game Engine</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>Island generation</td><td>spatial partition</td><td>CUDA</td><td>parallel</td><td>island sim</td></tr>
+                <tr><td>Tue</td><td>Parallel solver</td><td>PBD</td><td>CUDA solver</td><td>constraints</td><td>solver sim</td></tr>
+                <tr><td>Wed</td><td>GPU physics</td><td>FleX</td><td>particles</td><td>cloth</td><td>cloth sim</td></tr>
+                <tr><td>Thu</td><td>Paper: "PhysX GPU"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">🔨 parallel solver</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> parallel physics solver (island).</div>
+        </div>
+        <!-- WEEK 10.3 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 3 · Distributed physics simulation (HPC)</div>
+            <div class="week-aim">🎯 load balancing, spatial decomposition.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>Simulation</th><th>C++/CUDA</th><th>Game Engine</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>Domain decomposition</td><td>space filling curves</td><td>MPI</td><td>load balance</td><td>decomp sim</td></tr>
+                <tr><td>Tue</td><td>Ghost regions</td><td>halo exchange</td><td>MPI halo</td><td>sync</td><td>halo sim</td></tr>
+                <tr><td>Wed</td><td>Dynamic load balancing</td><td>DRB</td><td>repartition</td><td>migration</td><td>DLB sim</td></tr>
+                <tr><td>Thu</td><td>Paper: "Distributed physics"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">⚡ distributed simulator</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> distributed physics simulator (MPI).</div>
+        </div>
+        <!-- WEEK 10.4 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 4 · Physics for robotics (Drake, Mujoco)</div>
+            <div class="week-aim">🎯 contact dynamics, rigid bodies.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>Simulation</th><th>C++/CUDA</th><th>Game Engine</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>Drake architecture</td><td>multibody</td><td>drake</td><td>contact</td><td>drake sim</td></tr>
+                <tr><td>Tue</td><td>Mujoco</td><td>MJCF</td><td>mujoco</td><td>physics</td><td>mujoco sim</td></tr>
+                <tr><td>Wed</td><td>Contact dynamics</td><td>penalty method</td><td>LCP</td><td>solver</td><td>contact sim</td></tr>
+                <tr><td>Thu</td><td>Paper: "Drake"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">🔥 challenge: drake‑style simulator</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">CHALLENGE PROJECT</span> drake‑style physics simulator.</div>
+        </div>
+        <div style="background:#c0dbef; padding:1rem;"><span class="chip">📌 MONTH 10</span> SAP, parallel solver, distributed, drake · <span class="chip">⚡ distributed physics</span></div>
+    </div>
+
+    <!-- MONTH 11 – Multi‑Agent Simulation & AI Training Environments -->
+    <div class="month-card">
+        <div class="month-title">MONTH 11 — MULTI‑AGENT SIMULATION & AI TRAINING</div>
+        <div class="daily-struct"><span>07:30–09:30 Math</span><span>09:45–11:15 Simulation</span><span>11:30–13:00 Python/C++</span><span>14:00–15:30 RL</span><span>15:45–17:30 Project</span><span>17:30–18:30 Tools</span><span>19:30–21:00 Paper</span></div>
+        <!-- WEEK 11.1 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 1 · Unity/Unreal for simulation</div>
+            <div class="week-aim">🎯 game engine as simulator.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>Simulation</th><th>Python/C++</th><th>RL</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>Unity ML‑Agents</td><td>Academy</td><td>Python API</td><td>RL environment</td><td>ml‑agent env</td></tr>
+                <tr><td>Tue</td><td>Unreal Engine</td><td>AirSim</td><td>UE4</td><td>drone</td><td>airsim client</td></tr>
+                <tr><td>Wed</td><td>Sensor simulation</td><td>camera</td><td>RGBD</td><td>perception</td><td>camera sim</td></tr>
+                <tr><td>Thu</td><td>Paper: "Unity ML‑Agents"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">⚡ unity RL environment</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> Unity ML‑Agents environment.</div>
+        </div>
+        <!-- WEEK 11.2 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 2 · AirSim / CARLA for autonomous driving</div>
+            <div class="week-aim">🎯 sensor simulation, realistic rendering.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>Simulation</th><th>Python/C++</th><th>RL</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>AirSim</td><td>drone/car</td><td>API</td><td>control</td><td>airsim client</td></tr>
+                <tr><td>Tue</td><td>CARLA</td><td>autonomous driving</td><td>Python client</td><td>sensor</td><td>carla client</td></tr>
+                <tr><td>Wed</td><td>Sensor suite</td><td>LIDAR, camera</td><td>point cloud</td><td>detection</td><td>sensor sim</td></tr>
+                <tr><td>Thu</td><td>Paper: "CARLA"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">🔨 carla client</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> CARLA autonomous driving client.</div>
+        </div>
+        <!-- WEEK 11.3 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 3 · Multi‑agent RL environments</div>
+            <div class="week-aim">🎯 PettingZoo, MAgent.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>Simulation</th><th>Python/C++</th><th>RL</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>MARL</td><td>PettingZoo</td><td>environment</td><td>agents</td><td>pz env</td></tr>
+                <tr><td>Tue</td><td>MAgent</td><td>grid world</td><td>Python</td><td>battle</td><td>magent env</td></tr>
+                <tr><td>Wed</td><td>Cooperative/competitive</td><td>reward</td><td>RLlib</td><td>training</td><td>multi‑agent sim</td></tr>
+                <tr><td>Thu</td><td>Paper: "PettingZoo"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">⚡ magent‑like environment</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> multi‑agent environment (PettingZoo style).</div>
+        </div>
+        <!-- WEEK 11.4 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 4 · Distributed simulation for RL (RLlib, Ray)</div>
+            <div class="week-aim">🎯 Ray actors, remote tasks.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>Simulation</th><th>Python/C++</th><th>RL</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>Ray architecture</td><td>actors</td><td>ray remote</td><td>parallel</td><td>ray actor</td></tr>
+                <tr><td>Tue</td><td>RLlib</td><td>distributed training</td><td>policy</td><td>rollout</td><td>rllib env</td></tr>
+                <tr><td>Wed</td><td>Simulation with Ray</td><td>many environments</td><td>vector env</td><td>scaling</td><td>ray sim</td></tr>
+                <tr><td>Thu</td><td>Paper: "Ray"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">🔥 challenge: ray simulation actor</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">CHALLENGE PROJECT</span> distributed simulation with Ray.</div>
+        </div>
+        <div style="background:#c0dbef; padding:1rem;"><span class="chip">📌 MONTH 11</span> unity env, carla, magent, ray · <span class="chip">⚡ ray simulation</span></div>
+    </div>
+
+    <!-- MONTH 12 – Capstone: Sovereign AI + OS + Cloud Platform -->
+    <div class="month-card">
+        <div class="month-title">MONTH 12 — CAPSTONE: SOVEREIGN AI + OS + CLOUD PLATFORM</div>
+        <div class="daily-struct"><span>07:30–09:30 Math</span><span>09:45–11:15 System Design</span><span>11:30–13:00 Integration</span><span>14:00–15:30 Prototyping</span><span>15:45–17:30 Project</span><span>17:30–18:30 Tools</span><span>19:30–21:00 Paper</span></div>
+        <!-- WEEK 12.1 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 1 · Architectural design of sovereign platform</div>
+            <div class="week-aim">🎯 AI‑native OS, cloud‑native infrastructure, global scale.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>System Design</th><th>Integration</th><th>Prototyping</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>Capacity planning</td><td>Requirements</td><td>Components</td><td>Microkernel</td><td>design doc</td></tr>
+                <tr><td>Tue</td><td>Reliability modeling</td><td>Global control plane</td><td>APIs</td><td>AI orchestrator</td><td>API spec</td></tr>
+                <tr><td>Wed</td><td>Cost analysis</td><td>Multi‑region</td><td>Federation</td><td>Edge nodes</td><td>federation design</td></tr>
+                <tr><td>Thu</td><td>Paper: "Google stack"</td><td>discussion</td><td>roadmap</td><td>feasibility</td><td>final doc</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">⚡ platform architecture whitepaper</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> platform architecture whitepaper.</div>
+        </div>
+        <!-- WEEK 12.2 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 2 · Prototype microkernel + AI scheduler</div>
+            <div class="week-aim">🎯 minimal kernel with AI‑driven scheduling.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>System Design</th><th>Integration</th><th>Prototyping</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>Reinforcement learning for scheduling</td><td>RL scheduler</td><td>kernel module</td><td>Q‑learning</td><td>scheduler model</td></tr>
+                <tr><td>Tue</td><td>State representation</td><td>reward function</td><td>inference</td><td>agent</td><td>agent</td></tr>
+                <tr><td>Wed</td><td>Policy gradient</td><td>training loop</td><td>on‑policy</td><td>sim</td><td>train</td></tr>
+                <tr><td>Thu</td><td>Paper: "RL for scheduling"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">🔨 AI scheduler prototype</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> AI scheduler (RL) in simulation.</div>
+        </div>
+        <!-- WEEK 12.3 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 3 · Global distributed inference serving</div>
+            <div class="week-aim">🎯 multi‑region model serving, load balancing.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>System Design</th><th>Integration</th><th>Prototyping</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>Latency modeling</td><td>global LB</td><td>anycast</td><td>geo‑routing</td><td>routing sim</td></tr>
+                <tr><td>Tue</td><td>Consistency models</td><td>model replication</td><td>RAFT for models</td><td>consistency</td><td>replica</td></tr>
+                <tr><td>Wed</td><td>Cache hierarchy</td><td>multi‑level cache</td><td>redis</td><td>global cache</td><td>cache sim</td></tr>
+                <tr><td>Thu</td><td>Paper: "Google ML infra"</td><td>discussion</td><td>bench</td><td>performance</td><td>final</td></tr>
+                <tr><td>Fri</td><td>Wrap</td><td>integration</td><td>testing</td><td>final</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">⚡ global inference serving simulator</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">WEEKLY PROJECT</span> global model serving with geo‑routing.</div>
+        </div>
+        <!-- WEEK 12.4 -->
+        <div class="week-box">
+            <div class="week-header">WEEK 4 · Full integration and white paper</div>
+            <div class="week-aim">🎯 end‑to‑end prototype + final report.</div>
+            <table class="week-table">
+                <tr><th>Day</th><th>Math</th><th>System Design</th><th>Integration</th><th>Prototyping</th><th>Project</th></tr>
+                <tr><td>Mon</td><td>Integration</td><td>components</td><td>microkernel+AI</td><td>serving</td><td>merge</td></tr>
+                <tr><td>Tue</td><td>Testing</td><td>chaos</td><td>fault injection</td><td>recovery</td><td>chaos</td></tr>
+                <tr><td>Wed</td><td>Documentation</td><td>white paper</td><td>writing</td><td>diagrams</td><td>paper</td></tr>
+                <tr><td>Thu</td><td>Presentation</td><td>slides</td><td>demo</td><td>finalize</td><td>slides</td></tr>
+                <tr><td>Fri</td><td>Year review</td><td>future work</td><td>roadmap</td><td>celebration</td><td>final</td></tr>
+                <tr><td>Sat</td><td colspan="5">🔥 challenge: integrated prototype + white paper</td></tr>
+            </table>
+            <div class="weekly-project"><span class="chip">CHALLENGE PROJECT</span> integrated sovereign platform prototype + white paper.</div>
+        </div>
+        <div style="background:#c0dbef; padding:1rem;"><span class="chip">📌 MONTH 12</span> whitepaper, AI scheduler, global serving, final prototype · <span class="chip">⚡ sovereign platform</span></div>
+    </div>
+
+    <!-- GLOBAL RESOURCES -->
+    <hr>
+    <div class="resource-section">
+        <h2 style="font-size: 2rem;">📚 GLOBAL STANDARD TEXTBOOKS</h2>
+        <ul style="columns:2; list-style:none;">
+            <li>▹ "Designing Data‑Intensive Applications" (Kleppmann)</li><li>▹ "Cloud Native Infrastructure" (Miles)</li>
+            <li>▹ "Deep Learning Systems" (Awan)</li><li>▹ "Programming Massively Parallel Processors" (Kirk & Hwu)</li>
+            <li>▹ "Probabilistic Robotics" (Thrun)</li><li>▹ "Advanced Compiler Design" (Muchnick)</li>
+            <li>▹ "Distributed Systems" (van Steen & Tanenbaum)</li><li>▹ "Operating Systems: Three Easy Pieces"</li>
+        </ul>
+        <h2 style="margin-top:2rem;">📄 IMPORTANT RESEARCH PAPERS</h2>
+        <ul style="columns:2;">
+            <li>Google Borg (EuroSys'15)</li><li>Kubernetes (ATC'16)</li><li>Spanner (OSDI'12)</li><li>Paxos (1998)</li><li>Raft (ATC'14)</li><li>MapReduce (OSDI'04)</li><li>TensorFlow (OSDI'16)</li><li>Megatron‑LM (2019)</li><li>ZeRO (SC'20)</li><li>MLIR (CGO'19)</li><li>XLA (2017)</li><li>TVM (OSDI'18)</li><li>Ray (OSDI'18)</li>
+        </ul>
+        <h2 style="margin-top:2rem;">🔧 OPEN‑SOURCE CONTRIBUTION STRATEGY</h2>
+        <p>Start with small patches to Kubernetes (sig‑scheduling), PyTorch (distributed), MLIR, or Linux kernel. After Month 6, tackle a small feature (e.g., a new scheduler plugin, a runtime optimization). By Year‑5 end, aim to be a core contributor to one major infrastructure project.</p>
+        <h2 style="margin-top:2rem;">📈 PERFORMANCE BENCHMARKS</h2>
+        <ul>
+            <li>Month 4: all‑reduce implementation within 80% of NCCL.</li>
+            <li>Month 8: custom GPU kernel (matmul) within 90% of cuBLAS.</li>
+            <li>Month 12: end‑to‑end distributed AI platform (training + serving) capable of 100 TFLOPS simulated.</li>
+        </ul>
+        <h2 style="margin-top:2rem;">🧠 END OF YEAR‑5 CAPABILITY</h2>
+        <p>Independently design and implement large‑scale infrastructure components: a global distributed database, a distributed training platform, a GPU inference cluster, a container orchestration extension, a robotics autonomy stack, and a large‑scale simulation engine. Ready to lead the architecture of a sovereign AI + OS + cloud ecosystem.</p>
+    </div>
+
+    <footer>⚙️ Year 5 · each month 4 weeks · weekly projects · elite challenges · principal infrastructure architect mastery</footer>
+</div>
+</body>
+</html>
