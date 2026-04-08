@@ -355,8 +355,6 @@ class DealsLoader {
             
             <div class="deal-content">
                 <h3 class="deal-title">${this.escapeHtml(deal.title)}</h3>
-                <p class="deal-description">${this.escapeHtml(deal.description || '')}</p>
-                
                 ${deal.rating ? `
                 <div class="deal-rating">
                     <div class="stars">
