@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page | GetUpDeals – Best E‑commerce Deals</title>
+    <meta name="description" content="Compare prices and find the best deal for this product across Amazon, Flipkart, and more. Read reviews and check similar products.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Product Name | GetUpDeals">
+    <meta property="og:description" content="Find the best price for this product from top stores. Save money with our affiliate deals.">
+    <meta property="og:type" content="product">
+    <meta property="og:url" content="https://getupdeals.com/product/">
+    <meta property="og:image" content="https://getupdeals.com/assets/images/product-placeholder.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#2563eb">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo/favicon-set/favicon.ico">
+    <link rel="apple-touch-icon" href="../assets/images/logo/favicon-set/apple-touch-icon.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/themes.css">
+    <link rel="stylesheet" href="../assets/css/critical.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/product.css">
+    
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Chart.js for price history -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  
+    
+    
+</head>
+<body>
+ 
+<!-- Main Header (sticky) -->
+<header class="main-header" role="banner">
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo-container">
+            <a href="../index.html" class="logo" aria-label="GetUpDeals home">
+                <span class="brand-name">GetUpDeals</span>
+            </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+            <ul class="nav-list">
+                <li><a href="../index.html" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-dropdown">
+                    <a href="../categories/all-categories/index.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
+                        Categories <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                    <div class="dropdown-menu" role="menu">
+                        <a href="../categories/fashion/index.html" class="dropdown-item" role="menuitem">
+                            <i class="fas fa-tshirt" aria-hidden="true"></i> Fashion
+                        </a>
+                        <a href="../categories/electronics/index.html" class="dropdown-item" role="menuitem">
+                            <i class="fas fa-laptop" aria-hidden="true"></i> Electronics
+                        </a>
+                        <a href="../categories/gadgets/index.html" class="dropdown-item" role="menuitem">
+                            <i class="fas fa-mobile-alt" aria-hidden="true"></i> Gadgets
+                        </a>
+                        <a href="../categories/home-appliances/index.html" class="dropdown-item" role="menuitem">
+                            <i class="fas fa-blender" aria-hidden="true"></i> Home Appliances
+                        </a>
+                        <a href="../categories/all-categories/index.html" class="dropdown-item view-all" role="menuitem">
+                            <i class="fas fa-th" aria-hidden="true"></i> View All Categories
+                        </a>
+                    </div>
+                </li>
+                <li><a href="../deals/index.html" class="nav-link">Today's Deals</a></li>
+                <li><a href="../blog/index.html" class="nav-link">Blog</a></li>
+                <li><a href="../pages/contact/index.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <!-- Search Bar (desktop) -->
+            <div class="search-container" role="search">
+                <form class="search-form" action="../api/deals/search.php" method="get">
+                    <input type="search" name="q" placeholder="Search for deals..." class="search-input" aria-label="Search deals">
+                    <button type="submit" class="search-btn" aria-label="Submit search">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                    </button>
+                </form>
+            </div>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="header-actions">
+            <!-- Theme Toggle -->
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+                <i class="fas fa-moon" aria-hidden="true"></i>
+                <i class="fas fa-sun" aria-hidden="true"></i>
+            </button>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobileNav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile Navigation (slide-out panel) -->
+<div class="mobile-nav" id="mobileNav" role="dialog" aria-modal="true" aria-label="Mobile menu" hidden>
+    <div class="mobile-nav-header">
+        <a href="../index.html" class="mobile-logo" tabindex="-1">
+            <span class="brand-name">GetUpDeals</span>
+        </a>
+        <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu" tabindex="-1">
+            <i class="fas fa-times" aria-hidden="true"></i>
+        </button>
+    </div>
+
+    <div class="mobile-search" role="search">
+        <form class="mobile-search-form" action="../api/deals/search.php" method="get">
+            <input type="search" name="q" placeholder="Search deals..." aria-label="Search" tabindex="-1">
+            <button type="submit" aria-label="Submit" tabindex="-1"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+
+    <nav class="mobile-nav-menu" aria-label="Mobile navigation">
+        <a href="../index.html" class="mobile-nav-link active" tabindex="-1">
+            <i class="fas fa-home" aria-hidden="true"></i> Home
+        </a>
+        <div class="mobile-nav-dropdown">
+            <button class="mobile-nav-link" aria-expanded="false" tabindex="-1">
+                <i class="fas fa-th" aria-hidden="true"></i> Categories
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div class="mobile-dropdown-menu">
+                <a href="../categories/fashion/index.html" class="mobile-dropdown-item" tabindex="-1">
+                    <i class="fas fa-tshirt" aria-hidden="true"></i> Fashion
+                </a>
+                <a href="../categories/electronics/index.html" class="mobile-dropdown-item" tabindex="-1">
+                    <i class="fas fa-laptop" aria-hidden="true"></i> Electronics
+                </a>
+                <a href="../categories/gadgets/index.html" class="mobile-dropdown-item" tabindex="-1">
+                    <i class="fas fa-mobile-alt" aria-hidden="true"></i> Gadgets
+                </a>
+                <a href="../categories/home-appliances/index.html" class="mobile-dropdown-item" tabindex="-1">
+                    <i class="fas fa-blender" aria-hidden="true"></i> Home Appliances
+                </a>
+                <a href="../categories/all-categories/index.html" class="mobile-dropdown-item" tabindex="-1">
+                    <i class="fas fa-eye" aria-hidden="true"></i> View All
+                </a>
+            </div>
+        </div>
+        <a href="../deals/index.html" class="mobile-nav-link" tabindex="-1">
+            <i class="fas fa-tag" aria-hidden="true"></i> Today's Deals
+        </a>
+        <a href="../blog/index.html" class="mobile-nav-link" tabindex="-1">
+            <i class="fas fa-blog" aria-hidden="true"></i> Blog
+        </a>
+        <a href="../pages/contact/index.html" class="mobile-nav-link" tabindex="-1">
+            <i class="fas fa-envelope" aria-hidden="true"></i> Contact
+        </a>
+        <a href="../pages/about/index.html" class="mobile-nav-link" tabindex="-1">
+            <i class="fas fa-info-circle" aria-hidden="true"></i> About
+        </a>
+    </nav>
+
+    <div class="mobile-nav-footer">
+        <div class="theme-toggle-mobile">
+            <span>Theme:</span>
+            <button class="theme-switch-btn" id="themeSwitchMobile" tabindex="-1">
+                <span class="theme-icon">
+                    <i class="fas fa-moon" aria-hidden="true"></i>
+                </span>
+                Dark Mode
+            </button>
+        </div>
+    </div>
+</div>
+    <!-- Main Content -->
+    <main id="main-content" class="main-content">
+
+        <!-- PRODUCT GALLERY + DETAILS (dynamic) -->
+        <section id="product-details" class="product-details-section">
+            <div class="container">
+                <div id="product-details-container"><!-- JS will inject content here --></div>
+            </div>
+        </section>
+
+        <!-- Share Buttons -->
+        <div class="container">
+            <div class="share-buttons" id="share-buttons">
+                <div class="share-btn-icon whatsapp" data-platform="whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</div>
+                <div class="share-btn-icon facebook" data-platform="facebook"><i class="fab fa-facebook"></i> Facebook</div>
+                <div class="share-btn-icon twitter" data-platform="twitter"><i class="fab fa-twitter"></i> Twitter</div>
+                <div class="share-btn-icon telegram" data-platform="telegram"><i class="fab fa-telegram"></i> Telegram</div>
+                <div class="share-btn-icon email" data-platform="email"><i class="fas fa-envelope"></i> Email</div>
+                <div class="share-btn-icon" id="printBtn"><i class="fas fa-print"></i> Print</div>
+                <div class="share-btn-icon" id="qrBtn"><i class="fas fa-qrcode"></i> QR Code</div>
+            </div>
+        </div>
+
+        <!-- TAGS SECTION (dynamic) -->
+        <section id="product-tags-section" class="container">
+            <h3>Tags</h3>
+            <div id="product-tags" class="tag-container"></div>
+        </section>
+
+        <!-- TABS SECTION (dynamic) -->
+        <div class="container">
+            <div class="tabs-container" id="tabsContainer">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="details">Product Details</button>
+                    <button class="tab-btn" data-tab="specs">Specifications</button>
+                    <button class="tab-btn" data-tab="price-history">Price History</button>
+                    <button class="tab-btn" data-tab="reviews">Reviews</button>
+                    <button class="tab-btn" data-tab="qa">Q&A</button>
+                    <button class="tab-btn" data-tab="downloads">Downloads</button>
+                </div>
+                <div class="tab-content active" id="tab-details">
+                    <div id="product-description">Loading description...</div>
+                </div>
+                <div class="tab-content" id="tab-specs">
+                    <table class="specs-table" id="specs-table"><tr><td colspan="2">Loading specifications...</td></tr></table>
+                </div>
+                <div class="tab-content" id="tab-price-history">
+                    <canvas id="priceHistoryChart" width="400" height="200" style="max-width:100%; display:none;"></canvas>
+                    <div id="price-history-chart" class="price-history-placeholder">📊 No price history available.</div>
+                </div>
+                <div class="tab-content" id="tab-reviews">
+                    <div id="reviews-list"></div>
+                    <form id="review-form" class="review-form" enctype="multipart/form-data">
+                        <h3>Write a Review</h3>
+                        <input type="text" id="reviewerName" placeholder="Your name" required>
+                        <select id="reviewRating" required>
+                            <option value="">Rating</option>
+                            <option value="5">★★★★★</option>
+                            <option value="4">★★★★☆</option>
+                            <option value="3">★★★☆☆</option>
+                            <option value="2">★★☆☆☆</option>
+                            <option value="1">★☆☆☆☆</option>
+                        </select>
+                        <textarea id="reviewText" placeholder="Write your review here..." required></textarea>
+                        <input type="file" id="reviewImage" accept="image/*">
+                        <div id="reviewImagePreview"></div>
+                        <button type="submit">Submit Review</button>
+                        <div id="reviewError" class="error-message" style="display:none; color:red;"></div>
+                    </form>
+                </div>
+                <div class="tab-content" id="tab-qa">
+                    <div id="qa-list">Loading questions...</div>
+                    <form id="qa-form">
+                        <h3>Ask a Question</h3>
+                        <input type="text" id="questionName" placeholder="Your name" required>
+                        <textarea id="questionText" placeholder="Your question..." required></textarea>
+                        <button type="submit">Submit Question</button>
+                    </form>
+                </div>
+                <div class="tab-content" id="tab-downloads">
+                    <div id="downloads-list">No downloadable resources available.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Affiliate Badges & Trust Signals -->
+        <div class="container" id="affiliate-badges" style="margin: 20px 0;"></div>
+
+        <!-- Related Blog Posts -->
+        <section class="container" id="related-blogs-section" style="display: none;">
+            <div class="section-header">
+                <h2>Related Blog Posts</h2>
+            </div>
+            <div id="related-blogs" class="blog-grid"></div>
+        </section>
+
+        <!-- SIMILAR PRODUCTS (dynamic) -->
+        <section class="container">
+            <div class="section-header">
+                <h2>Similar Products</h2>
+            </div>
+            <div id="similar-products" class="carousel deals-grid"></div>
+        </section>
+
+        <!-- TOP RATED PRODUCTS (dynamic) -->
+        <section class="container">
+            <div class="section-header">
+                <h2>Top Rated in This Category</h2>
+            </div>
+            <div id="top-rated-products" class="carousel deals-grid"></div>
+        </section>
+
+        <!-- Recently Viewed Products -->
+        <section class="container" id="recently-viewed-section" style="display: none;">
+            <div class="section-header">
+                <h2>Recently Viewed</h2>
+            </div>
+            <div id="recently-viewed" class="carousel deals-grid"></div>
+        </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo-container"><a href="../index.html" class="logo"><span class="brand-name">GetUpDeals</span></a></div>
+                    <p class="footer-description">Your trusted source for the best e-commerce deals, discounts, and affiliate offers.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../deals/index.html">Today's Deals</a></li>
+                        <li><a href="../blog/index.html">Blog</a></li>
+                        <li><a href="../pages/about/index.html">About Us</a></li>
+                        <li><a href="../pages/contact/index.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Top Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="../categories/fashion/index.html">Fashion</a></li>
+                        <li><a href="../categories/electronics/index.html">Electronics</a></li>
+                        <li><a href="../categories/gadgets/index.html">Gadgets</a></li>
+                        <li><a href="../categories/home-appliances/index.html">Home Appliances</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact & Legal</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:contact@getupdeals.com">contact@getupdeals.com</a></li>
+                        <li><i class="fas fa-phone"></i> <span>+91 98765 43210</span></li>
+                        <li><i class="fas fa-map-marker-alt"></i> <span>Mumbai, India</span></li>
+                    </ul>
+                    <div class="footer-legal-links">
+                        <a href="../pages/privacy-policy/index.html">Privacy Policy</a>
+                        <a href="../pages/terms-of-service/index.html">Terms of Service</a>
+                        <a href="../pages/affiliate-disclosure/index.html">Affiliate Disclosure</a>
+                        <a href="../pages/disclaimer/index.html">Disclaimer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GetUpDeals.com. All rights reserved.</p>
+                <div class="payment-methods">
+                    <span>We Support:</span>
+                    <div class="payment-icons">
+                        <i class="fab fa-cc-visa" title="Visa"></i>
+                        <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+                        <i class="fab fa-cc-paypal" title="PayPal"></i>
+                        <i class="fas fa-mobile-alt" title="UPI"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+    
+    <!-- Your Firebase configuration -->
+    <script src="../assets/js/firebase-config.js"></script>
+
+    <!-- Main product.js -->
+    <script src="../assets/js/product.js" defer></script>
+    
+    <!-- Theme, navigation, etc. -->
+    <script src="../assets/js/main.js" defer></script>
+    <script src="../assets/js/theme-switcher.js" defer></script>
+    <script src="../assets/js/navigation.js" defer></script>
+    <script src="../assets/js/cookie-consent.js" defer></script>
+    
+    <!-- Basic UI interactions for modals -->
+
+</body>
+</html>
