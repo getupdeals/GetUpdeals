@@ -16,6 +16,15 @@
     --accent: #f59e0b;
     --accent-dark: #d97706;
 
+    /* RGB versions (for rgba() usage) */
+    --primary-rgb: 37, 99, 235;
+    --secondary-rgb: 124, 58, 237;
+    --accent-rgb: 245, 158, 11;
+    --success-rgb: 16, 185, 129;
+    --warning-rgb: 245, 158, 11;
+    --danger-rgb: 239, 68, 68;
+    --info-rgb: 59, 130, 246;
+
     /* Neutral Colors – Light Mode */
     --white: #ffffff;
     --gray-50: #f9fafb;
@@ -43,11 +52,17 @@
 
     /* Seasonal section background – light mode default */
     --bg-seasonal: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+
+    /* Shadows (using rgba with black) */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 /* --------------------------------------------------------------------------
    2. DARK THEME (via data attribute)
-      Add attribute data-theme="dark" to the <html> element to activate.
    -------------------------------------------------------------------------- */
 [data-theme="dark"] {
     /* Neutral Colors – Dark Mode (inverted) */
@@ -70,51 +85,3 @@
     /* All other variables (primary, secondary, success, etc.) remain the same.
        You can override them here if you wish. */
 }
-
-/* --------------------------------------------------------------------------
-   3. SYSTEM PREFERENCE DARK MODE (optional)
-      Automatically applies dark theme if the user's OS prefers dark mode.
-      To enable, remove the comment markers below.
-   -------------------------------------------------------------------------- */
-/*
-@media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-        --white: #111827;
-        --gray-50: #1f2937;
-        --gray-100: #374151;
-        --gray-200: #4b5563;
-        --gray-300: #6b7280;
-        --gray-400: #9ca3af;
-        --gray-500: #d1d5db;
-        --gray-600: #e5e7eb;
-        --gray-700: #f3f4f6;
-        --gray-800: #f9fafb;
-        --gray-900: #ffffff;
-        --black: #ffffff;
-        --bg-seasonal: linear-gradient(135deg, #1e293b, #0f172a);
-    }
-}
-*/
-
-/* --------------------------------------------------------------------------
-   4. ADDITIONAL THEMES (examples – uncomment and modify as needed)
-   -------------------------------------------------------------------------- */
-/* 
-   Christmas Theme 
-   [data-theme="christmas"] {
-       --primary: #b22222;
-       --secondary: #2e8b57;
-       --accent: #ffd700;
-       ...
-   }
-*/
-
-/* 
-   Halloween Theme 
-   [data-theme="halloween"] {
-       --primary: #ff7518;
-       --secondary: #5a4c3b;
-       --accent: #000000;
-       ...
-   }
-*/
